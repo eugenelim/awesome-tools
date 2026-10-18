@@ -14,6 +14,9 @@ sources:
   - id: ghostty
     resource: /sources/ghostty-about.md
     title: Ghostty Docs and About Ghostty
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # Ghostty
 
@@ -34,8 +37,17 @@ From the Ghostty docs:[^ghostty]
 
 Prebuilt binaries for macOS. On Linux, install a distro package or build from source.[^ghostty]
 
+## Install
+
+```sh
+brew install --cask ghostty
+```
+
+Requires macOS 13 or later.[^homebrew]
+
 ## See also
 
 - [Terminal emulators](../concepts/terminal-emulators.md)
 
 [^ghostty]: [Ghostty Docs and About Ghostty](../sources/ghostty-about.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

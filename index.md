@@ -3,11 +3,11 @@ okf_version: "0.2"
 ---
 # Awesome tools
 
-Software tools for a local machine setup, as an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) v0.2 bundle. Tool concepts are in `tools/`, categories in `concepts/`, and the vendor page snapshots they cite in `sources/`.
+Software tools for a local machine setup, as an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) v0.2 bundle. Tool concepts are in `tools/` and categories in `concepts/`.
 
 ## Overview
 
-- [Local machine setup](./concepts/local-machine-setup.md): every tool by category, platform and licence.
+- [Local machine setup](./concepts/local-machine-setup.md): every tool by category, platform and licence, plus Homebrew install commands.
 
 ## Categories
 
@@ -37,7 +37,9 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Obsidian homepage](./sources/obsidian-homepage.md)
 - [OpenKnowledge docs overview](./sources/openknowledge-docs-overview.md)
 - [OpenKnowledge GitHub README](./sources/openknowledge-github.md)
+- [Homebrew API snapshot](./sources/homebrew-api.md)
 - [Orca homepage](./sources/orca-homepage.md)
+- [Orca GitHub README](./sources/orca-github-readme.md)
 - [SilverBullet homepage](./sources/silverbullet-homepage.md)
 - [Swift Salamander homepage](./sources/swiftsalamander-homepage.md)
 - [VelaTerm homepage](./sources/velaterm-homepage.md)

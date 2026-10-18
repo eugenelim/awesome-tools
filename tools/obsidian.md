@@ -12,6 +12,9 @@ sources:
   - id: obsidian
     resource: /sources/obsidian-homepage.md
     title: Obsidian homepage
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # Obsidian
 
@@ -27,6 +30,14 @@ From the vendor homepage:[^obsidian]
 - Publish, a paid add-on: publish notes as a website with themes, custom domains and password protection.
 - Web Clipper.
 
+## Install
+
+```sh
+brew install --cask obsidian
+```
+
+Requires macOS 12 or later.[^homebrew]
+
 ## See also
 
 - [Knowledge management](../concepts/knowledge-management.md)
@@ -34,3 +45,4 @@ From the vendor homepage:[^obsidian]
 - [OpenKnowledge](./openknowledge.md)
 
 [^obsidian]: [Obsidian homepage](../sources/obsidian-homepage.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

@@ -12,6 +12,9 @@ sources:
   - id: bitwarden
     resource: /sources/bitwarden-homepage.md
     title: Bitwarden homepage
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # Bitwarden
 
@@ -40,8 +43,17 @@ From the vendor homepage:[^bitwarden]
 
 Prices as of 2026-10-18.[^bitwarden]
 
+## Install
+
+```sh
+brew install --cask bitwarden
+```
+
+Requires macOS 12 or later.[^homebrew]
+
 ## See also
 
 - [Password managers](../concepts/password-managers.md)
 
 [^bitwarden]: [Bitwarden homepage](../sources/bitwarden-homepage.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

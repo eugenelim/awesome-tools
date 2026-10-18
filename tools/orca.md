@@ -20,6 +20,12 @@ sources:
   - id: orca
     resource: /sources/orca-homepage.md
     title: Orca homepage
+  - id: orca-readme
+    resource: /sources/orca-github-readme.md
+    title: stablyai/orca README
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # Orca
 
@@ -42,9 +48,19 @@ From the vendor homepage:[^orca]
 
 Desktop apps for macOS, Windows and Linux, plus an iOS and Android companion app.[^orca]
 
+## Install
+
+```sh
+brew install --cask stablyai/orca/orca
+```
+
+This installs from Orca's own tap.[^orca-readme] Use the full tap path: the `orca` cask in homebrew/cask is a different program, plotly's chart-image tool, and it is disabled.[^homebrew]
+
 ## See also
 
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [VelaTerm](./velaterm.md)
 
 [^orca]: [Orca homepage](../sources/orca-homepage.md)
+[^orca-readme]: [stablyai/orca README](../sources/orca-github-readme.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

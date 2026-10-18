@@ -13,6 +13,9 @@ sources:
   - id: wick
     resource: /sources/wick-homepage.md
     title: Wick homepage
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # Wick
 
@@ -26,8 +29,13 @@ From the vendor homepage:[^wick]
 - Stopwatch with laps, split times and total times.
 - Alarms with repeat, label, snooze duration and sound.
 
+## Install
+
+No Homebrew cask or formula.[^homebrew]
+
 ## See also
 
 - [macOS utilities](../concepts/macos-utilities.md)
 
 [^wick]: [Wick homepage](../sources/wick-homepage.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

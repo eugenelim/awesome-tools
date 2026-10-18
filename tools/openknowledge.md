@@ -23,6 +23,9 @@ sources:
   - id: ok-github
     resource: /sources/openknowledge-github.md
     title: inkeep/open-knowledge on GitHub
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # OpenKnowledge
 
@@ -51,11 +54,12 @@ Other features listed in the docs:[^ok-docs]
 
 Desktop apps for macOS 13 or later, Windows and Linux. A local web app and CLI run on any platform, including Intel Macs.[^ok-docs] Desktop installers: DMG on Apple silicon Macs, a per-user Setup installer on Windows 10+ (x64/Arm64), and deb or rpm packages on Linux (x64/arm64).[^ok-github]
 
-## Install (CLI / web app)
+## Install
 
-Requires Node.js 24+ and git.[^ok-github]
+There's no Homebrew cask for the desktop app.[^homebrew] The CLI and web app need Node.js 24+ and git,[^ok-github] and both are available as Homebrew formulae.[^homebrew]
 
 ```sh
+brew install node git
 npm install -g @inkeep/open-knowledge
 cd your-project
 ok init
@@ -70,3 +74,4 @@ ok start --open
 
 [^ok-docs]: [OpenKnowledge docs overview](../sources/openknowledge-docs-overview.md)
 [^ok-github]: [inkeep/open-knowledge on GitHub](../sources/openknowledge-github.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

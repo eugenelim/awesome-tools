@@ -20,6 +20,9 @@ sources:
   - id: silverbullet
     resource: /sources/silverbullet-homepage.md
     title: SilverBullet homepage
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # SilverBullet
 
@@ -45,6 +48,10 @@ From the project homepage:[^silverbullet]
 
 Desktop syncs with any Server. Server and the `sb` CLI are MIT licensed.[^silverbullet]
 
+## Install
+
+No Homebrew cask or formula.[^homebrew]
+
 ## See also
 
 - [Knowledge management](../concepts/knowledge-management.md)
@@ -52,3 +59,4 @@ Desktop syncs with any Server. Server and the `sb` CLI are MIT licensed.[^silver
 - [OpenKnowledge](./openknowledge.md)
 
 [^silverbullet]: [SilverBullet homepage](../sources/silverbullet-homepage.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)

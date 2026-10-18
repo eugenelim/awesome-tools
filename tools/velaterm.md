@@ -20,6 +20,9 @@ sources:
   - id: velaterm
     resource: /sources/velaterm-homepage.md
     title: VelaTerm homepage
+  - id: homebrew
+    resource: /sources/homebrew-api.md
+    title: Homebrew API snapshot
 ---
 # VelaTerm
 
@@ -41,9 +44,14 @@ From the vendor homepage:[^velaterm]
 
 Desktop apps for macOS, Windows and Linux, built on Tauri 2. Also usable in a browser over end-to-end encrypted HTTPS and from iOS and Android apps. Remote machines connect over SSH, a pairing link or an account.[^velaterm]
 
+## Install
+
+No Homebrew cask or formula.[^homebrew]
+
 ## See also
 
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [Orca](./orca.md)
 
 [^velaterm]: [VelaTerm homepage](../sources/velaterm-homepage.md)
+[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
