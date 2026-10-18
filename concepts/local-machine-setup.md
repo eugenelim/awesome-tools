@@ -13,6 +13,8 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
+| [Zed](../tools/zed.md) | [Code editor](./code-editors.md) | ✓ | ✓ | ✓ | GPL-3.0-or-later |
+| [Pi](../tools/pi.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | MIT |
 | [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | Proprietary |
 | [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
 | [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
@@ -27,6 +29,8 @@ A blank cell means the captured sources don't state it.
 brew install --cask bitwarden
 brew install --cask ghostty
 brew install --cask stablyai/orca/orca
+brew install --cask zed
+brew install pi-coding-agent
 brew install --cask obsidian
 brew install --cask c0desurfer/tap/swift-salamander
 brew install node git && npm install -g @inkeep/open-knowledge

@@ -16,4 +16,4 @@ Applications for running and supervising several AI coding agents at once. They 
 | Desktop | macOS, Windows, Linux | macOS, Windows, Linux |
 | Mobile | iOS, Android | iOS, Android |
 
-See also [terminal emulators](./terminal-emulators.md).
+See also [terminal emulators](./terminal-emulators.md) and [AI coding agents](./ai-coding-agents.md).
