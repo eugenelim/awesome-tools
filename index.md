@@ -22,11 +22,13 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
 - [File managers](./concepts/file-managers.md): local, network and cloud file browsing.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
+- [Windows platform tools](./concepts/windows-platform-tools.md): package manager and Linux subsystem for Windows.
 
 ## Tools
 
 - [Antigravity](./tools/antigravity.md): Google's desktop app for orchestrating parallel AI agents.
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
+- [Chocolatey](./tools/chocolatey.md): package manager for Windows.
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
@@ -45,12 +47,14 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
+- [WSL](./tools/wsl.md): Windows Subsystem for Linux.
 - [Zed](./tools/zed.md): high-performance, multiplayer code editor.
 
 ## Sources
 
 - [Antigravity product page](./sources/antigravity-product.md)
 - [Bitwarden homepage](./sources/bitwarden-homepage.md)
+- [Chocolatey install page](./sources/chocolatey-install.md)
 - [Claude Code GitHub README](./sources/claude-code-github-readme.md)
 - [Codex GitHub README](./sources/codex-github-readme.md)
 - [GitHub Copilot CLI README](./sources/copilot-cli-github-readme.md)
@@ -76,6 +80,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Homebrew API snapshot: Paper](./sources/homebrew-api-paper.md)
 - [Pi GitHub README](./sources/pi-github-readme.md)
 - [Wick homepage](./sources/wick-homepage.md)
+- [WSL docs](./sources/wsl-docs.md)
 - [Zed homepage](./sources/zed-homepage.md)
 - [Zed GitHub README](./sources/zed-github-readme.md)
 - [Zed installation docs](./sources/zed-installation-docs.md)

@@ -1,7 +1,7 @@
 ---
 type: Overview
 title: Local machine setup
-description: All tools in this bundle by category, platform, licence and Homebrew install command.
+description: All tools in this bundle by category, platform and licence, with Homebrew and Windows install commands.
 ---
 # Local machine setup
 
@@ -29,6 +29,8 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
 | [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | Proprietary |
+| [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
+| [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
 | [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
 
 A blank cell means the captured sources don't state it.
@@ -56,3 +58,15 @@ brew install openjdk@17   # Java 17+ for VocBench
 ```
 
 VelaTerm, SilverBullet, Wick and VocBench have no Homebrew package. Protégé's cask is disabled. Install these from their websites.
+
+## Windows
+
+Run these in an administrator PowerShell. See [Chocolatey](../tools/chocolatey.md) and [WSL](../tools/wsl.md) for requirements.
+
+```powershell
+# WSL (Windows 10 2004+ or Windows 11), then restart
+wsl --install
+
+# Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
