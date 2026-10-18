@@ -11,6 +11,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | --- | --- | --- | --- | --- | --- |
 | [Bitwarden](../tools/bitwarden.md) | [Password manager](./password-managers.md) | ✓ | ✓ | ✓ | Open source |
 | [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
+| [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
@@ -46,6 +47,7 @@ A blank cell means the captured sources don't state it.
 brew install --cask bitwarden
 brew install --cask ghostty
 brew install --cask firefox@developer-edition
+brew install --cask sigmaos
 brew install --cask stablyai/orca/orca
 brew install herdr
 brew install --cask zed
