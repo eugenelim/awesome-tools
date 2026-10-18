@@ -17,6 +17,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 ## Categories
 
 - [Password managers](./concepts/password-managers.md): encrypted credential vaults.
+- [Personal AI agents](./concepts/personal-ai-agents.md): agents that run everyday tasks and goals for you.
 - [Terminal emulators](./concepts/terminal-emulators.md): applications that host shell sessions.
 - [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
@@ -40,7 +41,9 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
+- [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
 - [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
+- [Muse](./tools/muse.md): Meta's hosted personal AI agent.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
@@ -67,7 +70,9 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Homebrew API snapshot: coding agents](./sources/homebrew-api-agents.md)
 - [Firefox Developer Edition page](./sources/firefox-developer-edition.md)
 - [Homebrew API snapshot: dev environments](./sources/homebrew-api-dev-envs.md)
+- [Hermes Agent README](./sources/hermes-agent-readme.md)
 - [Logseq GitHub README](./sources/logseq-github.md)
+- [Muse homepage](./sources/muse-homepage.md)
 - [Node.js version manager docs](./sources/node-version-managers.md)
 - [pyenv README](./sources/pyenv-readme.md)
 - [uv Python docs](./sources/uv-python-docs.md)

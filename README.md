@@ -28,6 +28,7 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
 | [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |
 | [Design tools](./concepts/design-tools.md) | [Paper](./tools/paper.md) |
+| [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
 | [Password managers](./concepts/password-managers.md) | [Bitwarden](./tools/bitwarden.md) |
 | [File managers](./concepts/file-managers.md) | [Swift Salamander](./tools/swift-salamander.md) |
 | [macOS utilities](./concepts/macos-utilities.md) | [Wick](./tools/wick.md) |

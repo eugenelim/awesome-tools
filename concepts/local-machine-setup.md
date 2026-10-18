@@ -20,6 +20,8 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Claude Code](../tools/claude-code.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
 | [Codex](../tools/codex.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [GitHub Copilot CLI](../tools/github-copilot.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
+| [Hermes Agent](../tools/hermes.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | ✓ | ✓ | MIT |
+| [Muse](../tools/muse.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | | | Proprietary |
 | [Pi](../tools/pi.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | MIT |
 | [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | Proprietary |
 | [Logseq](../tools/logseq.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | AGPL-3.0 |
@@ -46,6 +48,8 @@ brew install --cask stablyai/orca/orca
 brew install herdr
 brew install --cask zed
 brew install pi-coding-agent
+brew install hermes-agent
+brew install --cask hermes-desktop
 brew install --cask claude-code
 brew install --cask codex
 brew install copilot-cli        # not `copilot`, which is AWS's ECS tool
@@ -59,7 +63,7 @@ brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```
 
-VelaTerm, SilverBullet, Wick and VocBench have no Homebrew package. Protégé's cask is disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick and VocBench have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
 ## Windows
 
