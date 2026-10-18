@@ -11,6 +11,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | --- | --- | --- | --- | --- | --- |
 | [Bitwarden](../tools/bitwarden.md) | [Password manager](./password-managers.md) | ✓ | ✓ | ✓ | Open source |
 | [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
+| [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
 | [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
@@ -69,7 +70,7 @@ brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```
 
-VelaTerm, SilverBullet, Wick and VocBench have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick, VocBench and Rill have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
 ## Windows
 

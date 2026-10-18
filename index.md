@@ -53,6 +53,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Pi](./tools/pi.md): minimal, extensible coding agent CLI.
 - [Protégé](./tools/protege.md): Stanford's open-source OWL 2 ontology editor.
 - [Rascal](./tools/rascal.md): free, open-source keyboard-first Finder replacement.
+- [Rill](./tools/rill.md): macOS browser (beta) that hands tasks to your Claude Code or Codex.
 - [SigmaOS](./tools/sigmaos.md): WebKit-based macOS browser with workspaces and an AI assistant.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
@@ -94,6 +95,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Orca homepage](./sources/orca-homepage.md)
 - [Orca GitHub README](./sources/orca-github-readme.md)
 - [Rascal homepage](./sources/rascal-homepage.md)
+- [Rill homepage](./sources/rill-homepage.md)
 - [SigmaOS homepage](./sources/sigmaos-homepage.md)
 - [SilverBullet homepage](./sources/silverbullet-homepage.md)
 - [Swift Salamander homepage](./sources/swiftsalamander-homepage.md)
