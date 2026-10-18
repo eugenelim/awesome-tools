@@ -22,6 +22,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
+- [Containers](./concepts/containers.md): building and running containers.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
 - [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
@@ -38,6 +39,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Chocolatey](./tools/chocolatey.md): package manager for Windows.
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
+- [Docker CLI](./tools/docker-cli.md): open-source container CLI; licensing vs Docker Desktop.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
 - [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.

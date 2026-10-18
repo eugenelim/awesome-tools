@@ -10,6 +10,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | Tool | Category | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
 | [Bitwarden](../tools/bitwarden.md) | [Password manager](./password-managers.md) | ✓ | ✓ | ✓ | Open source |
+| [Docker CLI](../tools/docker-cli.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
 | [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
 | [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
@@ -49,6 +50,7 @@ A blank cell means the captured sources don't state it.
 ```sh
 brew install --cask bitwarden
 brew install --cask ghostty
+brew install docker docker-compose docker-buildx colima   # Docker CLI without Docker Desktop
 brew install --cask firefox@developer-edition
 brew install --cask sigmaos
 brew install --cask stablyai/orca/orca
@@ -91,6 +93,7 @@ Then, with Chocolatey (package pages are linked from each tool page):
 
 ```powershell
 choco install git                 # Git for Windows, includes Git Bash
+choco install docker-cli          # client only; run Docker Engine in WSL 2
 choco install bitwarden
 choco install claude-code
 choco install codex
