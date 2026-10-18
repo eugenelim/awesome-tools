@@ -59,6 +59,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
+- [Vorssaint](./tools/vorssaint.md): free, open-source macOS menu bar toolkit.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
 - [WSL](./tools/wsl.md): Windows Subsystem for Linux.
 - [Zed](./tools/zed.md): high-performance, multiplayer code editor.

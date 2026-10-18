@@ -38,6 +38,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
 | [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
+| [Vorssaint](../tools/vorssaint.md) | [macOS utility](./macos-utilities.md) | ✓ (Apple silicon) | | | GPL-3.0-or-later |
 | [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
 
 A blank cell means the captured sources don't state it.
@@ -66,6 +67,7 @@ brew install --cask paper-design
 brew install --cask c0desurfer/tap/swift-salamander
 brew install --cask chang-07/tap/rascal
 brew install --cask lab421/tap/forel
+brew install --cask vorssaint
 brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```
