@@ -40,6 +40,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
+- [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
@@ -66,6 +67,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Homebrew API snapshot: coding agents](./sources/homebrew-api-agents.md)
 - [Firefox Developer Edition page](./sources/firefox-developer-edition.md)
 - [Homebrew API snapshot: dev environments](./sources/homebrew-api-dev-envs.md)
+- [Logseq GitHub README](./sources/logseq-github.md)
 - [Node.js version manager docs](./sources/node-version-managers.md)
 - [pyenv README](./sources/pyenv-readme.md)
 - [uv Python docs](./sources/uv-python-docs.md)

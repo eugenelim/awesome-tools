@@ -22,6 +22,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [GitHub Copilot CLI](../tools/github-copilot.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
 | [Pi](../tools/pi.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | MIT |
 | [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | Proprietary |
+| [Logseq](../tools/logseq.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | AGPL-3.0 |
 | [Octarine](../tools/octarine.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | Proprietary |
 | [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
 | [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
@@ -51,6 +52,7 @@ brew install copilot-cli        # not `copilot`, which is AWS's ECS tool
 brew install --cask antigravity
 brew install --cask obsidian
 brew install --cask octarine
+brew install --cask logseq
 brew install --cask paper-design
 brew install --cask c0desurfer/tap/swift-salamander
 brew install node git && npm install -g @inkeep/open-knowledge

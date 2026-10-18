@@ -1,19 +1,18 @@
 ---
 type: Category
 title: Knowledge management
-description: Note-taking and wiki tools that store content as plain Markdown files.
+description: Note-taking and wiki tools that store content as plain files.
 ---
 # Knowledge management
 
-Note-taking and wiki tools that store content as plain Markdown files.
+Note-taking and wiki tools that store content as plain files.
 
-| | [Obsidian](../tools/obsidian.md) | [Octarine](../tools/octarine.md) | [SilverBullet](../tools/silverbullet.md) | [OpenKnowledge](../tools/openknowledge.md) |
-| --- | --- | --- | --- | --- |
-| Storage | Local Markdown vault | Local Markdown files | Markdown folder, local or on a server | `.md`/`.mdx` files in a git project |
-| Licence | Proprietary, free | Proprietary; free tier | MIT (Server, CLI) | GPL-3.0 |
-| Pricing | Free; paid Sync and Publish | Free; $79 one-time Personal | Free | Free |
-| Extensibility | Plugins, open API | Built-in features, skills | Space Lua scripts and queries | MCP server, agent skills, plugins |
-| Sync | Paid Sync add-on | | Desktop ↔ Server | Git |
-| Publishing | Paid Publish add-on | One-click publish | Docs site | — |
+| Tool | Storage | Licence | Pricing | Extensibility | Sync / collaboration |
+| --- | --- | --- | --- | --- | --- |
+| [Obsidian](../tools/obsidian.md) | Local Markdown vault | Proprietary, free | Free; paid Sync and Publish | Plugins, open API | Paid Sync add-on |
+| [Logseq](../tools/logseq.md) | Markdown or Org-mode; DB graphs (beta) | AGPL-3.0 | | Plugins, themes | RTC (alpha) |
+| [Octarine](../tools/octarine.md) | Local Markdown files | Proprietary; free tier | Free; $79 one-time Personal | Built-in features, skills | Teams, one-click publish |
+| [SilverBullet](../tools/silverbullet.md) | Markdown folder, local or on a server | MIT (Server, CLI) | Free | Space Lua scripts and queries | Desktop ↔ Server; live team wiki |
+| [OpenKnowledge](../tools/openknowledge.md) | `.md`/`.mdx` files in a git project | GPL-3.0 | Free | MCP server, agent skills, plugins | Git |
 
 See also [ontology editors](./ontology-editors.md) for structured vocabularies.
