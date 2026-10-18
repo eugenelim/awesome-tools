@@ -7,7 +7,8 @@ description: Small single-purpose Mac applications.
 
 Small single-purpose Mac applications.
 
-| Tool | Purpose |
-| --- | --- |
-| [Wick](../tools/wick.md) | Timers, stopwatch and alarms in the menu bar and on the lock screen |
+| Tool | Purpose | Licence | Homebrew |
+| --- | --- | --- | --- |
+| [Forel](../tools/forel.md) | Rule-based folder automation (Hazel alternative) | GPL-3.0 | `--cask lab421/tap/forel` |
+| [Wick](../tools/wick.md) | Timers, stopwatch and alarms in the menu bar and on the lock screen | | none |
 

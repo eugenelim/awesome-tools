@@ -38,6 +38,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
+- [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
@@ -77,6 +78,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Node.js version manager docs](./sources/node-version-managers.md)
 - [pyenv README](./sources/pyenv-readme.md)
 - [uv Python docs](./sources/uv-python-docs.md)
+- [Forel README](./sources/forel-readme.md)
 - [Ghostty docs and About](./sources/ghostty-about.md)
 - [Obsidian homepage](./sources/obsidian-homepage.md)
 - [OpenKnowledge docs overview](./sources/openknowledge-docs-overview.md)

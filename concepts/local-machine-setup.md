@@ -35,6 +35,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | Proprietary |
 | [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+| [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
 | [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
 
 A blank cell means the captured sources don't state it.
@@ -61,6 +62,7 @@ brew install --cask logseq
 brew install --cask paper-design
 brew install --cask c0desurfer/tap/swift-salamander
 brew install --cask chang-07/tap/rascal
+brew install --cask lab421/tap/forel
 brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```
