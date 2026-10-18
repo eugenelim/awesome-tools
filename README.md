@@ -89,4 +89,4 @@ Facts were captured in October 2026. Prices, versions and platform support chang
 
 ## Licence
 
-This repo has no licence file yet.
+The content is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE). You can reuse and adapt it if you credit this repository. Product names and the quoted vendor material belong to their owners.
