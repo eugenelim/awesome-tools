@@ -15,6 +15,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Terminal emulators](./concepts/terminal-emulators.md): applications that host shell sessions.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
+- [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
@@ -30,6 +31,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
 - [Orca](./tools/orca.md): ADE for parallel agents in git worktrees.
+- [Paper](./tools/paper.md): design tool with an HTML/CSS canvas that agents can edit through MCP.
 - [Pi](./tools/pi.md): minimal, extensible coding agent CLI.
 - [Protégé](./tools/protege.md): Stanford's open-source OWL 2 ontology editor.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
@@ -58,6 +60,8 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [SilverBullet homepage](./sources/silverbullet-homepage.md)
 - [Swift Salamander homepage](./sources/swiftsalamander-homepage.md)
 - [VelaTerm homepage](./sources/velaterm-homepage.md)
+- [Paper homepage and pricing](./sources/paper-homepage.md)
+- [Homebrew API snapshot: Paper](./sources/homebrew-api-paper.md)
 - [Pi GitHub README](./sources/pi-github-readme.md)
 - [Wick homepage](./sources/wick-homepage.md)
 - [Zed homepage](./sources/zed-homepage.md)
