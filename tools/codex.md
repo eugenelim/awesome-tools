@@ -19,6 +19,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/codex
     title: "Homebrew: codex"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/codex
+    title: "Chocolatey: codex"
 ---
 # Codex
 
@@ -44,9 +47,17 @@ brew install --cask codex-app   # desktop app (macOS 12+)
 
 [^codex] [^homebrew] Other options: `curl -fsSL https://chatgpt.com/codex/install.sh | sh` on macOS and Linux, a PowerShell installer on Windows, or `npm install -g @openai/codex`. Run `codex` to start.[^codex]
 
+On Windows with [Chocolatey](./chocolatey.md) (CLI):[^choco-pkg]
+
+```powershell
+choco install codex
+```
+
 ## See also
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
 [^codex]: [openai/codex README](https://github.com/openai/codex)
 [^homebrew]: [Homebrew: codex](https://formulae.brew.sh/cask/codex) and [codex-app](https://formulae.brew.sh/cask/codex-app)
+
+[^choco-pkg]: [Chocolatey: codex](https://community.chocolatey.org/packages/codex)

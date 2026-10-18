@@ -83,3 +83,23 @@ wsl --install
 # Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+
+Then, with Chocolatey (package pages are linked from each tool page):
+
+```powershell
+choco install git                 # Git for Windows, includes Git Bash
+choco install bitwarden
+choco install claude-code
+choco install codex
+choco install github-copilot-cli
+choco install antigravity
+choco install herdr
+choco install hermes-desktop
+choco install zed-editor          # not `zed`, which is an unrelated tool
+choco install obsidian
+choco install logseq              # lags the GitHub release
+choco install uv
+choco install fnm
+```
+
+These have no Chocolatey package: Octarine, Firefox Developer Edition, Orca (the `orca` package is Microsoft's MSI editor), VelaTerm, SilverBullet, OpenKnowledge, Protégé, VocBench and Pi. Install them from their websites. See [Windows platform tools](./windows-platform-tools.md) for the recommended shell setup.

@@ -20,6 +20,9 @@ sources:
   - id: logseq
     resource: https://github.com/logseq/logseq
     title: Logseq README, release and Homebrew entry
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/logseq
+    title: "Chocolatey: logseq"
 ---
 # Logseq
 
@@ -41,9 +44,17 @@ brew install --cask logseq
 
 Requires macOS 12 or later.[^logseq]
 
+On Windows with [Chocolatey](./chocolatey.md). The package was at version 0.10.15 on 2026-10-19, behind the 2.0.2 release, so the GitHub download is newer.[^choco-pkg]
+
+```powershell
+choco install logseq
+```
+
 ## See also
 
 - [Knowledge management](../concepts/knowledge-management.md)
 - [Obsidian](./obsidian.md)
 
 [^logseq]: [logseq/logseq README](https://github.com/logseq/logseq), [latest release](https://github.com/logseq/logseq/releases/latest) and [Homebrew: logseq](https://formulae.brew.sh/cask/logseq)
+
+[^choco-pkg]: [Chocolatey: logseq](https://community.chocolatey.org/packages/logseq)

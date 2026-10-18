@@ -15,6 +15,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/obsidian
     title: "Homebrew: obsidian"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/obsidian
+    title: "Chocolatey: obsidian"
 ---
 # Obsidian
 
@@ -38,6 +41,12 @@ brew install --cask obsidian
 
 Requires macOS 12 or later.[^homebrew]
 
+On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+
+```powershell
+choco install obsidian
+```
+
 ## See also
 
 - [Knowledge management](../concepts/knowledge-management.md)
@@ -46,3 +55,5 @@ Requires macOS 12 or later.[^homebrew]
 
 [^obsidian]: [Obsidian homepage](https://obsidian.md/)
 [^homebrew]: [Homebrew: obsidian](https://formulae.brew.sh/cask/obsidian)
+
+[^choco-pkg]: [Chocolatey: obsidian](https://community.chocolatey.org/packages/obsidian)

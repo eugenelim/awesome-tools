@@ -19,6 +19,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/copilot-cli
     title: "Homebrew: copilot-cli"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/github-copilot-cli
+    title: "Chocolatey: github-copilot-cli"
 ---
 # GitHub Copilot CLI
 
@@ -43,9 +46,17 @@ brew install copilot-cli
 
 `copilot-cli@prerelease` installs prereleases.[^copilot] Don't use `brew install copilot`: that formula is AWS's CLI for Amazon ECS and Fargate.[^homebrew] Other options are the install script (`curl -fsSL https://gh.io/copilot-install | bash`), `winget install GitHub.Copilot` on Windows, or `npm install -g @github/copilot`. Run `copilot` to start and `/login` to authenticate.[^copilot]
 
+On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+
+```powershell
+choco install github-copilot-cli
+```
+
 ## See also
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
 [^copilot]: [github/copilot-cli README](https://github.com/github/copilot-cli)
 [^homebrew]: [Homebrew: copilot-cli](https://formulae.brew.sh/cask/copilot-cli) and the unrelated [copilot](https://formulae.brew.sh/formula/copilot) formula
+
+[^choco-pkg]: [Chocolatey: github-copilot-cli](https://community.chocolatey.org/packages/github-copilot-cli)

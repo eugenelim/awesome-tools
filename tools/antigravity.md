@@ -18,6 +18,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/antigravity
     title: "Homebrew: antigravity"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/antigravity
+    title: "Chocolatey: antigravity"
 ---
 # Google Antigravity
 
@@ -49,6 +52,12 @@ brew install --cask antigravity
 
 Requires macOS 13 or later.[^homebrew]
 
+On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+
+```powershell
+choco install antigravity
+```
+
 ## See also
 
 - [Agentic development environments](../concepts/agentic-development-environments.md)
@@ -56,3 +65,5 @@ Requires macOS 13 or later.[^homebrew]
 
 [^antigravity]: [Google Antigravity 2 product page](https://antigravity.google/product/antigravity-2)
 [^homebrew]: [Homebrew: antigravity](https://formulae.brew.sh/cask/antigravity)
+
+[^choco-pkg]: [Chocolatey: antigravity](https://community.chocolatey.org/packages/antigravity)

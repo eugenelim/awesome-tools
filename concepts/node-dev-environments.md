@@ -14,6 +14,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/formula/fnm
     title: "Homebrew: fnm, mise, nvm, volta"
+  - id: choco
+    resource: https://community.chocolatey.org/packages/fnm
+    title: "Chocolatey: fnm, mise, nvm"
 ---
 # Node.js dev environments
 
@@ -52,7 +55,7 @@ fnm install --lts
 echo "<version>" > .node-version   # pin the project; fnm switches on cd
 ```
 
-On Windows, run `winget install Schniz.fnm` or `choco install fnm`, then add `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` to your PowerShell profile.[^node-vm]
+On Windows, run `winget install Schniz.fnm` or `choco install fnm`, then add `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` to your PowerShell profile.[^node-vm] mise is also on Chocolatey as `mise`. The Chocolatey `nvm` package is nvm-windows, a separate project from nvm.[^choco]
 
 ## Setup with mise
 
@@ -73,3 +76,5 @@ These commands are from the mise docs.[^node-vm] The Homebrew formula is `mise`.
 
 [^node-vm]: [nvm README](https://github.com/nvm-sh/nvm), [fnm README](https://github.com/Schniz/fnm) and [commands](https://github.com/Schniz/fnm/blob/master/docs/commands.md), [Volta README](https://github.com/volta-cli/volta), [mise Node.js docs](https://mise.jdx.dev/lang/node.html)
 [^homebrew]: Homebrew: [fnm](https://formulae.brew.sh/formula/fnm), [mise](https://formulae.brew.sh/formula/mise), [nvm](https://formulae.brew.sh/formula/nvm), [volta](https://formulae.brew.sh/formula/volta)
+
+[^choco]: Chocolatey: [fnm](https://community.chocolatey.org/packages/fnm), [mise](https://community.chocolatey.org/packages/mise), [nvm (nvm-windows)](https://community.chocolatey.org/packages/nvm)

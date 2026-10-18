@@ -15,6 +15,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/bitwarden
     title: "Homebrew: bitwarden"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/bitwarden
+    title: "Chocolatey: bitwarden"
 ---
 # Bitwarden
 
@@ -51,9 +54,17 @@ brew install --cask bitwarden
 
 Requires macOS 12 or later.[^homebrew]
 
+On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+
+```powershell
+choco install bitwarden
+```
+
 ## See also
 
 - [Password managers](../concepts/password-managers.md)
 
 [^bitwarden]: [Bitwarden homepage](https://bitwarden.com/)
 [^homebrew]: [Homebrew: bitwarden](https://formulae.brew.sh/cask/bitwarden)
+
+[^choco-pkg]: [Chocolatey: bitwarden](https://community.chocolatey.org/packages/bitwarden)

@@ -18,6 +18,9 @@ sources:
   - id: hermes
     resource: https://github.com/NousResearch/hermes-agent
     title: Hermes Agent README and Homebrew entries
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/hermes-desktop
+    title: "Chocolatey: hermes-desktop"
 ---
 # Hermes Agent
 
@@ -48,9 +51,17 @@ brew install --cask hermes-desktop  # desktop app
 
 [^hermes] Other options are `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash` on Linux, macOS or WSL2, or `iex (irm https://hermes-agent.nousresearch.com/install.ps1)` in PowerShell. Then run `hermes setup`.[^hermes]
 
+On Windows with [Chocolatey](./chocolatey.md) (desktop app):[^choco-pkg]
+
+```powershell
+choco install hermes-desktop
+```
+
 ## See also
 
 - [Personal AI agents](../concepts/personal-ai-agents.md)
 - [Muse](./muse.md)
 
 [^hermes]: [NousResearch/hermes-agent README](https://github.com/NousResearch/hermes-agent); Homebrew: [hermes-agent](https://formulae.brew.sh/formula/hermes-agent) and [hermes-desktop](https://formulae.brew.sh/cask/hermes-desktop)
+
+[^choco-pkg]: [Chocolatey: hermes-desktop](https://community.chocolatey.org/packages/hermes-desktop)

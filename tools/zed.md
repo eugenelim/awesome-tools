@@ -24,6 +24,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/zed
     title: "Homebrew: zed"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/zed-editor
+    title: "Chocolatey: zed-editor"
 ---
 # Zed
 
@@ -57,6 +60,12 @@ brew install --cask zed
 
 For the preview build, use `brew install --cask zed@preview`.[^zed-install] [^homebrew] On Windows, run `winget install -e --id ZedIndustries.Zed`. On Linux, run `curl -f https://zed.dev/install.sh | sh`.[^zed-install]
 
+On Windows with [Chocolatey](./chocolatey.md), use `zed-editor`. The `zed` package is an unrelated tool from authzed.[^choco-pkg]
+
+```powershell
+choco install zed-editor
+```
+
 ## See also
 
 - [Code editors](../concepts/code-editors.md)
@@ -65,3 +74,5 @@ For the preview build, use `brew install --cask zed@preview`.[^zed-install] [^ho
 [^zed-readme]: [zed-industries/zed README](https://github.com/zed-industries/zed)
 [^zed-install]: [Installing Zed](https://zed.dev/docs/installation)
 [^homebrew]: [Homebrew: zed](https://formulae.brew.sh/cask/zed)
+
+[^choco-pkg]: [Chocolatey: zed-editor](https://community.chocolatey.org/packages/zed-editor) and the unrelated [zed](https://community.chocolatey.org/packages/zed)

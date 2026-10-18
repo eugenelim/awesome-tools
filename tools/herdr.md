@@ -20,6 +20,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/formula/herdr
     title: "Homebrew: herdr"
+  - id: choco-pkg
+    resource: https://community.chocolatey.org/packages/herdr
+    title: "Chocolatey: herdr"
 ---
 # herdr
 
@@ -44,6 +47,12 @@ brew install herdr
 
 This is a Homebrew formula, not a cask.[^homebrew] [^herdr] Other options are `curl -fsSL https://herdr.dev/install.sh | sh` or `mise use -g herdr`. Run `herdr` to start it; `ctrl+b q` detaches.[^herdr]
 
+On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+
+```powershell
+choco install herdr
+```
+
 ## See also
 
 - [Agentic development environments](../concepts/agentic-development-environments.md)
@@ -51,3 +60,5 @@ This is a Homebrew formula, not a cask.[^homebrew] [^herdr] Other options are `c
 
 [^herdr]: [herdrdev/herdr README](https://github.com/herdrdev/herdr)
 [^homebrew]: [Homebrew: herdr](https://formulae.brew.sh/formula/herdr)
+
+[^choco-pkg]: [Chocolatey: herdr](https://community.chocolatey.org/packages/herdr)
