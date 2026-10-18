@@ -17,6 +17,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
+- [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
 - [File managers](./concepts/file-managers.md): local, network and cloud file browsing.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
 
@@ -24,13 +25,17 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
+- [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
+- [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
 - [Orca](./tools/orca.md): ADE for parallel agents in git worktrees.
 - [Pi](./tools/pi.md): minimal, extensible coding agent CLI.
+- [Protégé](./tools/protege.md): Stanford's open-source OWL 2 ontology editor.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
+- [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
 - [Zed](./tools/zed.md): high-performance, multiplayer code editor.
 
@@ -43,6 +48,11 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [OpenKnowledge GitHub README](./sources/openknowledge-github.md)
 - [Homebrew API snapshot](./sources/homebrew-api.md)
 - [Homebrew API snapshot: Zed and Pi](./sources/homebrew-api-zed-pi.md)
+- [Homebrew API snapshot: Octarine, herdr, Protégé, VocBench](./sources/homebrew-api-batch-3.md)
+- [herdr GitHub README](./sources/herdr-github-readme.md)
+- [Octarine homepage and pricing](./sources/octarine-homepage.md)
+- [Protégé homepage](./sources/protege-homepage.md)
+- [VocBench homepage and docs](./sources/vocbench-homepage.md)
 - [Orca homepage](./sources/orca-homepage.md)
 - [Orca GitHub README](./sources/orca-github-readme.md)
 - [SilverBullet homepage](./sources/silverbullet-homepage.md)
