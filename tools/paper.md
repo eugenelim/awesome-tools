@@ -11,15 +11,14 @@ tags:
 platforms:
   - macOS
   - Web
-license: Proprietary
 pricing: Free; Pro $20/editor/month ($16 billed yearly); Organizations by contract
 sources:
   - id: paper
-    resource: /sources/paper-homepage.md
+    resource: https://paper.design/
     title: Paper homepage and pricing
   - id: homebrew
-    resource: /sources/homebrew-api-paper.md
-    title: Homebrew API snapshot (Paper)
+    resource: https://formulae.brew.sh/cask/paper-design
+    title: "Homebrew: paper-design"
 ---
 # Paper
 
@@ -57,5 +56,5 @@ Requires macOS 13 or later on Apple silicon.[^homebrew]
 
 - [Design tools](../concepts/design-tools.md)
 
-[^paper]: [Paper homepage and pricing](../sources/paper-homepage.md)
-[^homebrew]: [Homebrew API snapshot (Paper)](../sources/homebrew-api-paper.md)
+[^paper]: [Paper homepage](https://paper.design/) and [pricing](https://paper.design/pricing)
+[^homebrew]: [Homebrew: paper-design](https://formulae.brew.sh/cask/paper-design)

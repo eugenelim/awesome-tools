@@ -13,17 +13,17 @@ platforms:
 license: GPL-3.0-or-later (Apache-2.0 components where marked)
 sources:
   - id: zed
-    resource: /sources/zed-homepage.md
+    resource: https://zed.dev/
     title: Zed homepage
   - id: zed-readme
-    resource: /sources/zed-github-readme.md
+    resource: https://github.com/zed-industries/zed
     title: zed-industries/zed README
   - id: zed-install
-    resource: /sources/zed-installation-docs.md
+    resource: https://zed.dev/docs/installation
     title: Installing Zed
   - id: homebrew
-    resource: /sources/homebrew-api-zed-pi.md
-    title: Homebrew API snapshot (Zed and Pi)
+    resource: https://formulae.brew.sh/cask/zed
+    title: "Homebrew: zed"
 ---
 # Zed
 
@@ -61,7 +61,7 @@ For the preview build, use `brew install --cask zed@preview`.[^zed-install] [^ho
 
 - [Code editors](../concepts/code-editors.md)
 
-[^zed]: [Zed homepage](../sources/zed-homepage.md)
-[^zed-readme]: [zed-industries/zed README](../sources/zed-github-readme.md)
-[^zed-install]: [Installing Zed](../sources/zed-installation-docs.md)
-[^homebrew]: [Homebrew API snapshot (Zed and Pi)](../sources/homebrew-api-zed-pi.md)
+[^zed]: [Zed homepage](https://zed.dev/)
+[^zed-readme]: [zed-industries/zed README](https://github.com/zed-industries/zed)
+[^zed-install]: [Installing Zed](https://zed.dev/docs/installation)
+[^homebrew]: [Homebrew: zed](https://formulae.brew.sh/cask/zed)

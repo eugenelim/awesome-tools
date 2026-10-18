@@ -14,11 +14,11 @@ platforms:
 pricing: Requires a Copilot subscription
 sources:
   - id: copilot
-    resource: /sources/copilot-cli-github-readme.md
+    resource: https://github.com/github/copilot-cli
     title: github/copilot-cli README
   - id: homebrew
-    resource: /sources/homebrew-api-agents.md
-    title: Homebrew API snapshot (coding agents)
+    resource: https://formulae.brew.sh/cask/copilot-cli
+    title: "Homebrew: copilot-cli"
 ---
 # GitHub Copilot CLI
 
@@ -47,5 +47,5 @@ brew install copilot-cli
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^copilot]: [github/copilot-cli README](../sources/copilot-cli-github-readme.md)
-[^homebrew]: [Homebrew API snapshot (coding agents)](../sources/homebrew-api-agents.md)
+[^copilot]: [github/copilot-cli README](https://github.com/github/copilot-cli)
+[^homebrew]: [Homebrew: copilot-cli](https://formulae.brew.sh/cask/copilot-cli) and the unrelated [copilot](https://formulae.brew.sh/formula/copilot) formula

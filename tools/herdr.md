@@ -15,11 +15,11 @@ platforms:
 license: Apache-2.0
 sources:
   - id: herdr
-    resource: /sources/herdr-github-readme.md
+    resource: https://github.com/herdrdev/herdr
     title: herdrdev/herdr README
   - id: homebrew
-    resource: /sources/homebrew-api-batch-3.md
-    title: Homebrew API snapshot (batch 3)
+    resource: https://formulae.brew.sh/formula/herdr
+    title: "Homebrew: herdr"
 ---
 # herdr
 
@@ -49,5 +49,5 @@ This is a Homebrew formula, not a cask.[^homebrew] [^herdr] Other options are `c
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [Terminal emulators](../concepts/terminal-emulators.md)
 
-[^herdr]: [herdrdev/herdr README](../sources/herdr-github-readme.md)
-[^homebrew]: [Homebrew API snapshot (batch 3)](../sources/homebrew-api-batch-3.md)
+[^herdr]: [herdrdev/herdr README](https://github.com/herdrdev/herdr)
+[^homebrew]: [Homebrew: herdr](https://formulae.brew.sh/formula/herdr)

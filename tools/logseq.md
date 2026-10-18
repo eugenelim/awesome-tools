@@ -18,7 +18,7 @@ platforms:
 license: AGPL-3.0
 sources:
   - id: logseq
-    resource: /sources/logseq-github.md
+    resource: https://github.com/logseq/logseq
     title: Logseq README, release and Homebrew entry
 ---
 # Logseq
@@ -46,4 +46,4 @@ Requires macOS 12 or later.[^logseq]
 - [Knowledge management](../concepts/knowledge-management.md)
 - [Obsidian](./obsidian.md)
 
-[^logseq]: [Logseq README, release and Homebrew entry](../sources/logseq-github.md)
+[^logseq]: [logseq/logseq README](https://github.com/logseq/logseq), [latest release](https://github.com/logseq/logseq/releases/latest) and [Homebrew: logseq](https://formulae.brew.sh/cask/logseq)

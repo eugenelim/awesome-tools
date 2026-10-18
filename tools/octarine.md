@@ -12,15 +12,14 @@ platforms:
   - Windows
   - Linux
   - iOS
-license: Proprietary
 pricing: Free; Personal $79 one-time; Team $129/seat one-time (beta)
 sources:
   - id: octarine
-    resource: /sources/octarine-homepage.md
+    resource: https://octarine.app/
     title: Octarine homepage and pricing
   - id: homebrew
-    resource: /sources/homebrew-api-batch-3.md
-    title: Homebrew API snapshot (batch 3)
+    resource: https://formulae.brew.sh/cask/octarine
+    title: "Homebrew: octarine"
 ---
 # Octarine
 
@@ -58,5 +57,5 @@ brew install --cask octarine
 
 - [Knowledge management](../concepts/knowledge-management.md)
 
-[^octarine]: [Octarine homepage and pricing](../sources/octarine-homepage.md)
-[^homebrew]: [Homebrew API snapshot (batch 3)](../sources/homebrew-api-batch-3.md)
+[^octarine]: [Octarine homepage](https://octarine.app/) and [pricing](https://octarine.app/pricing)
+[^homebrew]: [Homebrew: octarine](https://formulae.brew.sh/cask/octarine)

@@ -18,11 +18,11 @@ platforms:
 license: MIT
 sources:
   - id: velaterm
-    resource: /sources/velaterm-homepage.md
+    resource: https://velaterm.com/
     title: VelaTerm homepage
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/
+    title: Homebrew catalogue (no package found)
 ---
 # VelaTerm
 
@@ -53,5 +53,5 @@ No Homebrew cask or formula.[^homebrew]
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [Orca](./orca.md)
 
-[^velaterm]: [VelaTerm homepage](../sources/velaterm-homepage.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^velaterm]: [VelaTerm homepage](https://velaterm.com/)
+[^homebrew]: [Homebrew catalogue](https://formulae.brew.sh/): no VelaTerm package as of 2026-10-18

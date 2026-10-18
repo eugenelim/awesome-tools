@@ -10,11 +10,11 @@ tags:
 license: Open source
 sources:
   - id: bitwarden
-    resource: /sources/bitwarden-homepage.md
+    resource: https://bitwarden.com/
     title: Bitwarden homepage
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/cask/bitwarden
+    title: "Homebrew: bitwarden"
 ---
 # Bitwarden
 
@@ -55,5 +55,5 @@ Requires macOS 12 or later.[^homebrew]
 
 - [Password managers](../concepts/password-managers.md)
 
-[^bitwarden]: [Bitwarden homepage](../sources/bitwarden-homepage.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^bitwarden]: [Bitwarden homepage](https://bitwarden.com/)
+[^homebrew]: [Homebrew: bitwarden](https://formulae.brew.sh/cask/bitwarden)

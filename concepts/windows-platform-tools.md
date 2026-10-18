@@ -4,28 +4,28 @@ title: Windows platform tools
 description: Foundational tools and the recommended shell setup for a Windows development machine.
 sources:
   - id: cc-win
-    resource: /sources/claude-code-setup-windows.md
+    resource: https://code.claude.com/docs/en/setup
     title: Claude Code setup (Windows)
   - id: git-win
-    resource: /sources/git-for-windows-install.md
+    resource: https://git-scm.com/install/windows
     title: Git for Windows install page
   - id: wsl
-    resource: /sources/wsl-docs.md
-    title: WSL About and Install docs
+    resource: https://learn.microsoft.com/en-us/windows/wsl/install
+    title: Install WSL
   - id: choco
-    resource: /sources/chocolatey-install.md
+    resource: https://chocolatey.org/install
     title: Chocolatey install page
   - id: uv
-    resource: /sources/uv-python-docs.md
-    title: uv README and Python version docs
+    resource: https://github.com/astral-sh/uv
+    title: uv README
   - id: pyenv
-    resource: /sources/pyenv-readme.md
+    resource: https://github.com/pyenv/pyenv
     title: pyenv README
   - id: node-vm
-    resource: /sources/node-version-managers.md
-    title: nvm, fnm, Volta and mise docs
+    resource: https://github.com/Schniz/fnm
+    title: nvm and fnm READMEs
   - id: copilot
-    resource: /sources/copilot-cli-github-readme.md
+    resource: https://github.com/github/copilot-cli
     title: github/copilot-cli README
 ---
 # Windows platform tools
@@ -85,11 +85,11 @@ Install and run tools *inside* the WSL terminal. Claude Code, for example, is in
 | Windows-native projects and installers | PowerShell | Chocolatey, uv, fnm, Copilot CLI |
 | Linux toolchains, sandboxed agents | WSL 2 | pyenv, Claude Code with sandboxing |
 
-[^cc-win]: [Claude Code setup (Windows)](../sources/claude-code-setup-windows.md)
-[^git-win]: [Git for Windows install page](../sources/git-for-windows-install.md)
-[^wsl]: [WSL About and Install docs](../sources/wsl-docs.md)
-[^choco]: [Chocolatey install page](../sources/chocolatey-install.md)
-[^uv]: [uv README and Python version docs](../sources/uv-python-docs.md)
-[^pyenv]: [pyenv README](../sources/pyenv-readme.md)
-[^node-vm]: [nvm, fnm, Volta and mise docs](../sources/node-version-managers.md)
-[^copilot]: [github/copilot-cli README](../sources/copilot-cli-github-readme.md)
+[^cc-win]: [Claude Code setup docs](https://code.claude.com/docs/en/setup)
+[^git-win]: [Git for Windows install page](https://git-scm.com/install/windows)
+[^wsl]: [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+[^choco]: [Chocolatey install page](https://chocolatey.org/install)
+[^uv]: [uv README](https://github.com/astral-sh/uv)
+[^pyenv]: [pyenv README](https://github.com/pyenv/pyenv)
+[^node-vm]: [nvm README](https://github.com/nvm-sh/nvm) and [fnm README](https://github.com/Schniz/fnm)
+[^copilot]: [github/copilot-cli README](https://github.com/github/copilot-cli)

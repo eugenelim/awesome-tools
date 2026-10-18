@@ -12,7 +12,7 @@ platforms:
 pricing: Free (AI features use your Claude Code or Codex plan)
 sources:
   - id: rill
-    resource: /sources/rill-homepage.md
+    resource: https://rill.love/
     title: Rill homepage
 ---
 # Rill
@@ -54,4 +54,4 @@ No Homebrew package. Download the `.dmg` from rill.love and drag Rill to Applica
 - [Web browsers](../concepts/web-browsers.md)
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^rill]: [Rill homepage](../sources/rill-homepage.md)
+[^rill]: [Rill homepage](https://rill.love/)

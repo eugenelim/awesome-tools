@@ -12,11 +12,11 @@ platforms:
   - Windows
 sources:
   - id: claude-code
-    resource: /sources/claude-code-github-readme.md
+    resource: https://github.com/anthropics/claude-code
     title: anthropics/claude-code README and product page
   - id: homebrew
-    resource: /sources/homebrew-api-agents.md
-    title: Homebrew API snapshot (coding agents)
+    resource: https://formulae.brew.sh/cask/claude-code
+    title: "Homebrew: claude-code"
 ---
 # Claude Code
 
@@ -42,5 +42,5 @@ brew install --cask claude-code
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^claude-code]: [anthropics/claude-code README and product page](../sources/claude-code-github-readme.md)
-[^homebrew]: [Homebrew API snapshot (coding agents)](../sources/homebrew-api-agents.md)
+[^claude-code]: [anthropics/claude-code README](https://github.com/anthropics/claude-code) and [product page](https://claude.com/product/claude-code)
+[^homebrew]: [Homebrew: claude-code](https://formulae.brew.sh/cask/claude-code)

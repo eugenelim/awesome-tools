@@ -18,14 +18,14 @@ license: MIT
 pricing: Free
 sources:
   - id: orca
-    resource: /sources/orca-homepage.md
+    resource: https://www.onorca.dev/
     title: Orca homepage
   - id: orca-readme
-    resource: /sources/orca-github-readme.md
+    resource: https://github.com/stablyai/orca
     title: stablyai/orca README
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/cask/orca
+    title: "Homebrew: orca (plotly)"
 ---
 # Orca
 
@@ -61,6 +61,6 @@ This installs from Orca's own tap.[^orca-readme] Use the full tap path: the `orc
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [VelaTerm](./velaterm.md)
 
-[^orca]: [Orca homepage](../sources/orca-homepage.md)
-[^orca-readme]: [stablyai/orca README](../sources/orca-github-readme.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^orca]: [Orca homepage](https://www.onorca.dev/)
+[^orca-readme]: [stablyai/orca README](https://github.com/stablyai/orca)
+[^homebrew]: [Homebrew: orca](https://formulae.brew.sh/cask/orca) (the unrelated plotly cask)

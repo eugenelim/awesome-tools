@@ -11,7 +11,7 @@ AI agents that carry out everyday tasks and longer-running goals on a person's b
 | --- | --- | --- |
 | Maker | Meta | Nous Research |
 | Hosting | Hosted; per-user cloud VM | Self-hosted: laptop, VPS, Docker, SSH, serverless |
-| Licence | Proprietary | MIT |
+| Licence | | MIT |
 | Models | | Any provider |
 | Chat | Muse app (mobile, Mac), WhatsApp | Terminal UI, Telegram, Discord, Slack, WhatsApp, Signal, email |
 | Safeguards | Approval before actions, audit trail, hidden credentials, one-time cards | You choose the backend and tool permissions |

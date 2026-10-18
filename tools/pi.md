@@ -14,11 +14,11 @@ platforms:
 license: MIT
 sources:
   - id: pi
-    resource: /sources/pi-github-readme.md
+    resource: https://github.com/earendil-works/pi
     title: earendil-works/pi README
   - id: homebrew
-    resource: /sources/homebrew-api-zed-pi.md
-    title: Homebrew API snapshot (Zed and Pi)
+    resource: https://formulae.brew.sh/formula/pi-coding-agent
+    title: "Homebrew: pi-coding-agent"
 ---
 # Pi
 
@@ -47,5 +47,5 @@ This is a Homebrew formula, not a cask.[^homebrew] The upstream options are the 
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^pi]: [earendil-works/pi README](../sources/pi-github-readme.md)
-[^homebrew]: [Homebrew API snapshot (Zed and Pi)](../sources/homebrew-api-zed-pi.md)
+[^pi]: [earendil-works/pi README](https://github.com/earendil-works/pi)
+[^homebrew]: [Homebrew: pi-coding-agent](https://formulae.brew.sh/formula/pi-coding-agent)

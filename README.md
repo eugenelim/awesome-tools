@@ -66,7 +66,7 @@ platforms: [macOS, Linux]
 # license / pricing: added only when the source states them
 sources:
   - id: ghostty
-    resource: /sources/ghostty-about.md
+    resource: https://ghostty.org/docs/about
     title: Ghostty Docs and About Ghostty
 ---
 ```
@@ -75,16 +75,17 @@ The body has a summary, features, platforms, pricing where known, and an **Insta
 
 ## Sources
 
-Every claim is taken from a snapshot of the vendor's own page or README, saved under `sources/`. That folder is listed in `.gitignore` and is not published, so citation links to `sources/` won't resolve on GitHub. Each tool's `resource` field links to the vendor site.
+Every claim is cited to the vendor's own page, README, docs, or Homebrew or Chocolatey package page. Citations link to those URLs. The maintainer keeps text snapshots of each source in a local `sources/` folder, which is listed in `.gitignore` and not published.
 
 Facts were captured in October 2026. Prices, versions and platform support change, so check the vendor site before you rely on them.
 
 ## Adding a tool
 
-1. Save the vendor page or README as a snapshot in `sources/<slug>.md` (`type: Source`, `resource:` the URL, `retrieved:` an ISO 8601 timestamp).
-2. Create `tools/<slug>.md` in the format above. Leave out any field the source doesn't support.
+1. Read the vendor page or README. Optionally keep a snapshot in your local `sources/` folder (`type: Source`, `resource:` the URL, `retrieved:` an ISO 8601 timestamp).
+2. Create `tools/<slug>.md` in the format above, citing source URLs in `sources` and footnotes. Leave out any field the source doesn't support.
 3. Add the tool to its category page, the [overview](./concepts/local-machine-setup.md), [index.md](./index.md) and the table in this README.
 4. Check Homebrew with `brew info --cask <name>` or `brew info <name>`. Watch for name collisions: `orca` and `copilot` are unrelated packages.
+5. Check Chocolatey at `https://community.chocolatey.org/packages/<id>`. Only list a package whose project URL points at the vendor.
 
 ## Licence
 

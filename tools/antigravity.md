@@ -13,11 +13,11 @@ platforms:
   - Linux
 sources:
   - id: antigravity
-    resource: /sources/antigravity-product.md
+    resource: https://antigravity.google/product/antigravity-2
     title: Google Antigravity 2 product page
   - id: homebrew
-    resource: /sources/homebrew-api-agents.md
-    title: Homebrew API snapshot (coding agents)
+    resource: https://formulae.brew.sh/cask/antigravity
+    title: "Homebrew: antigravity"
 ---
 # Google Antigravity
 
@@ -54,5 +54,5 @@ Requires macOS 13 or later.[^homebrew]
 - [Agentic development environments](../concepts/agentic-development-environments.md)
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^antigravity]: [Google Antigravity 2 product page](../sources/antigravity-product.md)
-[^homebrew]: [Homebrew API snapshot (coding agents)](../sources/homebrew-api-agents.md)
+[^antigravity]: [Google Antigravity 2 product page](https://antigravity.google/product/antigravity-2)
+[^homebrew]: [Homebrew: antigravity](https://formulae.brew.sh/cask/antigravity)

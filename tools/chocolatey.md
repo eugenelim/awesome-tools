@@ -12,7 +12,7 @@ platforms:
 license: Apache-2.0 (open source edition)
 sources:
   - id: choco
-    resource: /sources/chocolatey-install.md
+    resource: https://chocolatey.org/install
     title: Chocolatey install page
 ---
 # Chocolatey
@@ -40,4 +40,4 @@ The command downloads and runs `https://community.chocolatey.org/install.ps1`, a
 - [Windows platform tools](../concepts/windows-platform-tools.md)
 - [WSL](./wsl.md)
 
-[^choco]: [Chocolatey install page](../sources/chocolatey-install.md)
+[^choco]: [Chocolatey install page](https://chocolatey.org/install)

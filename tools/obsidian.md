@@ -10,11 +10,11 @@ tags:
 pricing: Free; paid Sync and Publish add-ons
 sources:
   - id: obsidian
-    resource: /sources/obsidian-homepage.md
+    resource: https://obsidian.md/
     title: Obsidian homepage
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/cask/obsidian
+    title: "Homebrew: obsidian"
 ---
 # Obsidian
 
@@ -44,5 +44,5 @@ Requires macOS 12 or later.[^homebrew]
 - [SilverBullet](./silverbullet.md)
 - [OpenKnowledge](./openknowledge.md)
 
-[^obsidian]: [Obsidian homepage](../sources/obsidian-homepage.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^obsidian]: [Obsidian homepage](https://obsidian.md/)
+[^homebrew]: [Homebrew: obsidian](https://formulae.brew.sh/cask/obsidian)

@@ -8,14 +8,14 @@ tags:
   - guide
 sources:
   - id: uv
-    resource: /sources/uv-python-docs.md
+    resource: https://docs.astral.sh/uv/guides/install-python/
     title: uv README and Python version docs
   - id: pyenv
-    resource: /sources/pyenv-readme.md
+    resource: https://github.com/pyenv/pyenv
     title: pyenv README
   - id: homebrew
-    resource: /sources/homebrew-api-dev-envs.md
-    title: Homebrew API snapshot (dev environments)
+    resource: https://formulae.brew.sh/formula/uv
+    title: "Homebrew: uv, pyenv"
 ---
 # Python dev environments
 
@@ -81,6 +81,6 @@ These commands are from the pyenv README.[^pyenv]
 - [Node.js dev environments](./node-dev-environments.md)
 - [Local machine setup](./local-machine-setup.md)
 
-[^uv]: [uv README and Python version docs](../sources/uv-python-docs.md)
-[^pyenv]: [pyenv README](../sources/pyenv-readme.md)
-[^homebrew]: [Homebrew API snapshot (dev environments)](../sources/homebrew-api-dev-envs.md)
+[^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/) and [Python versions](https://docs.astral.sh/uv/concepts/python-versions/)
+[^pyenv]: [pyenv README](https://github.com/pyenv/pyenv)
+[^homebrew]: Homebrew: [uv](https://formulae.brew.sh/formula/uv), [pyenv](https://formulae.brew.sh/formula/pyenv)

@@ -13,7 +13,7 @@ license: MIT
 pricing: Free
 sources:
   - id: rascal
-    resource: /sources/rascal-homepage.md
+    resource: https://tryrascal.org/
     title: Rascal homepage and repository
 ---
 # Rascal
@@ -55,4 +55,4 @@ That command removes macOS's quarantine flag from the app. Rascal can also be bu
 - [File managers](../concepts/file-managers.md)
 - [Swift Salamander](./swift-salamander.md)
 
-[^rascal]: [Rascal homepage and repository](../sources/rascal-homepage.md)
+[^rascal]: [Rascal homepage](https://tryrascal.org/) and [repository](https://github.com/chang-07/rascal)

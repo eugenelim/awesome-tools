@@ -11,7 +11,7 @@ platforms:
 pricing: Free; Pro $15 one-time (Early Access)
 sources:
   - id: swiftsalamander
-    resource: /sources/swiftsalamander-homepage.md
+    resource: https://swiftsalamander.app/
     title: Swift Salamander homepage
 ---
 # Swift Salamander
@@ -47,4 +47,4 @@ A Nix package is also offered.[^swiftsalamander]
 
 - [File managers](../concepts/file-managers.md)
 
-[^swiftsalamander]: [Swift Salamander homepage](../sources/swiftsalamander-homepage.md)
+[^swiftsalamander]: [Swift Salamander homepage](https://swiftsalamander.app/)

@@ -12,10 +12,9 @@ platforms:
   - Android
   - macOS
   - WhatsApp
-license: Proprietary (hosted service)
 sources:
   - id: muse
-    resource: /sources/muse-homepage.md
+    resource: https://muse.ai/
     title: Muse homepage and Homebrew entry
 ---
 # Muse
@@ -42,4 +41,4 @@ Homebrew's `muse` cask was **disabled** on 2026-10-01 because the download requi
 - [Personal AI agents](../concepts/personal-ai-agents.md)
 - [Hermes Agent](./hermes.md)
 
-[^muse]: [Muse homepage and Homebrew entry](../sources/muse-homepage.md)
+[^muse]: [Muse homepage](https://muse.ai/), [Homebrew: muse](https://formulae.brew.sh/cask/muse) and launch date from [PBS NewsHour](https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks)

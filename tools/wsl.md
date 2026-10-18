@@ -13,7 +13,7 @@ platforms:
 license: MIT
 sources:
   - id: wsl
-    resource: /sources/wsl-docs.md
+    resource: https://learn.microsoft.com/en-us/windows/wsl/install
     title: WSL About and Install docs
 ---
 # Windows Subsystem for Linux (WSL)
@@ -54,4 +54,4 @@ You'll create a Linux username and password on first launch.[^wsl]
 - [Windows platform tools](../concepts/windows-platform-tools.md)
 - [Chocolatey](./chocolatey.md)
 
-[^wsl]: [WSL About and Install docs](../sources/wsl-docs.md)
+[^wsl]: [What is WSL](https://learn.microsoft.com/en-us/windows/wsl/about) and [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)

@@ -9,11 +9,11 @@ tags:
   - guide
 sources:
   - id: node-vm
-    resource: /sources/node-version-managers.md
+    resource: nvm, fnm, Volta and mise READMEs and docs (linked in the footnote)
     title: nvm, fnm, Volta and mise docs
   - id: homebrew
-    resource: /sources/homebrew-api-dev-envs.md
-    title: Homebrew API snapshot (dev environments)
+    resource: https://formulae.brew.sh/formula/fnm
+    title: "Homebrew: fnm, mise, nvm, volta"
 ---
 # Node.js dev environments
 
@@ -71,5 +71,5 @@ These commands are from the mise docs.[^node-vm] The Homebrew formula is `mise`.
 - [WSL](../tools/wsl.md)
 - [Local machine setup](./local-machine-setup.md)
 
-[^node-vm]: [nvm, fnm, Volta and mise docs](../sources/node-version-managers.md)
-[^homebrew]: [Homebrew API snapshot (dev environments)](../sources/homebrew-api-dev-envs.md)
+[^node-vm]: [nvm README](https://github.com/nvm-sh/nvm), [fnm README](https://github.com/Schniz/fnm) and [commands](https://github.com/Schniz/fnm/blob/master/docs/commands.md), [Volta README](https://github.com/volta-cli/volta), [mise Node.js docs](https://mise.jdx.dev/lang/node.html)
+[^homebrew]: Homebrew: [fnm](https://formulae.brew.sh/formula/fnm), [mise](https://formulae.brew.sh/formula/mise), [nvm](https://formulae.brew.sh/formula/nvm), [volta](https://formulae.brew.sh/formula/volta)

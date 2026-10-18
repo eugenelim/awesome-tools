@@ -15,11 +15,11 @@ platforms:
 license: BSD-2-Clause-Views
 sources:
   - id: protege
-    resource: /sources/protege-homepage.md
+    resource: https://protege.stanford.edu/
     title: Protégé homepage, software page and licence
   - id: homebrew
-    resource: /sources/homebrew-api-batch-3.md
-    title: Homebrew API snapshot (batch 3)
+    resource: https://formulae.brew.sh/cask/protege
+    title: "Homebrew: protege"
 ---
 # Protégé
 
@@ -48,5 +48,5 @@ Homebrew has a `protege` cask, but it is disabled: it failed Homebrew's Gatekeep
 - [Ontology editors](../concepts/ontology-editors.md)
 - [VocBench](./vocbench.md)
 
-[^protege]: [Protégé homepage, software page and licence](../sources/protege-homepage.md)
-[^homebrew]: [Homebrew API snapshot (batch 3)](../sources/homebrew-api-batch-3.md)
+[^protege]: [Protégé homepage](https://protege.stanford.edu/), [software page](https://protege.stanford.edu/software) and [licence](https://github.com/protegeproject/protege/blob/master/license.txt)
+[^homebrew]: [Homebrew: protege](https://formulae.brew.sh/cask/protege)

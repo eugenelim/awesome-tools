@@ -15,11 +15,11 @@ platforms:
 license: Open source
 sources:
   - id: vocbench
-    resource: /sources/vocbench-homepage.md
+    resource: https://vocbench.uniroma2.it/
     title: VocBench homepage, downloads and docs
   - id: homebrew
-    resource: /sources/homebrew-api-batch-3.md
-    title: Homebrew API snapshot (batch 3)
+    resource: https://formulae.brew.sh/formula/openjdk@17
+    title: "Homebrew: openjdk@17"
 ---
 # VocBench
 
@@ -48,5 +48,5 @@ There is also a Docker distribution.[^vocbench]
 - [Ontology editors](../concepts/ontology-editors.md)
 - [Protégé](./protege.md)
 
-[^vocbench]: [VocBench homepage, downloads and docs](../sources/vocbench-homepage.md)
-[^homebrew]: [Homebrew API snapshot (batch 3)](../sources/homebrew-api-batch-3.md)
+[^vocbench]: [VocBench homepage](https://vocbench.uniroma2.it/), [downloads](https://vocbench.uniroma2.it/downloads/) and [docs](https://vocbench.uniroma2.it/doc/)
+[^homebrew]: [Homebrew: openjdk@17](https://formulae.brew.sh/formula/openjdk@17); no VocBench package in the [catalogue](https://formulae.brew.sh/)

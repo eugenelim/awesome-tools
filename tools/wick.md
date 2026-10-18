@@ -11,11 +11,11 @@ platforms:
   - macOS
 sources:
   - id: wick
-    resource: /sources/wick-homepage.md
+    resource: https://trywick.co/
     title: Wick homepage
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/
+    title: Homebrew catalogue (no package found)
 ---
 # Wick
 
@@ -37,5 +37,5 @@ No Homebrew cask or formula.[^homebrew]
 
 - [macOS utilities](../concepts/macos-utilities.md)
 
-[^wick]: [Wick homepage](../sources/wick-homepage.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^wick]: [Wick homepage](https://trywick.co/)
+[^homebrew]: [Homebrew catalogue](https://formulae.brew.sh/): no Wick package as of 2026-10-18

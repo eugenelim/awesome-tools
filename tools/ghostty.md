@@ -12,11 +12,11 @@ platforms:
   - Linux
 sources:
   - id: ghostty
-    resource: /sources/ghostty-about.md
+    resource: https://ghostty.org/docs/about
     title: Ghostty Docs and About Ghostty
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/cask/ghostty
+    title: "Homebrew: ghostty"
 ---
 # Ghostty
 
@@ -49,5 +49,5 @@ Requires macOS 13 or later.[^homebrew]
 
 - [Terminal emulators](../concepts/terminal-emulators.md)
 
-[^ghostty]: [Ghostty Docs and About Ghostty](../sources/ghostty-about.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^ghostty]: [Ghostty Docs](https://ghostty.org/docs) and [About Ghostty](https://ghostty.org/docs/about)
+[^homebrew]: [Homebrew: ghostty](https://formulae.brew.sh/cask/ghostty)

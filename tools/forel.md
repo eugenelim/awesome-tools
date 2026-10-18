@@ -14,7 +14,7 @@ platforms:
 license: GPL-3.0
 sources:
   - id: forel
-    resource: /sources/forel-readme.md
+    resource: https://github.com/lab421/forel
     title: lab421/forel README
 ---
 # Forel
@@ -48,4 +48,4 @@ This installs from the project's own Homebrew tap. Forel requires macOS 13 or la
 - [macOS utilities](../concepts/macos-utilities.md)
 - [File managers](../concepts/file-managers.md)
 
-[^forel]: [lab421/forel README](../sources/forel-readme.md)
+[^forel]: [lab421/forel README](https://github.com/lab421/forel)

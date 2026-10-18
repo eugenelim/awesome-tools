@@ -18,11 +18,11 @@ license: MIT (Server and sb CLI)
 pricing: Desktop free for personal use; Server free
 sources:
   - id: silverbullet
-    resource: /sources/silverbullet-homepage.md
+    resource: https://silverbullet.md/
     title: SilverBullet homepage
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/
+    title: Homebrew catalogue (no package found)
 ---
 # SilverBullet
 
@@ -58,5 +58,5 @@ No Homebrew cask or formula.[^homebrew]
 - [Obsidian](./obsidian.md)
 - [OpenKnowledge](./openknowledge.md)
 
-[^silverbullet]: [SilverBullet homepage](../sources/silverbullet-homepage.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^silverbullet]: [SilverBullet homepage](https://silverbullet.md/)
+[^homebrew]: [Homebrew catalogue](https://formulae.brew.sh/): no SilverBullet package as of 2026-10-18

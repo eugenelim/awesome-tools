@@ -14,7 +14,7 @@ platforms:
 pricing: Free
 sources:
   - id: firefox-dev
-    resource: /sources/firefox-developer-edition.md
+    resource: https://www.firefox.com/en-US/channel/desktop/developer/
     title: Firefox Developer Edition page and Homebrew entry
 ---
 # Firefox Developer Edition
@@ -48,4 +48,4 @@ brew install --cask firefox@developer-edition
 
 - [Web browsers](../concepts/web-browsers.md)
 
-[^firefox-dev]: [Firefox Developer Edition page and Homebrew entry](../sources/firefox-developer-edition.md)
+[^firefox-dev]: [Firefox Developer Edition page](https://www.firefox.com/en-US/channel/desktop/developer/) and [Homebrew: firefox@developer-edition](https://formulae.brew.sh/cask/firefox@developer-edition)

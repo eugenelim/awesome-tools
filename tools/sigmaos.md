@@ -12,7 +12,7 @@ platforms:
 pricing: Free (Personal); Pro from $20/month
 sources:
   - id: sigmaos
-    resource: /sources/sigmaos-homepage.md
+    resource: https://sigmaos.com/
     title: SigmaOS homepage and Homebrew entry
 ---
 # SigmaOS
@@ -53,4 +53,4 @@ Requires macOS 12 or later.[^sigmaos]
 - [Web browsers](../concepts/web-browsers.md)
 - [Firefox Developer Edition](./firefox-developer-edition.md)
 
-[^sigmaos]: [SigmaOS homepage and Homebrew entry](../sources/sigmaos-homepage.md)
+[^sigmaos]: [SigmaOS homepage](https://sigmaos.com/) and [Homebrew: sigmaos](https://formulae.brew.sh/cask/sigmaos)

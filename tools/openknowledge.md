@@ -18,14 +18,14 @@ license: GPL-3.0
 pricing: Free
 sources:
   - id: ok-docs
-    resource: /sources/openknowledge-docs-overview.md
+    resource: https://openknowledge.ai/docs/get-started/overview
     title: OpenKnowledge docs overview
   - id: ok-github
-    resource: /sources/openknowledge-github.md
+    resource: https://github.com/inkeep/open-knowledge
     title: inkeep/open-knowledge on GitHub
   - id: homebrew
-    resource: /sources/homebrew-api.md
-    title: Homebrew API snapshot
+    resource: https://formulae.brew.sh/formula/node
+    title: "Homebrew: node and git formulae"
 ---
 # OpenKnowledge
 
@@ -72,6 +72,6 @@ ok start --open
 - [Obsidian](./obsidian.md)
 - [SilverBullet](./silverbullet.md)
 
-[^ok-docs]: [OpenKnowledge docs overview](../sources/openknowledge-docs-overview.md)
-[^ok-github]: [inkeep/open-knowledge on GitHub](../sources/openknowledge-github.md)
-[^homebrew]: [Homebrew API snapshot](../sources/homebrew-api.md)
+[^ok-docs]: [OpenKnowledge docs overview](https://openknowledge.ai/docs/get-started/overview)
+[^ok-github]: [inkeep/open-knowledge on GitHub](https://github.com/inkeep/open-knowledge)
+[^homebrew]: Homebrew: [node](https://formulae.brew.sh/formula/node) and [git](https://formulae.brew.sh/formula/git); no OpenKnowledge package in the [catalogue](https://formulae.brew.sh/)

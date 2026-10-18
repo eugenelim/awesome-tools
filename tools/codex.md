@@ -14,11 +14,11 @@ platforms:
 license: Apache-2.0
 sources:
   - id: codex
-    resource: /sources/codex-github-readme.md
+    resource: https://github.com/openai/codex
     title: openai/codex README
   - id: homebrew
-    resource: /sources/homebrew-api-agents.md
-    title: Homebrew API snapshot (coding agents)
+    resource: https://formulae.brew.sh/cask/codex
+    title: "Homebrew: codex"
 ---
 # Codex
 
@@ -48,5 +48,5 @@ brew install --cask codex-app   # desktop app (macOS 12+)
 
 - [AI coding agents](../concepts/ai-coding-agents.md)
 
-[^codex]: [openai/codex README](../sources/codex-github-readme.md)
-[^homebrew]: [Homebrew API snapshot (coding agents)](../sources/homebrew-api-agents.md)
+[^codex]: [openai/codex README](https://github.com/openai/codex)
+[^homebrew]: [Homebrew: codex](https://formulae.brew.sh/cask/codex) and [codex-app](https://formulae.brew.sh/cask/codex-app)

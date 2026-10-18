@@ -16,7 +16,7 @@ platforms:
 license: MIT
 sources:
   - id: hermes
-    resource: /sources/hermes-agent-readme.md
+    resource: https://github.com/NousResearch/hermes-agent
     title: Hermes Agent README and Homebrew entries
 ---
 # Hermes Agent
@@ -53,4 +53,4 @@ brew install --cask hermes-desktop  # desktop app
 - [Personal AI agents](../concepts/personal-ai-agents.md)
 - [Muse](./muse.md)
 
-[^hermes]: [Hermes Agent README and Homebrew entries](../sources/hermes-agent-readme.md)
+[^hermes]: [NousResearch/hermes-agent README](https://github.com/NousResearch/hermes-agent); Homebrew: [hermes-agent](https://formulae.brew.sh/formula/hermes-agent) and [hermes-desktop](https://formulae.brew.sh/cask/hermes-desktop)

@@ -10,7 +10,7 @@ Applications for browsing and organising files across local, network and cloud s
 | | [Swift Salamander](../tools/swift-salamander.md) | [Rascal](../tools/rascal.md) |
 | --- | --- | --- |
 | Platform | macOS 13+, Apple silicon only | macOS 13+, Apple silicon and Intel |
-| Licence | Proprietary | MIT |
+| Licence | | MIT |
 | Pricing | Free; Pro $15 one-time (Early Access) | Free, no paid tier |
 | Panes | 1–2 free; 3–4 in Pro | Dual panes, tabs |
 | Remote storage | 38 cloud providers, SFTP, SMB, WebDAV (Pro) | |
