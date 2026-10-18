@@ -28,7 +28,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
 - [File managers](./concepts/file-managers.md): local, network and cloud file browsing.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
-- [Windows platform tools](./concepts/windows-platform-tools.md): package manager and Linux subsystem for Windows.
+- [Windows platform tools](./concepts/windows-platform-tools.md): package manager, Linux subsystem and recommended shell setup for Windows.
 
 ## Tools
 
