@@ -9,6 +9,11 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 
 - [Local machine setup](./concepts/local-machine-setup.md): every tool by category, platform and licence, plus Homebrew install commands.
 
+## Guides
+
+- [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv for switching Python versions (recommends uv).
+- [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta for switching Node.js versions (recommends fnm).
+
 ## Categories
 
 - [Password managers](./concepts/password-managers.md): encrypted credential vaults.
@@ -60,6 +65,10 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [GitHub Copilot CLI README](./sources/copilot-cli-github-readme.md)
 - [Homebrew API snapshot: coding agents](./sources/homebrew-api-agents.md)
 - [Firefox Developer Edition page](./sources/firefox-developer-edition.md)
+- [Homebrew API snapshot: dev environments](./sources/homebrew-api-dev-envs.md)
+- [Node.js version manager docs](./sources/node-version-managers.md)
+- [pyenv README](./sources/pyenv-readme.md)
+- [uv Python docs](./sources/uv-python-docs.md)
 - [Ghostty docs and About](./sources/ghostty-about.md)
 - [Obsidian homepage](./sources/obsidian-homepage.md)
 - [OpenKnowledge docs overview](./sources/openknowledge-docs-overview.md)
