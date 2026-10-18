@@ -31,6 +31,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | Proprietary |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
+| [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
 | [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | Proprietary |
 | [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
@@ -59,6 +60,7 @@ brew install --cask octarine
 brew install --cask logseq
 brew install --cask paper-design
 brew install --cask c0desurfer/tap/swift-salamander
+brew install --cask chang-07/tap/rascal
 brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```

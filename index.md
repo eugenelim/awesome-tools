@@ -51,6 +51,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Paper](./tools/paper.md): design tool with an HTML/CSS canvas that agents can edit through MCP.
 - [Pi](./tools/pi.md): minimal, extensible coding agent CLI.
 - [Protégé](./tools/protege.md): Stanford's open-source OWL 2 ontology editor.
+- [Rascal](./tools/rascal.md): free, open-source keyboard-first Finder replacement.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
@@ -89,6 +90,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [VocBench homepage and docs](./sources/vocbench-homepage.md)
 - [Orca homepage](./sources/orca-homepage.md)
 - [Orca GitHub README](./sources/orca-github-readme.md)
+- [Rascal homepage](./sources/rascal-homepage.md)
 - [SilverBullet homepage](./sources/silverbullet-homepage.md)
 - [Swift Salamander homepage](./sources/swiftsalamander-homepage.md)
 - [VelaTerm homepage](./sources/velaterm-homepage.md)
