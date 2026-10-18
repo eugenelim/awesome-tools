@@ -17,4 +17,6 @@ Applications for running and supervising several AI coding agents at once. They 
 | Remote | SSH, E2EE browser, iOS/Android | SSH worktrees, iOS/Android | SSH machines in one window |
 | Platforms | macOS, Windows, Linux | macOS, Windows, Linux | macOS, Linux, Windows |
 
+[Google Antigravity](../tools/antigravity.md) is Google's desktop app for launching, monitoring and scheduling parallel agents, with subagents, skills, MCP servers and hooks.
+
 See also [terminal emulators](./terminal-emulators.md) and [AI coding agents](./ai-coding-agents.md).

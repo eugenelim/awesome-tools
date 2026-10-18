@@ -24,8 +24,12 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 
 ## Tools
 
+- [Antigravity](./tools/antigravity.md): Google's desktop app for orchestrating parallel AI agents.
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
+- [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
+- [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
+- [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
@@ -43,7 +47,12 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 
 ## Sources
 
+- [Antigravity product page](./sources/antigravity-product.md)
 - [Bitwarden homepage](./sources/bitwarden-homepage.md)
+- [Claude Code GitHub README](./sources/claude-code-github-readme.md)
+- [Codex GitHub README](./sources/codex-github-readme.md)
+- [GitHub Copilot CLI README](./sources/copilot-cli-github-readme.md)
+- [Homebrew API snapshot: coding agents](./sources/homebrew-api-agents.md)
 - [Ghostty docs and About](./sources/ghostty-about.md)
 - [Obsidian homepage](./sources/obsidian-homepage.md)
 - [OpenKnowledge docs overview](./sources/openknowledge-docs-overview.md)
