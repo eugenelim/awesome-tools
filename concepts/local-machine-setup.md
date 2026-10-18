@@ -31,6 +31,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
 | [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
+| [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
 | [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
@@ -72,7 +73,7 @@ brew install node git && npm install -g @inkeep/open-knowledge
 brew install openjdk@17   # Java 17+ for VocBench
 ```
 
-VelaTerm, SilverBullet, Wick, VocBench and Rill have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick, VocBench, Rill and openGym (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
 ## Windows
 

@@ -3,7 +3,7 @@ okf_version: "0.2"
 ---
 # Awesome tools
 
-Software tools for a local machine setup, as an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) v0.2 bundle. Tool concepts are in `tools/` and categories in `concepts/`.
+Software tools worth knowing about (developer tools, everyday apps and self-hosted services), as an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) v0.2 bundle. Tool concepts are in `tools/` and categories in `concepts/`.
 
 ## Overview
 
@@ -24,6 +24,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
+- [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
 - [File managers](./concepts/file-managers.md): local, network and cloud file browsing.
@@ -47,6 +48,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Muse](./tools/muse.md): Meta's hosted personal AI agent.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
+- [openGym](./tools/opengym.md): self-hosted gym and body-weight tracker.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
 - [Orca](./tools/orca.md): ADE for parallel agents in git worktrees.
 - [Paper](./tools/paper.md): design tool with an HTML/CSS canvas that agents can edit through MCP.

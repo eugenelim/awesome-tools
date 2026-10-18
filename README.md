@@ -1,11 +1,11 @@
 ---
 type: Readme
 title: Awesome tools
-description: How to use and contribute to this OKF bundle of local machine setup tools.
+description: How to use and contribute to this OKF bundle of software tools.
 ---
 # Awesome tools
 
-A catalogue of software tools for setting up a developer machine on macOS and Windows. Each tool has its own page covering what it does, which platforms it runs on, its licence and pricing, and how to install it.
+A catalogue of software tools worth knowing about: developer tools, everyday apps and self-hosted services, on macOS, Windows, Linux and mobile. Each tool has its own page covering what it does, which platforms it runs on, its licence and pricing, and how to install it.
 
 The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format) (OKF) v0.2 bundle: plain Markdown files with YAML frontmatter, joined by ordinary relative links.
 
@@ -26,6 +26,7 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | [Terminal emulators](./concepts/terminal-emulators.md) | [Ghostty](./tools/ghostty.md) |
 | [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |
 | [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
+| [Health and fitness](./concepts/health-and-fitness.md) | [openGym](./tools/opengym.md) |
 | [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |
 | [Design tools](./concepts/design-tools.md) | [Paper](./tools/paper.md) |
 | [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
