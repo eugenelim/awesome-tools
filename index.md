@@ -13,6 +13,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 
 - [Password managers](./concepts/password-managers.md): encrypted credential vaults.
 - [Terminal emulators](./concepts/terminal-emulators.md): applications that host shell sessions.
+- [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
@@ -28,6 +29,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
+- [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
@@ -53,6 +55,7 @@ Software tools for a local machine setup, as an [Open Knowledge Format](https://
 - [Codex GitHub README](./sources/codex-github-readme.md)
 - [GitHub Copilot CLI README](./sources/copilot-cli-github-readme.md)
 - [Homebrew API snapshot: coding agents](./sources/homebrew-api-agents.md)
+- [Firefox Developer Edition page](./sources/firefox-developer-edition.md)
 - [Ghostty docs and About](./sources/ghostty-about.md)
 - [Obsidian homepage](./sources/obsidian-homepage.md)
 - [OpenKnowledge docs overview](./sources/openknowledge-docs-overview.md)
