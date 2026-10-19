@@ -14,6 +14,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/formula/fnm
     title: "Homebrew: fnm, mise, nvm, volta"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise
+    title: "winget: jdx.mise"
   - id: choco
     resource: https://community.chocolatey.org/packages/fnm
     title: "Chocolatey: fnm, mise, nvm"
@@ -55,7 +58,7 @@ fnm install --lts
 echo "<version>" > .node-version   # pin the project; fnm switches on cd
 ```
 
-On Windows, run `winget install Schniz.fnm` or `choco install fnm`, then add `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` to your PowerShell profile.[^node-vm] mise is also on Chocolatey as `mise`. The Chocolatey `nvm` package is nvm-windows, a separate project from nvm.[^choco]
+On Windows, run `winget install Schniz.fnm` or `choco install fnm`, then add `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` to your PowerShell profile.[^node-vm] mise is on winget as `jdx.mise`[^winget-pkg] and on Chocolatey as `mise`. The Chocolatey `nvm` package is nvm-windows, a separate project from nvm.[^choco]
 
 ## Setup with mise
 
@@ -78,3 +81,5 @@ These commands are from the mise docs.[^node-vm] The Homebrew formula is `mise`.
 [^homebrew]: Homebrew: [fnm](https://formulae.brew.sh/formula/fnm), [mise](https://formulae.brew.sh/formula/mise), [nvm](https://formulae.brew.sh/formula/nvm), [volta](https://formulae.brew.sh/formula/volta)
 
 [^choco]: Chocolatey: [fnm](https://community.chocolatey.org/packages/fnm), [mise](https://community.chocolatey.org/packages/mise), [nvm (nvm-windows)](https://community.chocolatey.org/packages/nvm)
+
+[^winget-pkg]: [winget: jdx.mise](https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise)

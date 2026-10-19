@@ -16,6 +16,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/formula/uv
     title: "Homebrew: uv, pyenv"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv
+    title: "winget: astral-sh.uv"
   - id: choco
     resource: https://community.chocolatey.org/packages/uv
     title: "Chocolatey: uv"
@@ -66,7 +69,7 @@ uv venv                         # create .venv (downloads Python if missing)
 uv python upgrade               # move to latest patch releases
 ```
 
-The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`[^uv] or `choco install uv`.[^choco]
+The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
 
 ## Setup with pyenv (if needed)
 
@@ -89,3 +92,5 @@ These commands are from the pyenv README.[^pyenv]
 [^homebrew]: Homebrew: [uv](https://formulae.brew.sh/formula/uv), [pyenv](https://formulae.brew.sh/formula/pyenv)
 
 [^choco]: [Chocolatey: uv](https://community.chocolatey.org/packages/uv)
+
+[^winget-pkg]: [winget: astral-sh.uv](https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv)

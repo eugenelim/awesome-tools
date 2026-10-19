@@ -15,6 +15,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/obsidian
     title: "Homebrew: obsidian"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Obsidian/Obsidian
+    title: "winget: Obsidian.Obsidian"
   - id: choco-pkg
     resource: https://community.chocolatey.org/packages/obsidian
     title: "Chocolatey: obsidian"
@@ -41,7 +44,13 @@ brew install --cask obsidian
 
 Requires macOS 12 or later.[^homebrew]
 
-On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+On Windows with [winget](./winget.md) (recommended):[^winget-pkg]
+
+```powershell
+winget install Obsidian.Obsidian
+```
+
+Or with [Chocolatey](./chocolatey.md):[^choco-pkg]
 
 ```powershell
 choco install obsidian
@@ -57,3 +66,5 @@ choco install obsidian
 [^homebrew]: [Homebrew: obsidian](https://formulae.brew.sh/cask/obsidian)
 
 [^choco-pkg]: [Chocolatey: obsidian](https://community.chocolatey.org/packages/obsidian)
+
+[^winget-pkg]: [winget: Obsidian.Obsidian](https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/Obsidian/Obsidian)

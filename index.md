@@ -30,7 +30,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
 - [File managers](./concepts/file-managers.md): Finder and File Explorer alternatives.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
-- [Windows platform tools](./concepts/windows-platform-tools.md): package manager, Linux subsystem and recommended shell setup for Windows.
+- [Windows platform tools](./concepts/windows-platform-tools.md): winget vs Chocolatey recommendation, WSL and shell setup for Windows.
 
 ## Tools
 
@@ -68,5 +68,6 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
 - [Vorssaint](./tools/vorssaint.md): free, open-source macOS menu bar toolkit.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
+- [winget](./tools/winget.md): Windows Package Manager, built into Windows 10 1809+ and 11.
 - [WSL](./tools/wsl.md): Windows Subsystem for Linux.
 - [Zed](./tools/zed.md): high-performance, multiplayer code editor.

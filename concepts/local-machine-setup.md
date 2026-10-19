@@ -41,6 +41,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
 | [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
 | [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
+| [winget](../tools/winget.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
 | [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
 | [Vorssaint](../tools/vorssaint.md) | [macOS utility](./macos-utilities.md) | ✓ (Apple silicon) | | | GPL-3.0-or-later |
@@ -82,41 +83,41 @@ VelaTerm, SilverBullet, Wick, VocBench, Rill and openGym (Docker) have no Homebr
 
 ## Windows
 
-Run these in an administrator PowerShell. See [Chocolatey](../tools/chocolatey.md) and [WSL](../tools/wsl.md) for requirements.
+Use winget first and Chocolatey only as a fallback; [Windows platform tools](./windows-platform-tools.md#package-managers-winget-first-chocolatey-as-fallback) explains why. winget is built into Windows 10 1809+ and Windows 11.
 
 ```powershell
-# WSL (Windows 10 2004+ or Windows 11), then restart
+# WSL (Windows 10 2004+ or Windows 11), run as administrator, then restart
 wsl --install
-
-# Chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Then, with Chocolatey (package pages are linked from each tool page):
+With winget (IDs checked 2026-10-19):
 
 ```powershell
-choco install git                 # Git for Windows, includes Git Bash
-choco install docker-cli          # client only; run Docker Engine in WSL 2
-choco install bitwarden
-choco install claude-code
-choco install codex
-choco install github-copilot-cli
-choco install antigravity
-choco install herdr
-choco install hermes-desktop
-choco install zed-editor          # not `zed`, which is an unrelated tool
-choco install obsidian
-choco install logseq              # lags the GitHub release
-choco install uv
-choco install fnm
-choco install onecommander        # Pro licence needed for commercial use
-```
-
-With winget (for tools whose Chocolatey packages are missing or outdated):
-
-```powershell
+winget install Git.Git                          # Git for Windows, includes Git Bash
+winget install Docker.DockerCLI                 # client only; run Docker Engine in WSL 2
+winget install Bitwarden.Bitwarden
+winget install Anthropic.ClaudeCode
+winget install OpenAI.Codex
+winget install GitHub.Copilot
+winget install Google.Antigravity
+winget install ZedIndustries.Zed
+winget install Obsidian.Obsidian
+winget install Logseq.Logseq
+winget install astral-sh.uv
+winget install Schniz.fnm
+winget install jdx.mise
+winget install MilosParipovic.OneCommander      # Pro licence needed for commercial use
 winget install MarekJasinski.FreeCommanderXE
 winget install MathiasSvensson.MultiCommander
 ```
+
+With Chocolatey, for tools winget lacks or only has as a preview. Install Chocolatey first (administrator PowerShell; see [Chocolatey](../tools/chocolatey.md)):
+
+```powershell
+choco install herdr
+choco install hermes-desktop
+```
+
+Every tool above except Multi Commander also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
 These have no Chocolatey package: Octarine, Firefox Developer Edition, Orca (the `orca` package is Microsoft's MSI editor), VelaTerm, SilverBullet, OpenKnowledge, Protégé, VocBench and Pi. Install them from their websites. See [Windows platform tools](./windows-platform-tools.md) for the recommended shell setup.

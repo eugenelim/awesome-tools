@@ -20,6 +20,9 @@ sources:
   - id: logseq
     resource: https://github.com/logseq/logseq
     title: Logseq README, release and Homebrew entry
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logseq/Logseq
+    title: "winget: Logseq.Logseq"
   - id: choco-pkg
     resource: https://community.chocolatey.org/packages/logseq
     title: "Chocolatey: logseq"
@@ -44,11 +47,13 @@ brew install --cask logseq
 
 Requires macOS 12 or later.[^logseq]
 
-On Windows with [Chocolatey](./chocolatey.md). The package was at version 0.10.15 on 2026-10-19, behind the 2.0.2 release, so the GitHub download is newer.[^choco-pkg]
+On Windows with [winget](./winget.md) (recommended; at 2.0.2, the current release):[^winget-pkg]
 
 ```powershell
-choco install logseq
+winget install Logseq.Logseq
 ```
+
+Avoid the Chocolatey package for now: it was at version 0.10.15 on 2026-10-19, behind the 2.0.2 release.[^choco-pkg]
 
 ## See also
 
@@ -58,3 +63,5 @@ choco install logseq
 [^logseq]: [logseq/logseq README](https://github.com/logseq/logseq), [latest release](https://github.com/logseq/logseq/releases/latest) and [Homebrew: logseq](https://formulae.brew.sh/cask/logseq)
 
 [^choco-pkg]: [Chocolatey: logseq](https://community.chocolatey.org/packages/logseq)
+
+[^winget-pkg]: [winget: Logseq.Logseq](https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Logseq/Logseq)

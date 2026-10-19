@@ -32,6 +32,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/formula/docker
     title: "Homebrew: docker, docker-compose, docker-buildx, colima"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI
+    title: "winget: Docker.DockerCLI"
   - id: choco-pkg
     resource: https://community.chocolatey.org/packages/docker-cli
     title: "Chocolatey: docker-cli"
@@ -84,7 +87,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-Run `docker` from the WSL terminal. For a Windows-side client, Chocolatey has `docker-cli`.[^choco-pkg]
+Run `docker` from the WSL terminal. For a Windows-side client, use `winget install Docker.DockerCLI`[^winget-pkg] or `choco install docker-cli`.[^choco-pkg]
 
 ### Linux
 
@@ -110,3 +113,5 @@ Podman is an Apache-2.0 alternative with its own CLI. On macOS it runs container
 [^brew-prefix]: [Homebrew installation docs](https://docs.brew.sh/Installation)
 [^homebrew]: Homebrew: [docker](https://formulae.brew.sh/formula/docker), [docker-compose](https://formulae.brew.sh/formula/docker-compose), [docker-buildx](https://formulae.brew.sh/formula/docker-buildx), [colima](https://formulae.brew.sh/formula/colima), [podman](https://formulae.brew.sh/formula/podman), [docker-desktop](https://formulae.brew.sh/cask/docker-desktop)
 [^choco-pkg]: Chocolatey: [docker-cli](https://community.chocolatey.org/packages/docker-cli), [docker-desktop](https://community.chocolatey.org/packages/docker-desktop), [podman-cli](https://community.chocolatey.org/packages/podman-cli)
+
+[^winget-pkg]: [winget: Docker.DockerCLI](https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI)

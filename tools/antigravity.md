@@ -18,6 +18,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/antigravity
     title: "Homebrew: antigravity"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Antigravity
+    title: "winget: Google.Antigravity"
   - id: choco-pkg
     resource: https://community.chocolatey.org/packages/antigravity
     title: "Chocolatey: antigravity"
@@ -52,7 +55,13 @@ brew install --cask antigravity
 
 Requires macOS 13 or later.[^homebrew]
 
-On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+On Windows with [winget](./winget.md) (recommended):[^winget-pkg]
+
+```powershell
+winget install Google.Antigravity
+```
+
+Or with [Chocolatey](./chocolatey.md):[^choco-pkg]
 
 ```powershell
 choco install antigravity
@@ -67,3 +76,5 @@ choco install antigravity
 [^homebrew]: [Homebrew: antigravity](https://formulae.brew.sh/cask/antigravity)
 
 [^choco-pkg]: [Chocolatey: antigravity](https://community.chocolatey.org/packages/antigravity)
+
+[^winget-pkg]: [winget: Google.Antigravity](https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Antigravity)

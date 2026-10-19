@@ -15,6 +15,9 @@ sources:
   - id: homebrew
     resource: https://formulae.brew.sh/cask/bitwarden
     title: "Homebrew: bitwarden"
+  - id: winget-pkg
+    resource: https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden
+    title: "winget: Bitwarden.Bitwarden"
   - id: choco-pkg
     resource: https://community.chocolatey.org/packages/bitwarden
     title: "Chocolatey: bitwarden"
@@ -54,7 +57,13 @@ brew install --cask bitwarden
 
 Requires macOS 12 or later.[^homebrew]
 
-On Windows with [Chocolatey](./chocolatey.md):[^choco-pkg]
+On Windows with [winget](./winget.md) (recommended):[^winget-pkg]
+
+```powershell
+winget install Bitwarden.Bitwarden
+```
+
+Or with [Chocolatey](./chocolatey.md):[^choco-pkg]
 
 ```powershell
 choco install bitwarden
@@ -68,3 +77,5 @@ choco install bitwarden
 [^homebrew]: [Homebrew: bitwarden](https://formulae.brew.sh/cask/bitwarden)
 
 [^choco-pkg]: [Chocolatey: bitwarden](https://community.chocolatey.org/packages/bitwarden)
+
+[^winget-pkg]: [winget: Bitwarden.Bitwarden](https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden)
