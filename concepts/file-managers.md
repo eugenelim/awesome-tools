@@ -38,5 +38,7 @@ Both install from their developers' own Homebrew taps rather than homebrew/cask.
 | winget | `MilosParipovic.OneCommander` | `MarekJasinski.FreeCommanderXE` | `MathiasSvensson.MultiCommander` |
 | Chocolatey | `onecommander` (current) | outdated packages only | none |
 
+**Maintainer's view:** OneCommander has the best aesthetic of the three.
+
 At work, note that OneCommander needs a paid Pro licence for professional or commercial use. FreeCommander and Multi Commander are listed as freeware in winget.
 

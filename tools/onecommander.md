@@ -25,6 +25,8 @@ sources:
 
 A dual-pane replacement for Windows File Explorer, with Miller columns (macOS Finder-style column view) and tabs. It's free for home use with no ads or tracking; commercial use needs a Pro licence.[^onecommander]
 
+**Maintainer's view:** of the Windows file managers in this bundle, OneCommander has the best aesthetic.
+
 ## Features
 
 From the OneCommander site:[^onecommander]
