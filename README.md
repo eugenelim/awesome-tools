@@ -32,7 +32,7 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | [Design tools](./concepts/design-tools.md) | [Paper](./tools/paper.md) |
 | [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
 | [Password managers](./concepts/password-managers.md) | [Bitwarden](./tools/bitwarden.md) |
-| [File managers](./concepts/file-managers.md) | [Rascal](./tools/rascal.md), [Swift Salamander](./tools/swift-salamander.md) |
+| [File managers](./concepts/file-managers.md) | macOS: [Rascal](./tools/rascal.md), [Swift Salamander](./tools/swift-salamander.md). Windows: [FreeCommander](./tools/freecommander.md), [Multi Commander](./tools/multicommander.md), [OneCommander](./tools/onecommander.md) |
 | [macOS utilities](./concepts/macos-utilities.md) | [Forel](./tools/forel.md), [Vorssaint](./tools/vorssaint.md), [Wick](./tools/wick.md) |
 | [Windows platform tools](./concepts/windows-platform-tools.md) | [Chocolatey](./tools/chocolatey.md), [WSL](./tools/wsl.md) |
 

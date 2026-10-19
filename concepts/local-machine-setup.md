@@ -35,6 +35,9 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
+| [FreeCommander](../tools/freecommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
+| [Multi Commander](../tools/multicommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
+| [OneCommander](../tools/onecommander.md) | [File manager](./file-managers.md) | | ✓ | | Proprietary |
 | [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
 | [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
 | [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
@@ -106,6 +109,14 @@ choco install obsidian
 choco install logseq              # lags the GitHub release
 choco install uv
 choco install fnm
+choco install onecommander        # Pro licence needed for commercial use
+```
+
+With winget (for tools whose Chocolatey packages are missing or outdated):
+
+```powershell
+winget install MarekJasinski.FreeCommanderXE
+winget install MathiasSvensson.MultiCommander
 ```
 
 These have no Chocolatey package: Octarine, Firefox Developer Edition, Orca (the `orca` package is Microsoft's MSI editor), VelaTerm, SilverBullet, OpenKnowledge, Protégé, VocBench and Pi. Install them from their websites. See [Windows platform tools](./windows-platform-tools.md) for the recommended shell setup.

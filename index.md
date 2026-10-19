@@ -28,7 +28,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
-- [File managers](./concepts/file-managers.md): local, network and cloud file browsing.
+- [File managers](./concepts/file-managers.md): Finder and File Explorer alternatives.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
 - [Windows platform tools](./concepts/windows-platform-tools.md): package manager, Linux subsystem and recommended shell setup for Windows.
 
@@ -42,14 +42,17 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Docker CLI](./tools/docker-cli.md): open-source container CLI; licensing vs Docker Desktop.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
 - [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
+- [FreeCommander](./tools/freecommander.md): free dual-panel Windows file manager.
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
 - [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
+- [Multi Commander](./tools/multicommander.md): free, scriptable dual-pane Windows file manager.
 - [Muse](./tools/muse.md): Meta's hosted personal AI agent.
 - [Obsidian](./tools/obsidian.md): local-first Markdown notes.
 - [Octarine](./tools/octarine.md): private Markdown notes app with a one-time licence.
+- [OneCommander](./tools/onecommander.md): modern Windows Explorer alternative with Miller columns.
 - [openGym](./tools/opengym.md): self-hosted gym and body-weight tracker.
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
 - [Orca](./tools/orca.md): ADE for parallel agents in git worktrees.
