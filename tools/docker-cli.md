@@ -26,6 +26,9 @@ sources:
   - id: engine-ubuntu
     resource: https://docs.docker.com/engine/install/ubuntu/
     title: Install Docker Engine on Ubuntu
+  - id: brew-prefix
+    resource: https://docs.brew.sh/Installation
+    title: Homebrew installation docs
   - id: homebrew
     resource: https://formulae.brew.sh/formula/docker
     title: "Homebrew: docker, docker-compose, docker-buildx, colima"
@@ -55,7 +58,22 @@ colima start
 docker run hello-world
 ```
 
-The Homebrew `docker-compose` and `docker-buildx` formulae are CLI plugins. For the Docker CLI to find them, add `cliPluginsExtraDirs` to `~/.docker/config.json`, as Homebrew's install notes explain.[^homebrew]
+Homebrew installs `docker-compose` and `docker-buildx` as Docker CLI plugins in `$HOMEBREW_PREFIX/lib/docker/cli-plugins`, but the Docker CLI doesn't look there by default.[^homebrew] Add that folder to `~/.docker/config.json`, creating the file if it doesn't exist:
+
+```json
+{
+  "cliPluginsExtraDirs": ["/opt/homebrew/lib/docker/cli-plugins"]
+}
+```
+
+`/opt/homebrew` is Homebrew's default prefix on Apple silicon.[^brew-prefix] On an Intel Mac, use the folder printed by `echo "$(brew --prefix)/lib/docker/cli-plugins"`. If `config.json` already has other settings, add the `cliPluginsExtraDirs` line inside the existing braces rather than replacing the file.
+
+Check that the plugins are found:
+
+```sh
+docker compose version
+docker buildx version
+```
 
 ### Windows: Docker Engine inside WSL 2
 
@@ -89,5 +107,6 @@ Podman is an Apache-2.0 alternative with its own CLI. On macOS it runs container
 [^desktop-license]: [Docker Desktop license agreement](https://docs.docker.com/subscription/desktop-license/)
 [^colima-site]: Colima website: [colima.run](https://colima.run/)
 [^engine-ubuntu]: [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+[^brew-prefix]: [Homebrew installation docs](https://docs.brew.sh/Installation)
 [^homebrew]: Homebrew: [docker](https://formulae.brew.sh/formula/docker), [docker-compose](https://formulae.brew.sh/formula/docker-compose), [docker-buildx](https://formulae.brew.sh/formula/docker-buildx), [colima](https://formulae.brew.sh/formula/colima), [podman](https://formulae.brew.sh/formula/podman), [docker-desktop](https://formulae.brew.sh/cask/docker-desktop)
 [^choco-pkg]: Chocolatey: [docker-cli](https://community.chocolatey.org/packages/docker-cli), [docker-desktop](https://community.chocolatey.org/packages/docker-desktop), [podman-cli](https://community.chocolatey.org/packages/podman-cli)
