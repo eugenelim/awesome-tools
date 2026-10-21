@@ -23,7 +23,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
-- [Containers](./concepts/containers.md): building and running containers.
+- [Containers](./concepts/containers.md): containers and Kubernetes.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
 - [Git and GitHub tools](./concepts/git-tools.md): command-line tools for Git and GitHub.
@@ -50,6 +50,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
+- [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.
 - [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
 - [Multi Commander](./tools/multicommander.md): free, scriptable dual-pane Windows file manager.
 - [Muse](./tools/muse.md): Meta's hosted personal AI agent.
