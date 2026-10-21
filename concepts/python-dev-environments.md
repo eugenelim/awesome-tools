@@ -85,6 +85,7 @@ These commands are from the pyenv README.[^pyenv]
 ## See also
 
 - [Node.js dev environments](./node-dev-environments.md)
+- [Go dev environments](./go-dev-environments.md)
 - [Local machine setup](./local-machine-setup.md)
 
 [^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/) and [Python versions](https://docs.astral.sh/uv/concepts/python-versions/)

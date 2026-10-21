@@ -15,6 +15,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
 | [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
+| [GitHub CLI (gh)](../tools/github-cli.md) | [Git and GitHub tool](./git-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
@@ -54,6 +55,7 @@ A blank cell means the captured sources don't state it.
 ```sh
 brew install --cask bitwarden
 brew install --cask ghostty
+brew install gh
 brew install docker docker-compose docker-buildx colima   # Docker CLI without Docker Desktop
 brew install --cask firefox@developer-edition
 brew install --cask sigmaos
@@ -94,6 +96,7 @@ With winget (IDs checked 2026-10-19):
 
 ```powershell
 winget install Git.Git                          # Git for Windows, includes Git Bash
+winget install --id GitHub.cli --source winget   # GitHub CLI (gh)
 winget install Docker.DockerCLI                 # client only; run Docker Engine in WSL 2
 winget install Bitwarden.Bitwarden
 winget install Anthropic.ClaudeCode

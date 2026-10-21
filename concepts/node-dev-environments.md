@@ -74,6 +74,7 @@ These commands are from the mise docs.[^node-vm] The Homebrew formula is `mise`.
 ## See also
 
 - [Python dev environments](./python-dev-environments.md)
+- [Go dev environments](./go-dev-environments.md)
 - [WSL](../tools/wsl.md)
 - [Local machine setup](./local-machine-setup.md)
 

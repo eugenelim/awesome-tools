@@ -13,6 +13,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 
 - [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv for switching Python versions (recommends uv).
 - [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta for switching Node.js versions (recommends fnm).
+- [Go dev environments](./concepts/go-dev-environments.md): one Go install plus built-in toolchain switching (no version manager needed).
 
 ## Categories
 
@@ -25,6 +26,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Containers](./concepts/containers.md): building and running containers.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
+- [Git and GitHub tools](./concepts/git-tools.md): command-line tools for Git and GitHub.
 - [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
 - [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
@@ -44,6 +46,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
 - [FreeCommander](./tools/freecommander.md): free dual-panel Windows file manager.
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
+- [GitHub CLI (gh)](./tools/github-cli.md): GitHub's official command-line tool.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
