@@ -29,6 +29,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Go developer tools](./concepts/go-tools.md): linting, debugging, vulnerability scanning and releases for Go.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
+- [Email clients](./concepts/email-clients.md): applications for reading, searching and sending email.
 - [Git and GitHub tools](./concepts/git-tools.md): command-line tools for Git and GitHub.
 - [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
 - [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
@@ -61,6 +62,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Helm](./tools/helm.md): the package manager for Kubernetes, using charts.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
+- [Himalaya](./tools/himalaya.md): command-line email client for IMAP, SMTP, JMAP, Gmail and Microsoft Graph.
 - [k9s](./tools/k9s.md): terminal UI for Kubernetes clusters.
 - [kind](./tools/kind.md): local Kubernetes clusters in Docker containers.
 - [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.

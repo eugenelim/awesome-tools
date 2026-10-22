@@ -31,6 +31,7 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | [Terminal emulators](./concepts/terminal-emulators.md) | [Ghostty](./tools/ghostty.md) |
 | [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |
 | [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
+| [Email clients](./concepts/email-clients.md) | [Himalaya](./tools/himalaya.md) |
 | [Git and GitHub tools](./concepts/git-tools.md) | [GitHub CLI (gh)](./tools/github-cli.md) |
 | [Health and fitness](./concepts/health-and-fitness.md) | [openGym](./tools/opengym.md) |
 | [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |

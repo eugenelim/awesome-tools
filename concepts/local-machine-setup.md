@@ -41,6 +41,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [APOC Core](../tools/apoc.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Neo4j Desktop](../tools/neo4j-desktop.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
 | [DBeaver Community](../tools/dbeaver.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
@@ -88,6 +89,7 @@ brew install golangci-lint delve govulncheck
 brew install --cask goreleaser/tap/goreleaser
 brew install postgresql@18 pgcli pgvector       # or Postgres.app instead of postgresql@18
 brew install --cask pgadmin4 dbeaver-community
+brew install himalaya
 brew install neo4j                              # includes cypher-shell
 brew install --cask neo4j-desktop
 brew install --cask firefox@developer-edition
@@ -166,9 +168,10 @@ With Chocolatey, for tools winget lacks or only has as a preview. Install Chocol
 ```powershell
 choco install herdr
 choco install hermes-desktop
+choco install himalaya                          # or: scoop install himalaya
 ```
 
-Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. The Neo4j server has no Windows package; use its zip or Docker.
+Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker.
 
 Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
