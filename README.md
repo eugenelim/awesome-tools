@@ -16,33 +16,37 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 - [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv.
 - [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta.
 - [Go dev environments](./concepts/go-dev-environments.md): one Go install plus built-in toolchain switching.
+- [LinkML dev environment](./concepts/linkml-dev-environment.md): uv, copier and just with the LinkML project template.
 
 ## Tools by category
 
-| Category | Tools |
-| --- | --- |
-| [Package managers](./concepts/package-managers.md) | [Homebrew](./tools/homebrew.md), [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md) |
-| [API clients](./concepts/api-clients.md) | [Insomnia](./tools/insomnia.md) |
-| [AI coding agents](./concepts/ai-coding-agents.md) | [Claude Code](./tools/claude-code.md), [Codex](./tools/codex.md), [GitHub Copilot CLI](./tools/github-copilot.md), [Pi](./tools/pi.md) |
-| [Agentic development environments](./concepts/agentic-development-environments.md) | [Antigravity](./tools/antigravity.md), [herdr](./tools/herdr.md), [Orca](./tools/orca.md), [VelaTerm](./tools/velaterm.md) |
-| [Containers](./concepts/containers.md) | [Colima](./tools/colima.md), [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |
-| [Databases](./concepts/databases.md) | PostgreSQL: [PostgreSQL](./tools/postgresql.md), [Postgres.app](./tools/postgres-app.md), [pgAdmin 4](./tools/pgadmin.md), [pgcli](./tools/pgcli.md), [Postgres MCP Pro](./tools/postgres-mcp-pro.md). Vector search: [pgvector](./tools/pgvector.md), [Qdrant](./tools/qdrant.md). Neo4j: [Neo4j Community Edition](./tools/neo4j.md), [Cypher Shell](./tools/cypher-shell.md), [Neo4j Browser](./tools/neo4j-browser.md), [APOC Core](./tools/apoc.md), [Neo4j Desktop](./tools/neo4j-desktop.md). Both: [DBeaver Community](./tools/dbeaver.md) |
-| [Python developer tools](./concepts/python-tools.md) | [mypy](./tools/mypy.md), [pre-commit](./tools/pre-commit.md), [pytest](./tools/pytest.md), [Ruff](./tools/ruff.md), [ty](./tools/ty.md) |
-| [Go developer tools](./concepts/go-tools.md) | [Delve](./tools/delve.md), [golangci-lint](./tools/golangci-lint.md), [GoReleaser](./tools/goreleaser.md), [govulncheck](./tools/govulncheck.md) |
-| [Code editors](./concepts/code-editors.md) | [Zed](./tools/zed.md) |
-| [Terminal emulators](./concepts/terminal-emulators.md) | [Ghostty](./tools/ghostty.md) |
-| [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |
-| [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
-| [Email clients](./concepts/email-clients.md) | [Himalaya](./tools/himalaya.md) |
-| [Git and GitHub tools](./concepts/git-tools.md) | [GitHub CLI (gh)](./tools/github-cli.md) |
-| [Health and fitness](./concepts/health-and-fitness.md) | [openGym](./tools/opengym.md) |
-| [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |
-| [Design tools](./concepts/design-tools.md) | [Paper](./tools/paper.md) |
-| [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
-| [Password managers](./concepts/password-managers.md) | [Bitwarden](./tools/bitwarden.md) |
-| [File managers](./concepts/file-managers.md) | macOS: [Rascal](./tools/rascal.md), [Swift Salamander](./tools/swift-salamander.md). Windows: [FreeCommander](./tools/freecommander.md), [Multi Commander](./tools/multicommander.md), [OneCommander](./tools/onecommander.md) |
-| [macOS utilities](./concepts/macos-utilities.md) | [Forel](./tools/forel.md), [Vorssaint](./tools/vorssaint.md), [Wick](./tools/wick.md) |
-| [Windows platform tools](./concepts/windows-platform-tools.md) | [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md), [WSL](./tools/wsl.md) |
+Grouped like [index.md](./index.md) and the [overview](./concepts/local-machine-setup.md): essentials first, then by type of work.
+
+| Group | Category | Tools |
+| --- | --- | --- |
+| Essentials: core setup | [Package managers](./concepts/package-managers.md) | [Homebrew](./tools/homebrew.md), [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md) |
+| Essentials: core setup | [Password managers](./concepts/password-managers.md) | [Bitwarden](./tools/bitwarden.md) |
+| Essentials: core setup | [Terminal emulators](./concepts/terminal-emulators.md) | [Ghostty](./tools/ghostty.md) |
+| Essentials: core setup | [Code editors](./concepts/code-editors.md) | [Zed](./tools/zed.md) |
+| Essentials: core setup | [Git and GitHub tools](./concepts/git-tools.md) | [GitHub CLI (gh)](./tools/github-cli.md) |
+| Essentials: core setup | [Windows platform tools](./concepts/windows-platform-tools.md) | [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md), [WSL](./tools/wsl.md) |
+| Essentials: everyday utilities | [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |
+| Essentials: everyday utilities | [File managers](./concepts/file-managers.md) | macOS: [Rascal](./tools/rascal.md), [Swift Salamander](./tools/swift-salamander.md). Windows: [FreeCommander](./tools/freecommander.md), [Multi Commander](./tools/multicommander.md), [OneCommander](./tools/onecommander.md) |
+| Essentials: everyday utilities | [macOS utilities](./concepts/macos-utilities.md) | [Forel](./tools/forel.md), [Vorssaint](./tools/vorssaint.md), [Wick](./tools/wick.md) |
+| Essentials: everyday utilities | [Health and fitness](./concepts/health-and-fitness.md) | [openGym](./tools/opengym.md) |
+| AI-assisted coding | [AI coding agents](./concepts/ai-coding-agents.md) | [Claude Code](./tools/claude-code.md), [Codex](./tools/codex.md), [GitHub Copilot CLI](./tools/github-copilot.md), [Pi](./tools/pi.md) |
+| AI-assisted coding | [Agentic development environments](./concepts/agentic-development-environments.md) | [Antigravity](./tools/antigravity.md), [herdr](./tools/herdr.md), [Orca](./tools/orca.md), [VelaTerm](./tools/velaterm.md) |
+| Programming languages | [Python developer tools](./concepts/python-tools.md) | [mypy](./tools/mypy.md), [pre-commit](./tools/pre-commit.md), [pytest](./tools/pytest.md), [Ruff](./tools/ruff.md), [ty](./tools/ty.md) |
+| Programming languages | [Go developer tools](./concepts/go-tools.md) | [Delve](./tools/delve.md), [golangci-lint](./tools/golangci-lint.md), [GoReleaser](./tools/goreleaser.md), [govulncheck](./tools/govulncheck.md) |
+| Containers and Kubernetes | [Containers](./concepts/containers.md) | [Colima](./tools/colima.md), [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |
+| Databases and vector search | [Databases](./concepts/databases.md) | PostgreSQL: [PostgreSQL](./tools/postgresql.md), [Postgres.app](./tools/postgres-app.md), [pgAdmin 4](./tools/pgadmin.md), [pgcli](./tools/pgcli.md), [Postgres MCP Pro](./tools/postgres-mcp-pro.md). Vector search: [pgvector](./tools/pgvector.md), [Qdrant](./tools/qdrant.md). Neo4j: [Neo4j Community Edition](./tools/neo4j.md), [Cypher Shell](./tools/cypher-shell.md), [Neo4j Browser](./tools/neo4j-browser.md), [APOC Core](./tools/apoc.md), [Neo4j Desktop](./tools/neo4j-desktop.md). Both: [DBeaver Community](./tools/dbeaver.md) |
+| Web, APIs and design | [API clients](./concepts/api-clients.md) | [Insomnia](./tools/insomnia.md) |
+| Web, APIs and design | [Design tools](./concepts/design-tools.md) | [Paper](./tools/paper.md) |
+| Notes, knowledge and email | [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
+| Notes, knowledge and email | [Email clients](./concepts/email-clients.md) | [Himalaya](./tools/himalaya.md) |
+| Ontologies and data modelling | [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |
+| Ontologies and data modelling | [Data modelling](./concepts/data-modelling.md) | [LinkML](./tools/linkml.md) |
+| Personal AI agents | [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
 
 ## Using the bundle
 

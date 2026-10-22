@@ -15,14 +15,17 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 - [Databases and vector search](#databases-and-vector-search)
 - [Web, APIs and design](#web-apis-and-design)
 - [Notes, knowledge and email](#notes-knowledge-and-email)
-- [Ontologies](#ontologies)
+- [Ontologies and data modelling](#ontologies-and-data-modelling)
 - [Personal AI agents](#personal-ai-agents)
-- [Everyday utilities](#everyday-utilities)
 - [Install commands](#install-commands)
 
 ## Essentials
 
-The maintainer's picks for any machine: a package manager, a password manager, a terminal, an editor and the GitHub CLI. On Windows, also WSL and Git for Windows; see [Windows platform tools](./windows-platform-tools.md). Set up the [package manager](./package-managers.md) first.
+The maintainer's picks for any machine, whatever your work: the core setup, then everyday utilities. Set up the [package manager](./package-managers.md) first.
+
+### Core setup
+
+A package manager, a password manager, a terminal, an editor and the GitHub CLI. On Windows, also WSL and Git for Windows; see [Windows platform tools](./windows-platform-tools.md).
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
@@ -34,6 +37,24 @@ The maintainer's picks for any machine: a package manager, a password manager, a
 | [winget](../tools/winget.md) | [Package manager](./package-managers.md) | | ✓ | | MIT |
 | [Chocolatey](../tools/chocolatey.md) | [Package manager](./package-managers.md) (fallback to winget) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+
+### Everyday utilities
+
+Browsers, file managers and small utilities. Pick the ones for your platform.
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
+| [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
+| [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
+| [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
+| [FreeCommander](../tools/freecommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
+| [Multi Commander](../tools/multicommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
+| [OneCommander](../tools/onecommander.md) | [File manager](./file-managers.md) | | ✓ | | Proprietary |
+| [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
+| [Vorssaint](../tools/vorssaint.md) | [macOS utility](./macos-utilities.md) | ✓ (Apple silicon) | | | GPL-3.0-or-later |
+| [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
+| [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
 
 ## AI-assisted coding
 
@@ -126,10 +147,13 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
 
-## Ontologies
+## Ontologies and data modelling
+
+For a LinkML project, see [LinkML dev environment](./linkml-dev-environment.md).
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
+| [LinkML](../tools/linkml.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
 
@@ -140,22 +164,6 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [Hermes Agent](../tools/hermes.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | ✓ | ✓ | MIT |
 | [Muse](../tools/muse.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | | | |
 
-## Everyday utilities
-
-| Tool | Type | macOS | Windows | Linux | Licence |
-| --- | --- | --- | --- | --- | --- |
-| [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
-| [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
-| [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
-| [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
-| [FreeCommander](../tools/freecommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
-| [Multi Commander](../tools/multicommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
-| [OneCommander](../tools/onecommander.md) | [File manager](./file-managers.md) | | ✓ | | Proprietary |
-| [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
-| [Vorssaint](../tools/vorssaint.md) | [macOS utility](./macos-utilities.md) | ✓ (Apple silicon) | | | GPL-3.0-or-later |
-| [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
-| [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
-
 ## Install commands
 
 The commands follow the same groups. Copy the essentials, then the groups you need.
@@ -165,9 +173,13 @@ The commands follow the same groups. Copy the essentials, then the groups you ne
 Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebrew.md#set-up). To update everything later, run `brew update && brew upgrade`.
 
 ```sh
-# Essentials
+# Essentials: core setup
 brew install --cask bitwarden ghostty zed
 brew install gh
+
+# Essentials: everyday utilities
+brew install --cask sigmaos vorssaint
+brew install --cask c0desurfer/tap/swift-salamander chang-07/tap/rascal lab421/tap/forel
 
 # AI-assisted coding
 brew install --cask claude-code codex antigravity stablyai/orca/orca
@@ -198,16 +210,13 @@ brew install --cask obsidian octarine logseq
 brew install node git && npm install -g @inkeep/open-knowledge
 brew install himalaya
 
-# Ontologies: Java 17+ for VocBench
-brew install openjdk@17
+# Ontologies and data modelling
+brew install openjdk@17                    # Java 17+ for VocBench
+uv tool install linkml                     # or a LinkML project; see the LinkML guide
 
 # Personal AI agents
 brew install hermes-agent
 brew install --cask hermes-desktop
-
-# Everyday utilities
-brew install --cask sigmaos vorssaint
-brew install --cask c0desurfer/tap/swift-salamander chang-07/tap/rascal lab421/tap/forel
 ```
 
 VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant and openGym (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
@@ -219,12 +228,17 @@ Use winget first and Chocolatey only as a fallback; [Windows platform tools](./w
 With winget (IDs checked 2026-10-19):
 
 ```powershell
-# Essentials
+# Essentials: core setup
 wsl --install                                    # as administrator, then restart (Windows 10 2004+ or 11)
 winget install Git.Git                           # Git for Windows, includes Git Bash
 winget install --id GitHub.cli --source winget   # GitHub CLI (gh)
 winget install Bitwarden.Bitwarden
 winget install ZedIndustries.Zed
+
+# Essentials: everyday utilities
+winget install MilosParipovic.OneCommander       # Pro licence needed for commercial use
+winget install MarekJasinski.FreeCommanderXE
+winget install MathiasSvensson.MultiCommander
 
 # AI-assisted coding
 winget install Anthropic.ClaudeCode
@@ -265,10 +279,8 @@ winget install Insomnia.Insomnia
 winget install Obsidian.Obsidian
 winget install Logseq.Logseq
 
-# Everyday utilities
-winget install MilosParipovic.OneCommander       # Pro licence needed for commercial use
-winget install MarekJasinski.FreeCommanderXE
-winget install MathiasSvensson.MultiCommander
+# Data modelling (after installing uv above)
+uv tool install linkml
 ```
 
 With Chocolatey, for tools winget lacks or only has as a preview. Install Chocolatey first (administrator PowerShell; see [Chocolatey](../tools/chocolatey.md)):

@@ -14,31 +14,64 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv for switching Python versions (recommends uv).
 - [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta for switching Node.js versions (recommends fnm).
 - [Go dev environments](./concepts/go-dev-environments.md): one Go install plus built-in toolchain switching (no version manager needed).
+- [LinkML dev environment](./concepts/linkml-dev-environment.md): uv, copier and just with the linkml-project-copier template (recommended), or LinkML on its own.
 
 ## Categories
 
+Grouped like the [overview](./concepts/local-machine-setup.md): essentials first, then by type of work.
+
+### Essentials: core setup
+
 - [Package managers](./concepts/package-managers.md): Homebrew, winget and Chocolatey, with everyday commands side by side.
-- [API clients](./concepts/api-clients.md): sending, testing and designing API requests.
 - [Password managers](./concepts/password-managers.md): encrypted credential vaults.
-- [Personal AI agents](./concepts/personal-ai-agents.md): agents that run everyday tasks and goals for you.
 - [Terminal emulators](./concepts/terminal-emulators.md): applications that host shell sessions.
-- [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
-- [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
-- [Containers](./concepts/containers.md): containers and Kubernetes.
-- [Databases](./concepts/databases.md): PostgreSQL, Neo4j and vector search servers, clients and extensions.
-- [Python developer tools](./concepts/python-tools.md): linting, formatting, type checking, testing and Git hooks for Python.
-- [Go developer tools](./concepts/go-tools.md): linting, debugging, vulnerability scanning and releases for Go.
-- [Design tools](./concepts/design-tools.md): interface design and prototyping.
-- [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
-- [Email clients](./concepts/email-clients.md): applications for reading, searching and sending email.
 - [Git and GitHub tools](./concepts/git-tools.md): command-line tools for Git and GitHub.
-- [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
-- [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
-- [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
+- [Windows platform tools](./concepts/windows-platform-tools.md): winget vs Chocolatey recommendation, WSL and shell setup for Windows.
+
+### Essentials: everyday utilities
+
+- [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
 - [File managers](./concepts/file-managers.md): Finder and File Explorer alternatives.
 - [macOS utilities](./concepts/macos-utilities.md): small single-purpose Mac apps.
-- [Windows platform tools](./concepts/windows-platform-tools.md): winget vs Chocolatey recommendation, WSL and shell setup for Windows.
+- [Health and fitness](./concepts/health-and-fitness.md): training and body-weight tracking.
+
+### AI-assisted coding
+
+- [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
+- [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
+
+### Programming languages
+
+- [Python developer tools](./concepts/python-tools.md): linting, formatting, type checking, testing and Git hooks for Python.
+- [Go developer tools](./concepts/go-tools.md): linting, debugging, vulnerability scanning and releases for Go.
+
+### Containers and Kubernetes
+
+- [Containers](./concepts/containers.md): containers and Kubernetes.
+
+### Databases and vector search
+
+- [Databases](./concepts/databases.md): PostgreSQL, Neo4j and vector search servers, clients, extensions and MCP servers.
+
+### Web, APIs and design
+
+- [API clients](./concepts/api-clients.md): sending, testing and designing API requests.
+- [Design tools](./concepts/design-tools.md): interface design and prototyping.
+
+### Notes, knowledge and email
+
+- [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
+- [Email clients](./concepts/email-clients.md): applications for reading, searching and sending email.
+
+### Ontologies and data modelling
+
+- [Ontology editors](./concepts/ontology-editors.md): OWL ontologies, SKOS thesauri and RDF vocabularies.
+- [Data modelling](./concepts/data-modelling.md): schema languages such as LinkML, and the code and validators generated from them.
+
+### Personal AI agents
+
+- [Personal AI agents](./concepts/personal-ai-agents.md): agents that run everyday tasks and goals for you.
 
 ## Tools
 
@@ -72,6 +105,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [kind](./tools/kind.md): local Kubernetes clusters in Docker containers.
 - [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.
 - [kubectx and kubens](./tools/kubectx.md): fast switching of kubectl contexts and namespaces.
+- [LinkML](./tools/linkml.md): YAML data modelling language that generates JSON Schema, Pydantic, SQL, OWL and SHACL.
 - [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
 - [Multi Commander](./tools/multicommander.md): free, scriptable dual-pane Windows file manager.
 - [Muse](./tools/muse.md): Meta's hosted personal AI agent.
