@@ -24,6 +24,9 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | [AI coding agents](./concepts/ai-coding-agents.md) | [Claude Code](./tools/claude-code.md), [Codex](./tools/codex.md), [GitHub Copilot CLI](./tools/github-copilot.md), [Pi](./tools/pi.md) |
 | [Agentic development environments](./concepts/agentic-development-environments.md) | [Antigravity](./tools/antigravity.md), [herdr](./tools/herdr.md), [Orca](./tools/orca.md), [VelaTerm](./tools/velaterm.md) |
 | [Containers](./concepts/containers.md) | [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |
+| [Databases](./concepts/databases.md) | PostgreSQL: [PostgreSQL](./tools/postgresql.md), [Postgres.app](./tools/postgres-app.md), [pgAdmin 4](./tools/pgadmin.md), [pgcli](./tools/pgcli.md), [pgvector](./tools/pgvector.md). Neo4j: [Neo4j Community Edition](./tools/neo4j.md), [Cypher Shell](./tools/cypher-shell.md), [Neo4j Browser](./tools/neo4j-browser.md), [APOC Core](./tools/apoc.md), [Neo4j Desktop](./tools/neo4j-desktop.md). Both: [DBeaver Community](./tools/dbeaver.md) |
+| [Python developer tools](./concepts/python-tools.md) | [mypy](./tools/mypy.md), [pre-commit](./tools/pre-commit.md), [pytest](./tools/pytest.md), [Ruff](./tools/ruff.md), [ty](./tools/ty.md) |
+| [Go developer tools](./concepts/go-tools.md) | [Delve](./tools/delve.md), [golangci-lint](./tools/golangci-lint.md), [GoReleaser](./tools/goreleaser.md), [govulncheck](./tools/govulncheck.md) |
 | [Code editors](./concepts/code-editors.md) | [Zed](./tools/zed.md) |
 | [Terminal emulators](./concepts/terminal-emulators.md) | [Ghostty](./tools/ghostty.md) |
 | [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |

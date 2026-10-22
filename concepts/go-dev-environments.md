@@ -91,6 +91,7 @@ It's also packaged as `brew install gopls`.[^homebrew]
 
 ## See also
 
+- [Go developer tools](./go-tools.md): golangci-lint, Delve, govulncheck and GoReleaser
 - [Python dev environments](./python-dev-environments.md)
 - [Node.js dev environments](./node-dev-environments.md)
 

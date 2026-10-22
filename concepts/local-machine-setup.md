@@ -21,6 +21,26 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [k9s](../tools/k9s.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [kind](../tools/kind.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [kubectx and kubens](../tools/kubectx.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Ruff](../tools/ruff.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [mypy](../tools/mypy.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [ty](../tools/ty.md) (beta) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [pytest](../tools/pytest.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [pre-commit](../tools/pre-commit.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [golangci-lint](../tools/golangci-lint.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | GPL-3.0 |
+| [Delve](../tools/delve.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [govulncheck](../tools/govulncheck.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | BSD-3-Clause |
+| [GoReleaser](../tools/goreleaser.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
+| [PostgreSQL](../tools/postgresql.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
+| [Postgres.app](../tools/postgres-app.md) | [Database](./databases.md) | ✓ | | | PostgreSQL |
+| [pgAdmin 4](../tools/pgadmin.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
+| [pgcli](../tools/pgcli.md) | [Database](./databases.md) | ✓ | | ✓ | BSD-3-Clause |
+| [pgvector](../tools/pgvector.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
+| [Neo4j Community Edition](../tools/neo4j.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
+| [Cypher Shell](../tools/cypher-shell.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
+| [Neo4j Browser](../tools/neo4j-browser.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
+| [APOC Core](../tools/apoc.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Neo4j Desktop](../tools/neo4j-desktop.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
+| [DBeaver Community](../tools/dbeaver.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
@@ -63,6 +83,13 @@ brew install --cask ghostty
 brew install gh
 brew install kubectl helm k9s kind kubectx   # kubectx installs kubens too
 brew install docker docker-compose docker-buildx colima   # Docker CLI without Docker Desktop
+brew install ruff ty pre-commit                 # Python tools; add mypy and pytest per project with uv
+brew install golangci-lint delve govulncheck
+brew install --cask goreleaser/tap/goreleaser
+brew install postgresql@18 pgcli pgvector       # or Postgres.app instead of postgresql@18
+brew install --cask pgadmin4 dbeaver-community
+brew install neo4j                              # includes cypher-shell
+brew install --cask neo4j-desktop
 brew install --cask firefox@developer-edition
 brew install --cask sigmaos
 brew install --cask stablyai/orca/orca
@@ -119,6 +146,14 @@ winget install ZedIndustries.Zed
 winget install Obsidian.Obsidian
 winget install Logseq.Logseq
 winget install astral-sh.uv
+winget install astral-sh.ruff
+winget install astral-sh.ty
+winget install GolangCI.golangci-lint
+winget install goreleaser.goreleaser
+winget install PostgreSQL.PostgreSQL.18
+winget install PostgreSQL.pgAdmin
+winget install DBeaver.DBeaver.Community        # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
+winget install Neo4j.Neo4jDesktop
 winget install Schniz.fnm
 winget install jdx.mise
 winget install MilosParipovic.OneCommander      # Pro licence needed for commercial use
@@ -133,6 +168,8 @@ choco install herdr
 choco install hermes-desktop
 ```
 
-Every tool above except Multi Commander also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
+Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. The Neo4j server has no Windows package; use its zip or Docker.
+
+Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
 These have no Chocolatey package: Octarine, Firefox Developer Edition, Orca (the `orca` package is Microsoft's MSI editor), VelaTerm, SilverBullet, OpenKnowledge, Protégé, VocBench and Pi. Install them from their websites. See [Windows platform tools](./windows-platform-tools.md) for the recommended shell setup.

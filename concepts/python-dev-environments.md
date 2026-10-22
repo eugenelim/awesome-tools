@@ -84,6 +84,7 @@ These commands are from the pyenv README.[^pyenv]
 
 ## See also
 
+- [Python developer tools](./python-tools.md): Ruff, mypy, ty, pytest and pre-commit
 - [Node.js dev environments](./node-dev-environments.md)
 - [Go dev environments](./go-dev-environments.md)
 - [Local machine setup](./local-machine-setup.md)
