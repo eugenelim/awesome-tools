@@ -1,165 +1,265 @@
 ---
 type: Overview
 title: Local machine setup
-description: All tools in this bundle by category, platform and licence, with Homebrew and Windows install commands.
+description: Essential tools first, then tools for each type of work, with platforms, licences and Homebrew and Windows install commands.
 ---
 # Local machine setup
 
-Every tool in this bundle, grouped by category. Details and sources are on each tool page.
+Every tool in this bundle: the essentials first, then the tools for each type of work. Install what matches your work. Details and sources are on each tool page, and a blank cell means the captured sources don't state it.
 
-| Tool | Category | macOS | Windows | Linux | Licence |
+- [Essentials](#essentials)
+- [AI-assisted coding](#ai-assisted-coding)
+- [Python](#python)
+- [Go](#go)
+- [Containers and Kubernetes](#containers-and-kubernetes)
+- [Databases and vector search](#databases-and-vector-search)
+- [Web and design](#web-and-design)
+- [Notes, knowledge and email](#notes-knowledge-and-email)
+- [Ontologies](#ontologies)
+- [Personal AI agents](#personal-ai-agents)
+- [Everyday utilities](#everyday-utilities)
+- [Install commands](#install-commands)
+
+## Essentials
+
+The maintainer's picks for any machine: a password manager, a terminal, an editor and the GitHub CLI. On Windows, also winget, WSL and Git for Windows; see [Windows platform tools](./windows-platform-tools.md).
+
+| Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
 | [Bitwarden](../tools/bitwarden.md) | [Password manager](./password-managers.md) | ✓ | ✓ | ✓ | Open source |
-| [Docker CLI](../tools/docker-cli.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
-| [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
-| [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
+| [Zed](../tools/zed.md) | [Code editor](./code-editors.md) | ✓ | ✓ | ✓ | GPL-3.0-or-later |
 | [GitHub CLI (gh)](../tools/github-cli.md) | [Git and GitHub tool](./git-tools.md) | ✓ | ✓ | ✓ | MIT |
-| [kubectl](../tools/kubectl.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [Helm](../tools/helm.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [k9s](../tools/k9s.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [kind](../tools/kind.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [kubectx and kubens](../tools/kubectx.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [winget](../tools/winget.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+| [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+| [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) (fallback to winget) | | ✓ | | Apache-2.0 |
+
+## AI-assisted coding
+
+Coding agents, and agentic development environments (ADEs) for running several agents at once.
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Claude Code](../tools/claude-code.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
+| [Codex](../tools/codex.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [GitHub Copilot CLI](../tools/github-copilot.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
+| [Pi](../tools/pi.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | MIT |
+| [Antigravity](../tools/antigravity.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | |
+| [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
+| [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
+
+## Python
+
+Install Python and manage environments with uv; see [Python dev environments](./python-dev-environments.md).
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [Ruff](../tools/ruff.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [mypy](../tools/mypy.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [ty](../tools/ty.md) (beta) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [pytest](../tools/pytest.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [pre-commit](../tools/pre-commit.md) | [Python developer tool](./python-tools.md) | ✓ | ✓ | ✓ | MIT |
+
+For Node.js, see [Node.js dev environments](./node-dev-environments.md).
+
+## Go
+
+Install Go itself as described in [Go dev environments](./go-dev-environments.md).
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [golangci-lint](../tools/golangci-lint.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Delve](../tools/delve.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [govulncheck](../tools/govulncheck.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | BSD-3-Clause |
 | [GoReleaser](../tools/goreleaser.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
+
+## Containers and Kubernetes
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Docker CLI](../tools/docker-cli.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Colima](../tools/colima.md) | [Containers](./containers.md) | ✓ | | ✓ | MIT |
+| [kubectl](../tools/kubectl.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Helm](../tools/helm.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [k9s](../tools/k9s.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [kind](../tools/kind.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [kubectx and kubens](../tools/kubectx.md) | [Containers](./containers.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+
+On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Docker Engine in WSL 2. See [Docker CLI](../tools/docker-cli.md).
+
+## Databases and vector search
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [PostgreSQL](../tools/postgresql.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
 | [Postgres.app](../tools/postgres-app.md) | [Database](./databases.md) | ✓ | | | PostgreSQL |
 | [pgAdmin 4](../tools/pgadmin.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
 | [pgcli](../tools/pgcli.md) | [Database](./databases.md) | ✓ | | ✓ | BSD-3-Clause |
-| [pgvector](../tools/pgvector.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
-| [Postgres MCP Pro](../tools/postgres-mcp-pro.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | MIT |
+| [Postgres MCP Pro](../tools/postgres-mcp-pro.md) | [Database](./databases.md) (MCP server) | ✓ | ✓ | ✓ | MIT |
+| [pgvector](../tools/pgvector.md) | [Vector search](./databases.md#vector-search) | ✓ | ✓ | ✓ | PostgreSQL |
+| [Qdrant](../tools/qdrant.md) | [Vector search](./databases.md#vector-search) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Neo4j Community Edition](../tools/neo4j.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Cypher Shell](../tools/cypher-shell.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Neo4j Browser](../tools/neo4j-browser.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
 | [APOC Core](../tools/apoc.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Neo4j Desktop](../tools/neo4j-desktop.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
 | [DBeaver Community](../tools/dbeaver.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
-| [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
-| [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
-| [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [Zed](../tools/zed.md) | [Code editor](./code-editors.md) | ✓ | ✓ | ✓ | GPL-3.0-or-later |
-| [Antigravity](../tools/antigravity.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | |
-| [Claude Code](../tools/claude-code.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
-| [Codex](../tools/codex.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | Apache-2.0 |
-| [GitHub Copilot CLI](../tools/github-copilot.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | |
-| [Hermes Agent](../tools/hermes.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | ✓ | ✓ | MIT |
-| [Muse](../tools/muse.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | | | |
-| [Pi](../tools/pi.md) | [AI coding agent](./ai-coding-agents.md) | ✓ | ✓ | ✓ | MIT |
+
+## Web and design
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
+| [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
+
+## Notes, knowledge and email
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | |
 | [Logseq](../tools/logseq.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | AGPL-3.0 |
 | [Octarine](../tools/octarine.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | |
 | [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
 | [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
-| [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
-| [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
+| [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
+
+## Ontologies
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
+
+## Personal AI agents
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Hermes Agent](../tools/hermes.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | ✓ | ✓ | MIT |
+| [Muse](../tools/muse.md) | [Personal AI agent](./personal-ai-agents.md) | ✓ | | | |
+
+## Everyday utilities
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
+| [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
+| [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
+| [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
 | [FreeCommander](../tools/freecommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
 | [Multi Commander](../tools/multicommander.md) | [File manager](./file-managers.md) | | ✓ | | Freeware |
 | [OneCommander](../tools/onecommander.md) | [File manager](./file-managers.md) | | ✓ | | Proprietary |
-| [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
-| [Swift Salamander](../tools/swift-salamander.md) | [File manager](./file-managers.md) | ✓ | | | |
-| [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | Apache-2.0 |
-| [winget](../tools/winget.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
-| [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
 | [Forel](../tools/forel.md) | [macOS utility](./macos-utilities.md) | ✓ | | | GPL-3.0 |
 | [Vorssaint](../tools/vorssaint.md) | [macOS utility](./macos-utilities.md) | ✓ (Apple silicon) | | | GPL-3.0-or-later |
 | [Wick](../tools/wick.md) | [macOS utility](./macos-utilities.md) | ✓ | | | |
+| [openGym](../tools/opengym.md) | [Health and fitness](./health-and-fitness.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | AGPL-3.0 |
 
-A blank cell means the captured sources don't state it.
+## Install commands
 
-## Homebrew
+The commands follow the same groups. Copy the essentials, then the groups you need.
+
+### Homebrew
 
 ```sh
-brew install --cask bitwarden
-brew install --cask ghostty
+# Essentials
+brew install --cask bitwarden ghostty zed
 brew install gh
-brew install kubectl helm k9s kind kubectx   # kubectx installs kubens too
-brew install docker docker-compose docker-buildx colima   # Docker CLI without Docker Desktop
-brew install ruff ty pre-commit                 # Python tools; add mypy and pytest per project with uv
+
+# AI-assisted coding
+brew install --cask claude-code codex antigravity stablyai/orca/orca
+brew install copilot-cli pi-coding-agent herdr  # copilot-cli, not `copilot` (AWS's ECS tool)
+
+# Python: add mypy and pytest per project with uv
+brew install ruff ty pre-commit
+
+# Go
 brew install golangci-lint delve govulncheck
 brew install --cask goreleaser/tap/goreleaser
-brew install postgresql@18 pgcli pgvector       # or Postgres.app instead of postgresql@18
-brew install --cask pgadmin4 dbeaver-community
+
+# Containers and Kubernetes
+brew install docker docker-compose docker-buildx colima  # Docker CLI without Docker Desktop
+brew install kubectl helm k9s kind kubectx              # kubectx installs kubens too
+
+# Databases and vector search
+brew install postgresql@18 pgcli pgvector  # or Postgres.app instead of postgresql@18
+brew install neo4j                         # includes cypher-shell
+brew install --cask pgadmin4 dbeaver-community neo4j-desktop
+docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
+
+# Web and design
+brew install --cask firefox@developer-edition paper-design
+
+# Notes, knowledge and email
+brew install --cask obsidian octarine logseq
+brew install node git && npm install -g @inkeep/open-knowledge
 brew install himalaya
-brew install neo4j                              # includes cypher-shell
-brew install --cask neo4j-desktop
-brew install --cask firefox@developer-edition
-brew install --cask sigmaos
-brew install --cask stablyai/orca/orca
-brew install herdr
-brew install --cask zed
-brew install pi-coding-agent
+
+# Ontologies: Java 17+ for VocBench
+brew install openjdk@17
+
+# Personal AI agents
 brew install hermes-agent
 brew install --cask hermes-desktop
-brew install --cask claude-code
-brew install --cask codex
-brew install copilot-cli        # not `copilot`, which is AWS's ECS tool
-brew install --cask antigravity
-brew install --cask obsidian
-brew install --cask octarine
-brew install --cask logseq
-brew install --cask paper-design
-brew install --cask c0desurfer/tap/swift-salamander
-brew install --cask chang-07/tap/rascal
-brew install --cask lab421/tap/forel
-brew install --cask vorssaint
-brew install node git && npm install -g @inkeep/open-knowledge
-brew install openjdk@17   # Java 17+ for VocBench
+
+# Everyday utilities
+brew install --cask sigmaos vorssaint
+brew install --cask c0desurfer/tap/swift-salamander chang-07/tap/rascal lab421/tap/forel
 ```
 
-VelaTerm, SilverBullet, Wick, VocBench, Rill and openGym (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant and openGym (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
-## Windows
+### Windows
 
 Use winget first and Chocolatey only as a fallback; [Windows platform tools](./windows-platform-tools.md#package-managers-winget-first-chocolatey-as-fallback) explains why. winget is built into Windows 10 1809+ and Windows 11.
-
-```powershell
-# WSL (Windows 10 2004+ or Windows 11), run as administrator, then restart
-wsl --install
-```
 
 With winget (IDs checked 2026-10-19):
 
 ```powershell
-winget install Git.Git                          # Git for Windows, includes Git Bash
+# Essentials
+wsl --install                                    # as administrator, then restart (Windows 10 2004+ or 11)
+winget install Git.Git                           # Git for Windows, includes Git Bash
 winget install --id GitHub.cli --source winget   # GitHub CLI (gh)
-winget install -e --id Kubernetes.kubectl
-winget install Helm.Helm                        # Chocolatey's kubernetes-helm lags behind
-winget install Derailed.k9s
-winget install Kubernetes.kind
-winget install --id ahmetb.kubectx
-winget install --id ahmetb.kubens
-winget install Docker.DockerCLI                 # client only; run Docker Engine in WSL 2
 winget install Bitwarden.Bitwarden
+winget install ZedIndustries.Zed
+
+# AI-assisted coding
 winget install Anthropic.ClaudeCode
 winget install OpenAI.Codex
 winget install GitHub.Copilot
 winget install Google.Antigravity
-winget install ZedIndustries.Zed
-winget install Obsidian.Obsidian
-winget install Logseq.Logseq
+
+# Python and Node.js
 winget install astral-sh.uv
 winget install astral-sh.ruff
 winget install astral-sh.ty
-winget install GolangCI.golangci-lint
-winget install goreleaser.goreleaser
-winget install PostgreSQL.PostgreSQL.18
-winget install PostgreSQL.pgAdmin
-winget install DBeaver.DBeaver.Community        # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
-winget install Neo4j.Neo4jDesktop
 winget install Schniz.fnm
 winget install jdx.mise
-winget install MilosParipovic.OneCommander      # Pro licence needed for commercial use
+
+# Go
+winget install GolangCI.golangci-lint
+winget install goreleaser.goreleaser
+
+# Containers and Kubernetes
+winget install Docker.DockerCLI                  # client only; run Docker Engine in WSL 2
+winget install -e --id Kubernetes.kubectl
+winget install Helm.Helm                         # Chocolatey's kubernetes-helm lags behind
+winget install Derailed.k9s
+winget install Kubernetes.kind
+winget install --id ahmetb.kubectx
+winget install --id ahmetb.kubens
+
+# Databases
+winget install PostgreSQL.PostgreSQL.18
+winget install PostgreSQL.pgAdmin
+winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
+winget install Neo4j.Neo4jDesktop
+
+# Notes and knowledge
+winget install Obsidian.Obsidian
+winget install Logseq.Logseq
+
+# Everyday utilities
+winget install MilosParipovic.OneCommander       # Pro licence needed for commercial use
 winget install MarekJasinski.FreeCommanderXE
 winget install MathiasSvensson.MultiCommander
 ```
@@ -167,12 +267,12 @@ winget install MathiasSvensson.MultiCommander
 With Chocolatey, for tools winget lacks or only has as a preview. Install Chocolatey first (administrator PowerShell; see [Chocolatey](../tools/chocolatey.md)):
 
 ```powershell
-choco install herdr
-choco install hermes-desktop
-choco install himalaya                          # or: scoop install himalaya
+choco install herdr                              # AI-assisted coding
+choco install himalaya                           # email; or: scoop install himalaya
+choco install hermes-desktop                     # personal AI agents
 ```
 
-Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker.
+Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker. Qdrant has no winget or Chocolatey package; use Docker or the release zip. Colima doesn't run on Windows.
 
 Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
