@@ -153,7 +153,10 @@ For a LinkML project, see [LinkML dev environment](./linkml-dev-environment.md).
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
-| [LinkML](../tools/linkml.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [LinkML](../tools/linkml.md) (core Python tools) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [LinkML-Scala](../tools/linkml-scala.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [LinkML-OWL](../tools/linkml-owl.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | |
+| [Schema Automator](../tools/schema-automator.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | BSD-3-Clause |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
 
@@ -213,6 +216,9 @@ brew install himalaya
 # Ontologies and data modelling
 brew install openjdk@17                    # Java 17+ for VocBench
 uv tool install linkml                     # or a LinkML project; see the LinkML guide
+uv tool install schema-automator           # optional LinkML add-on
+uv tool install linkml-owl                 # optional LinkML add-on
+mise use -g ubi:NeverBlink-OSS/linkml-scala  # optional: LinkML-Scala native CLI
 
 # Personal AI agents
 brew install hermes-agent

@@ -46,7 +46,7 @@ A data modelling language that follows object-oriented and ontological principle
 - **Linting:** `linkml-lint` checks a schema for problems.[^linkml]
 - **Runtime:** `linkml-runtime`, the library generated code depends on, moved into the main `linkml` repository on 2025-12-01; its old repository is archived.[^runtime]
 
-Schema Automator (BSD-3-Clause) is a separate LinkML project for automated help across the schema development lifecycle.[^automator]
+These are the core Python tools, the LinkML project's own implementation. Related tools: [LinkML-Scala](./linkml-scala.md), an independent implementation with a browser playground and native CLI; [LinkML-OWL](./linkml-owl.md), which turns instance data into OWL; and [Schema Automator](./schema-automator.md), which drafts schemas from existing data.[^automator] See the [comparison](../concepts/data-modelling.md#linkml-tools-compared).
 
 ## Install
 

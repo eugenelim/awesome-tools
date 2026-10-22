@@ -73,6 +73,14 @@ uv run gen-pydantic personinfo.yaml > models.py
 
 `uv add` makes LinkML a project dependency, so everyone on the project gets the same version; `uv run` runs its commands in the project environment. To run LinkML without Python at all, use the Docker image; see [LinkML](../tools/linkml.md#install).
 
+## Add-ons and alternatives
+
+- [Schema Automator](../tools/schema-automator.md): draft the first schema from existing TSV files or a JSON Schema with `schemauto`, then refine it in the project.
+- [LinkML-OWL](../tools/linkml-owl.md): build an OWL ontology from instance data with `linkml-data2owl`.
+- [LinkML-Scala](../tools/linkml-scala.md): try schemas in a browser playground, or validate in CI without Python; it differs from the Python tools in places.
+
+All three are compared with the core tools in [Data modelling](./data-modelling.md#linkml-tools-compared). Install the Python ones with `uv tool install`, or `uv add --dev` to pin them in the project.
+
 ## See also
 
 - [LinkML](../tools/linkml.md)

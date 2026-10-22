@@ -45,7 +45,7 @@ Grouped like [index.md](./index.md) and the [overview](./concepts/local-machine-
 | Notes, knowledge and email | [Knowledge management](./concepts/knowledge-management.md) | [Logseq](./tools/logseq.md), [Obsidian](./tools/obsidian.md), [Octarine](./tools/octarine.md), [OpenKnowledge](./tools/openknowledge.md), [SilverBullet](./tools/silverbullet.md) |
 | Notes, knowledge and email | [Email clients](./concepts/email-clients.md) | [Himalaya](./tools/himalaya.md) |
 | Ontologies and data modelling | [Ontology editors](./concepts/ontology-editors.md) | [Protégé](./tools/protege.md), [VocBench](./tools/vocbench.md) |
-| Ontologies and data modelling | [Data modelling](./concepts/data-modelling.md) | [LinkML](./tools/linkml.md) |
+| Ontologies and data modelling | [Data modelling](./concepts/data-modelling.md) | [LinkML](./tools/linkml.md), [LinkML-Scala](./tools/linkml-scala.md), [LinkML-OWL](./tools/linkml-owl.md), [Schema Automator](./tools/schema-automator.md) |
 | Personal AI agents | [Personal AI agents](./concepts/personal-ai-agents.md) | [Hermes Agent](./tools/hermes.md), [Muse](./tools/muse.md) |
 
 ## Using the bundle
