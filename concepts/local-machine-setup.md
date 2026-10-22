@@ -13,7 +13,7 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 - [Go](#go)
 - [Containers and Kubernetes](#containers-and-kubernetes)
 - [Databases and vector search](#databases-and-vector-search)
-- [Web and design](#web-and-design)
+- [Web, APIs and design](#web-apis-and-design)
 - [Notes, knowledge and email](#notes-knowledge-and-email)
 - [Ontologies](#ontologies)
 - [Personal AI agents](#personal-ai-agents)
@@ -22,17 +22,18 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 
 ## Essentials
 
-The maintainer's picks for any machine: a password manager, a terminal, an editor and the GitHub CLI. On Windows, also winget, WSL and Git for Windows; see [Windows platform tools](./windows-platform-tools.md).
+The maintainer's picks for any machine: a package manager, a password manager, a terminal, an editor and the GitHub CLI. On Windows, also WSL and Git for Windows; see [Windows platform tools](./windows-platform-tools.md). Set up the [package manager](./package-managers.md) first.
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
+| [Homebrew](../tools/homebrew.md) | [Package manager](./package-managers.md) | ✓ | (WSL) | ✓ | BSD-2-Clause |
 | [Bitwarden](../tools/bitwarden.md) | [Password manager](./password-managers.md) | ✓ | ✓ | ✓ | Open source |
 | [Ghostty](../tools/ghostty.md) | [Terminal emulator](./terminal-emulators.md) | ✓ | | ✓ | |
 | [Zed](../tools/zed.md) | [Code editor](./code-editors.md) | ✓ | ✓ | ✓ | GPL-3.0-or-later |
 | [GitHub CLI (gh)](../tools/github-cli.md) | [Git and GitHub tool](./git-tools.md) | ✓ | ✓ | ✓ | MIT |
-| [winget](../tools/winget.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+| [winget](../tools/winget.md) | [Package manager](./package-managers.md) | | ✓ | | MIT |
+| [Chocolatey](../tools/chocolatey.md) | [Package manager](./package-managers.md) (fallback to winget) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
-| [Chocolatey](../tools/chocolatey.md) | [Windows platform tool](./windows-platform-tools.md) (fallback to winget) | | ✓ | | Apache-2.0 |
 
 ## AI-assisted coding
 
@@ -106,11 +107,12 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [Neo4j Desktop](../tools/neo4j-desktop.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
 | [DBeaver Community](../tools/dbeaver.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 
-## Web and design
+## Web, APIs and design
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
 | [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
+| [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
 
 ## Notes, knowledge and email
@@ -160,6 +162,8 @@ The commands follow the same groups. Copy the essentials, then the groups you ne
 
 ### Homebrew
 
+Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebrew.md#set-up). To update everything later, run `brew update && brew upgrade`.
+
 ```sh
 # Essentials
 brew install --cask bitwarden ghostty zed
@@ -186,8 +190,8 @@ brew install neo4j                         # includes cypher-shell
 brew install --cask pgadmin4 dbeaver-community neo4j-desktop
 docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
-# Web and design
-brew install --cask firefox@developer-edition paper-design
+# Web, APIs and design
+brew install --cask firefox@developer-edition insomnia paper-design
 
 # Notes, knowledge and email
 brew install --cask obsidian octarine logseq
@@ -210,7 +214,7 @@ VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant and openGym (Docker) have n
 
 ### Windows
 
-Use winget first and Chocolatey only as a fallback; [Windows platform tools](./windows-platform-tools.md#package-managers-winget-first-chocolatey-as-fallback) explains why. winget is built into Windows 10 1809+ and Windows 11.
+Use winget first and Chocolatey only as a fallback; [Windows platform tools](./windows-platform-tools.md#package-managers-winget-first-chocolatey-as-fallback) explains why. winget is built into Windows 10 1809+ and Windows 11; see [winget](../tools/winget.md#set-up) to check it works. To update everything later, run `winget upgrade --all`.
 
 With winget (IDs checked 2026-10-19):
 
@@ -254,6 +258,9 @@ winget install PostgreSQL.pgAdmin
 winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
 winget install Neo4j.Neo4jDesktop
 
+# Web and APIs
+winget install Insomnia.Insomnia
+
 # Notes and knowledge
 winget install Obsidian.Obsidian
 winget install Logseq.Logseq
@@ -274,6 +281,6 @@ choco install hermes-desktop                     # personal AI agents
 
 Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker. Qdrant has no winget or Chocolatey package; use Docker or the release zip. Colima doesn't run on Windows.
 
-Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package; IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
+Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package (Insomnia's is years out of date); IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
 These have no Chocolatey package: Octarine, Firefox Developer Edition, Orca (the `orca` package is Microsoft's MSI editor), VelaTerm, SilverBullet, OpenKnowledge, Protégé, VocBench and Pi. Install them from their websites. See [Windows platform tools](./windows-platform-tools.md) for the recommended shell setup.

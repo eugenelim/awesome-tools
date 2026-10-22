@@ -21,6 +21,8 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 
 | Category | Tools |
 | --- | --- |
+| [Package managers](./concepts/package-managers.md) | [Homebrew](./tools/homebrew.md), [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md) |
+| [API clients](./concepts/api-clients.md) | [Insomnia](./tools/insomnia.md) |
 | [AI coding agents](./concepts/ai-coding-agents.md) | [Claude Code](./tools/claude-code.md), [Codex](./tools/codex.md), [GitHub Copilot CLI](./tools/github-copilot.md), [Pi](./tools/pi.md) |
 | [Agentic development environments](./concepts/agentic-development-environments.md) | [Antigravity](./tools/antigravity.md), [herdr](./tools/herdr.md), [Orca](./tools/orca.md), [VelaTerm](./tools/velaterm.md) |
 | [Containers](./concepts/containers.md) | [Colima](./tools/colima.md), [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |

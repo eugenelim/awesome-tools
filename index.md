@@ -17,6 +17,8 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 
 ## Categories
 
+- [Package managers](./concepts/package-managers.md): Homebrew, winget and Chocolatey, with everyday commands side by side.
+- [API clients](./concepts/api-clients.md): sending, testing and designing API requests.
 - [Password managers](./concepts/password-managers.md): encrypted credential vaults.
 - [Personal AI agents](./concepts/personal-ai-agents.md): agents that run everyday tasks and goals for you.
 - [Terminal emulators](./concepts/terminal-emulators.md): applications that host shell sessions.
@@ -64,6 +66,8 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
 - [Himalaya](./tools/himalaya.md): command-line email client for IMAP, SMTP, JMAP, Gmail and Microsoft Graph.
+- [Homebrew](./tools/homebrew.md): package manager for macOS and Linux, with setup and common commands.
+- [Insomnia](./tools/insomnia.md): Kong's open-source API client for REST, GraphQL, gRPC, WebSockets and SSE.
 - [k9s](./tools/k9s.md): terminal UI for Kubernetes clusters.
 - [kind](./tools/kind.md): local Kubernetes clusters in Docker containers.
 - [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.
@@ -104,6 +108,6 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
 - [Vorssaint](./tools/vorssaint.md): free, open-source macOS menu bar toolkit.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
-- [winget](./tools/winget.md): Windows Package Manager, built into Windows 10 1809+ and 11.
+- [winget](./tools/winget.md): Windows Package Manager, built into Windows 10 1809+ and 11, with setup and common commands.
 - [WSL](./tools/wsl.md): Windows Subsystem for Linux.
 - [Zed](./tools/zed.md): high-performance, multiplayer code editor.

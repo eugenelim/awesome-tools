@@ -37,6 +37,7 @@ The command downloads and runs `https://community.chocolatey.org/install.ps1`, a
 
 ## See also
 
+- [Package managers](../concepts/package-managers.md)
 - [Windows platform tools](../concepts/windows-platform-tools.md)
 - [WSL](./wsl.md)
 
