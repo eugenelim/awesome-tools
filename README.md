@@ -12,7 +12,7 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 ## Start here
 
 - [index.md](./index.md): every page in the bundle.
-- [Local machine setup](./concepts/local-machine-setup.md): all tools in one table, plus Homebrew and Windows install commands.
+- [Local machine setup](./concepts/local-machine-setup.md): essential tools first, then tools for each type of work, plus Homebrew and Windows install commands.
 - [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv.
 - [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta.
 - [Go dev environments](./concepts/go-dev-environments.md): one Go install plus built-in toolchain switching.
@@ -23,8 +23,8 @@ The repo is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/op
 | --- | --- |
 | [AI coding agents](./concepts/ai-coding-agents.md) | [Claude Code](./tools/claude-code.md), [Codex](./tools/codex.md), [GitHub Copilot CLI](./tools/github-copilot.md), [Pi](./tools/pi.md) |
 | [Agentic development environments](./concepts/agentic-development-environments.md) | [Antigravity](./tools/antigravity.md), [herdr](./tools/herdr.md), [Orca](./tools/orca.md), [VelaTerm](./tools/velaterm.md) |
-| [Containers](./concepts/containers.md) | [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |
-| [Databases](./concepts/databases.md) | PostgreSQL: [PostgreSQL](./tools/postgresql.md), [Postgres.app](./tools/postgres-app.md), [pgAdmin 4](./tools/pgadmin.md), [pgcli](./tools/pgcli.md), [pgvector](./tools/pgvector.md), [Postgres MCP Pro](./tools/postgres-mcp-pro.md). Neo4j: [Neo4j Community Edition](./tools/neo4j.md), [Cypher Shell](./tools/cypher-shell.md), [Neo4j Browser](./tools/neo4j-browser.md), [APOC Core](./tools/apoc.md), [Neo4j Desktop](./tools/neo4j-desktop.md). Both: [DBeaver Community](./tools/dbeaver.md) |
+| [Containers](./concepts/containers.md) | [Colima](./tools/colima.md), [Docker CLI](./tools/docker-cli.md), [Helm](./tools/helm.md), [k9s](./tools/k9s.md), [kind](./tools/kind.md), [kubectl](./tools/kubectl.md), [kubectx and kubens](./tools/kubectx.md) |
+| [Databases](./concepts/databases.md) | PostgreSQL: [PostgreSQL](./tools/postgresql.md), [Postgres.app](./tools/postgres-app.md), [pgAdmin 4](./tools/pgadmin.md), [pgcli](./tools/pgcli.md), [Postgres MCP Pro](./tools/postgres-mcp-pro.md). Vector search: [pgvector](./tools/pgvector.md), [Qdrant](./tools/qdrant.md). Neo4j: [Neo4j Community Edition](./tools/neo4j.md), [Cypher Shell](./tools/cypher-shell.md), [Neo4j Browser](./tools/neo4j-browser.md), [APOC Core](./tools/apoc.md), [Neo4j Desktop](./tools/neo4j-desktop.md). Both: [DBeaver Community](./tools/dbeaver.md) |
 | [Python developer tools](./concepts/python-tools.md) | [mypy](./tools/mypy.md), [pre-commit](./tools/pre-commit.md), [pytest](./tools/pytest.md), [Ruff](./tools/ruff.md), [ty](./tools/ty.md) |
 | [Go developer tools](./concepts/go-tools.md) | [Delve](./tools/delve.md), [golangci-lint](./tools/golangci-lint.md), [GoReleaser](./tools/goreleaser.md), [govulncheck](./tools/govulncheck.md) |
 | [Code editors](./concepts/code-editors.md) | [Zed](./tools/zed.md) |
@@ -91,7 +91,7 @@ Facts were captured in October 2026. Prices, versions and platform support chang
 
 1. Read the vendor page or README. Optionally keep a snapshot in your local `sources/` folder (`type: Source`, `resource:` the URL, `retrieved:` an ISO 8601 timestamp).
 2. Create `tools/<slug>.md` in the format above, citing source URLs in `sources` and footnotes. Leave out any field the source doesn't support.
-3. Add the tool to its category page, the [overview](./concepts/local-machine-setup.md), [index.md](./index.md) and the table in this README.
+3. Add the tool to its category page, the matching type-of-work section of the [overview](./concepts/local-machine-setup.md) and its install commands, [index.md](./index.md) and the table in this README.
 4. Check Homebrew with `brew info --cask <name>` or `brew info <name>`. Watch for name collisions: `orca` and `copilot` are unrelated packages.
 5. Check Chocolatey at `https://community.chocolatey.org/packages/<id>`. Only list a package whose project URL points at the vendor.
 

@@ -53,7 +53,7 @@ The `docker` command-line client, licensed under Apache-2.0.[^docker-cli] It sen
 
 ### macOS: Docker CLI + Colima
 
-[Colima](https://colima.run/) (MIT) runs Docker, containerd or Incus on macOS and Linux.[^colima-site] [^docker-cli]
+[Colima](./colima.md) (MIT) runs Docker, containerd or Incus on macOS and Linux.[^colima-site] [^docker-cli]
 
 ```sh
 brew install docker docker-compose docker-buildx colima

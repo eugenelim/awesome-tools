@@ -55,6 +55,7 @@ SELECT * FROM items ORDER BY embedding <-> '[3,1,2]' LIMIT 5;
 
 - [Databases](../concepts/databases.md)
 - [PostgreSQL](./postgresql.md)
+- [Qdrant](./qdrant.md), a standalone vector database
 
 [^pgvector]: [pgvector/pgvector README and LICENSE](https://github.com/pgvector/pgvector)
 [^packages]: Homebrew: [pgvector](https://formulae.brew.sh/formula/pgvector); version checked 2026-10-21

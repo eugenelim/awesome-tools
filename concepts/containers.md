@@ -9,7 +9,8 @@ Tools for building and running containers and working with Kubernetes.
 
 | Tool | Licence | macOS | Windows | Linux |
 | --- | --- | --- | --- | --- |
-| [Docker CLI](../tools/docker-cli.md) | Apache-2.0 | `brew install docker` + Colima | Docker Engine in WSL 2, or `choco install docker-cli` | Docker Engine |
+| [Docker CLI](../tools/docker-cli.md) | Apache-2.0 | `brew install docker` + [Colima](../tools/colima.md) | Docker Engine in WSL 2, or `choco install docker-cli` | Docker Engine |
+| [Colima](../tools/colima.md) | MIT | `brew install colima` | | `yay -S lima-bin colima-bin` (Arch AUR), or Nix |
 | [kubectl](../tools/kubectl.md) | Apache-2.0 | `brew install kubectl` | `winget install -e --id Kubernetes.kubectl` | binary from dl.k8s.io |
 | [Helm](../tools/helm.md) | Apache-2.0 | `brew install helm` | `winget install Helm.Helm` | `snap install helm --classic` |
 | [k9s](../tools/k9s.md) | Apache-2.0 | `brew install k9s` | `winget install k9s` | |

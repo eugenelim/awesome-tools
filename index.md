@@ -7,7 +7,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 
 ## Overview
 
-- [Local machine setup](./concepts/local-machine-setup.md): every tool by category, platform and licence, plus Homebrew install commands.
+- [Local machine setup](./concepts/local-machine-setup.md): essential tools first, then tools for each type of work, with platforms, licences and install commands.
 
 ## Guides
 
@@ -24,7 +24,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 - [Code editors](./concepts/code-editors.md): editors and IDEs for source code.
 - [Containers](./concepts/containers.md): containers and Kubernetes.
-- [Databases](./concepts/databases.md): PostgreSQL and Neo4j servers, clients and extensions.
+- [Databases](./concepts/databases.md): PostgreSQL, Neo4j and vector search servers, clients and extensions.
 - [Python developer tools](./concepts/python-tools.md): linting, formatting, type checking, testing and Git hooks for Python.
 - [Go developer tools](./concepts/go-tools.md): linting, debugging, vulnerability scanning and releases for Go.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
@@ -46,6 +46,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Chocolatey](./tools/chocolatey.md): package manager for Windows.
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.
+- [Colima](./tools/colima.md): Docker, containerd or Incus in a Lima VM on macOS and Linux.
 - [Cypher Shell](./tools/cypher-shell.md): command-line client for running Cypher against Neo4j.
 - [DBeaver Community](./tools/dbeaver.md): open-source desktop SQL client for 100+ databases.
 - [Delve](./tools/delve.md): debugger for Go (`dlv`).
@@ -90,6 +91,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [PostgreSQL](./tools/postgresql.md): open-source relational database server, with the psql client.
 - [pre-commit](./tools/pre-commit.md): framework for multi-language Git pre-commit hooks.
 - [Protégé](./tools/protege.md): Stanford's open-source OWL 2 ontology editor.
+- [Qdrant](./tools/qdrant.md): open-source vector database, with an official MCP server.
 - [pytest](./tools/pytest.md): Python testing framework with plain asserts and fixtures.
 - [Rascal](./tools/rascal.md): free, open-source keyboard-first Finder replacement.
 - [Rill](./tools/rill.md): macOS browser (beta) that hands tasks to your Claude Code or Codex.
