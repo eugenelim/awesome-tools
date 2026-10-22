@@ -14,3 +14,5 @@ Tools for building and maintaining OWL ontologies, SKOS thesauri and other RDF v
 | Collaboration | WebProtégé: permissions, discussions, revision history | Multi-user, multilingual |
 | Reasoning | HermiT, Pellet (desktop) | |
 | Licence | BSD-2-Clause-Views | Open source |
+
+To define a schema in YAML and generate OWL, SHACL, JSON Schema and code from it, see [LinkML](../tools/linkml.md) in [Data modelling](./data-modelling.md).
