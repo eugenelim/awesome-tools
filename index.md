@@ -48,9 +48,13 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Ghostty](./tools/ghostty.md): native, GPU-accelerated terminal emulator.
 - [GitHub CLI (gh)](./tools/github-cli.md): GitHub's official command-line tool.
 - [GitHub Copilot CLI](./tools/github-copilot.md): Copilot's coding agent in the terminal.
+- [Helm](./tools/helm.md): the package manager for Kubernetes, using charts.
 - [herdr](./tools/herdr.md): terminal agent multiplexer with a background server.
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
+- [k9s](./tools/k9s.md): terminal UI for Kubernetes clusters.
+- [kind](./tools/kind.md): local Kubernetes clusters in Docker containers.
 - [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.
+- [kubectx and kubens](./tools/kubectx.md): fast switching of kubectl contexts and namespaces.
 - [Logseq](./tools/logseq.md): open-source knowledge base for Markdown and Org-mode.
 - [Multi Commander](./tools/multicommander.md): free, scriptable dual-pane Windows file manager.
 - [Muse](./tools/muse.md): Meta's hosted personal AI agent.
