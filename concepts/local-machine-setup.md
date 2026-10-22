@@ -35,6 +35,7 @@ Every tool in this bundle, grouped by category. Details and sources are on each 
 | [pgAdmin 4](../tools/pgadmin.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
 | [pgcli](../tools/pgcli.md) | [Database](./databases.md) | ✓ | | ✓ | BSD-3-Clause |
 | [pgvector](../tools/pgvector.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
+| [Postgres MCP Pro](../tools/postgres-mcp-pro.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | MIT |
 | [Neo4j Community Edition](../tools/neo4j.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Cypher Shell](../tools/cypher-shell.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Neo4j Browser](../tools/neo4j-browser.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |

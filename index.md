@@ -84,6 +84,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [pgAdmin 4](./tools/pgadmin.md): administration and development GUI for PostgreSQL.
 - [pgcli](./tools/pgcli.md): PostgreSQL terminal client with auto-completion and syntax highlighting.
 - [pgvector](./tools/pgvector.md): vector similarity search extension for PostgreSQL.
+- [Postgres MCP Pro](./tools/postgres-mcp-pro.md): PostgreSQL MCP server for AI agents, with query plans, index tuning and health checks.
 - [Pi](./tools/pi.md): minimal, extensible coding agent CLI.
 - [Postgres.app](./tools/postgres-app.md): PostgreSQL packaged as a native macOS app.
 - [PostgreSQL](./tools/postgresql.md): open-source relational database server, with the psql client.

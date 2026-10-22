@@ -92,6 +92,7 @@ The second command, from the Docker image docs, runs psql from a container again
 - [pgAdmin 4](./pgadmin.md)
 - [pgcli](./pgcli.md)
 - [pgvector](./pgvector.md)
+- [Postgres MCP Pro](./postgres-mcp-pro.md), to give AI agents access to a database
 
 [^licence]: [PostgreSQL Licence](https://www.postgresql.org/about/licence/)
 [^versioning]: [PostgreSQL Versioning Policy](https://www.postgresql.org/support/versioning/), checked 2026-10-21

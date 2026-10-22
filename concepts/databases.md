@@ -16,6 +16,7 @@ Database servers and the clients, GUIs and extensions used with them.
 | [pgAdmin 4](../tools/pgadmin.md) | PostgreSQL | `brew install --cask pgadmin4` | `winget install PostgreSQL.pgAdmin` | `sudo apt install pgadmin4` (pgAdmin APT repository) |
 | [pgcli](../tools/pgcli.md) | BSD-3-Clause | `brew install pgcli` | | `sudo apt-get install pgcli` or `pipx install pgcli` |
 | [pgvector](../tools/pgvector.md) | PostgreSQL | `brew install pgvector` | build from source | `sudo apt install postgresql-18-pgvector` (PGDG repository) |
+| [Postgres MCP Pro](../tools/postgres-mcp-pro.md) (MCP server for AI agents) | MIT | `docker pull crystaldba/postgres-mcp` or `uvx postgres-mcp` | same | same |
 
 On a Mac, pick either Homebrew's `postgresql@18` or [Postgres.app](../tools/postgres-app.md) for the server, not both. Postgres.app already includes pgvector.
 
