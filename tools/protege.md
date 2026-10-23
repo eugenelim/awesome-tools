@@ -33,6 +33,8 @@ A free, open-source OWL 2 ontology editor developed at Stanford University.[^pro
 | Focus | Reasoners (HermiT, Pellet), explanations, refactoring, multiple ontologies | Collaborative editing, permissions, discussions, revision history |
 | Formats | OWL 2, RDF | RDF/XML, Turtle, OWL/XML, OBO and more |
 
+To run WebProtégé on your own network instead of at Stanford, see [WebProtégé (self-hosted)](./webprotege.md).
+
 Both editions are compatible with each other. The desktop app is written in Java with a plug-in architecture and is maintained by the community. The current version is 5.6.9.[^protege]
 
 ## Licence
@@ -46,6 +48,7 @@ Homebrew has a `protege` cask, but it is disabled: it failed Homebrew's Gatekeep
 ## See also
 
 - [Ontology editors](../concepts/ontology-editors.md)
+- [WebProtégé (self-hosted)](./webprotege.md)
 - [VocBench](./vocbench.md)
 
 [^protege]: [Protégé homepage](https://protege.stanford.edu/), [software page](https://protege.stanford.edu/software) and [licence](https://github.com/protegeproject/protege/blob/master/license.txt)

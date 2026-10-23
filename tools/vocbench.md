@@ -47,6 +47,7 @@ There is also a Docker distribution.[^vocbench]
 
 - [Ontology editors](../concepts/ontology-editors.md)
 - [Protégé](./protege.md)
+- [WebProtégé (self-hosted)](./webprotege.md)
 
 [^vocbench]: [VocBench homepage](https://vocbench.uniroma2.it/), [downloads](https://vocbench.uniroma2.it/downloads/) and [docs](https://vocbench.uniroma2.it/doc/)
 [^homebrew]: [Homebrew: openjdk@17](https://formulae.brew.sh/formula/openjdk@17); no VocBench package in the [catalogue](https://formulae.brew.sh/)

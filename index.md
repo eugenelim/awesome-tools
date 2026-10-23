@@ -144,6 +144,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.
 - [Vorssaint](./tools/vorssaint.md): free, open-source macOS menu bar toolkit.
+- [WebProtégé (self-hosted)](./tools/webprotege.md): Protégé's collaborative web ontology editor, run on your own server with Docker Compose.
 - [Wick](./tools/wick.md): timers, stopwatch and alarms for Mac.
 - [winget](./tools/winget.md): Windows Package Manager, built into Windows 10 1809+ and 11, with setup and common commands.
 - [WSL](./tools/wsl.md): Windows Subsystem for Linux.

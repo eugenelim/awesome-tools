@@ -158,6 +158,7 @@ For a LinkML project, see [LinkML dev environment](./linkml-dev-environment.md).
 | [LinkML-OWL](../tools/linkml-owl.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | |
 | [Schema Automator](../tools/schema-automator.md) | [Data modelling](./data-modelling.md) | ✓ | ✓ | ✓ | BSD-3-Clause |
 | [Protégé](../tools/protege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | BSD-2-Clause-Views |
+| [WebProtégé (self-hosted)](../tools/webprotege.md) | [Ontology editor](./ontology-editors.md) | ✓ (Docker) | ✓ (Docker) | ✓ (Docker) | BSD-2-Clause (deployment) |
 | [VocBench](../tools/vocbench.md) | [Ontology editor](./ontology-editors.md) | ✓ (Java) | ✓ (Java) | ✓ (Java) | Open source |
 
 ## Personal AI agents
@@ -225,7 +226,7 @@ brew install hermes-agent
 brew install --cask hermes-desktop
 ```
 
-VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant and openGym (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant, openGym (Docker) and WebProtégé (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
 ### Windows
 
