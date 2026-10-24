@@ -23,9 +23,15 @@ sources:
   - id: install
     resource: https://github.com/abiosoft/colima/blob/main/docs/INSTALL.md
     title: Colima installation options
+  - id: faq
+    resource: https://github.com/abiosoft/colima/blob/main/docs/FAQ.md
+    title: Colima FAQ
   - id: packages
     resource: https://formulae.brew.sh/formula/colima
     title: "Homebrew: colima"
+  - id: services
+    resource: https://docs.brew.sh/Manpage#services-subcommand
+    title: "Homebrew manpage: brew services"
 ---
 # Colima
 
@@ -63,6 +69,31 @@ colima stop
 
 After `colima start`, the `docker` client on macOS works with no extra setup. To resize an existing VM, run `colima stop`, then `colima start` with new `--cpu` or `--memory` values.[^colima]
 
+## Start at login with Homebrew
+
+If you installed Colima with Homebrew, the Colima FAQ says the easiest way to start it automatically is a Homebrew service:[^faq]
+
+```sh
+brew services start colima        # start now, and again at every login
+brew services list                # check it's running
+brew services restart colima
+brew services stop colima         # stop, and don't start at login
+```
+
+Without `sudo`, `brew services` starts the service at login.[^services] The service runs `colima start -f` and logs to `$(brew --prefix)/var/log/colima.log`.[^packages] It uses no extra flags; to start with other settings, such as Kubernetes, set them in the config file with `colima start --edit`.[^faq]
+
+## Run without a background service
+
+Start and stop Colima yourself; it won't start again at login:[^faq] [^help]
+
+```sh
+colima start                      # start the VM; your terminal is free again
+colima status
+colima stop                       # when you're done
+
+colima start --foreground         # or keep Colima attached to this terminal
+```
+
 ## See also
 
 - [Containers](../concepts/containers.md)
@@ -71,4 +102,7 @@ After `colima start`, the `docker` client on macOS works with no extra setup. To
 
 [^colima]: [abiosoft/colima README](https://github.com/abiosoft/colima)
 [^install]: [Colima installation options](https://github.com/abiosoft/colima/blob/main/docs/INSTALL.md)
-[^packages]: Homebrew: [colima](https://formulae.brew.sh/formula/colima); [releases](https://github.com/abiosoft/colima/releases); versions checked 2026-10-21
+[^faq]: [Colima FAQ: Does Colima support autostart?](https://github.com/abiosoft/colima/blob/main/docs/FAQ.md#does-colima-support-autostart)
+[^packages]: Homebrew: [colima](https://formulae.brew.sh/formula/colima) (versions checked 2026-10-21; service definition checked 2026-10-23); [releases](https://github.com/abiosoft/colima/releases)
+[^help]: `colima --help` and `colima start --help`, Colima 0.10.3 on the maintainer's Mac, 2026-10-23
+[^services]: [Homebrew manpage: brew services](https://docs.brew.sh/Manpage#services-subcommand)
