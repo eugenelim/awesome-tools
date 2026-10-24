@@ -209,9 +209,9 @@ brew install ripgrep fd jq tree
 
 # Essentials: everyday utilities
 brew install --cask c0desurfer/tap/swift-salamander
+brew install --cask firefox@developer-edition
 brew install --cask chang-07/tap/rascal
 brew install --cask lab421/tap/forel
-brew install --cask firefox@developer-edition
 brew install --cask sigmaos vorssaint
 
 # AI-assisted coding
