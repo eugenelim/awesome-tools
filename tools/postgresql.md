@@ -37,6 +37,12 @@ sources:
   - id: docker
     resource: https://github.com/docker-library/docs/blob/master/postgres/content.md
     title: Docker Official Image postgres documentation
+  - id: pg-ctl
+    resource: https://www.postgresql.org/docs/current/app-pg-ctl.html
+    title: pg_ctl documentation
+  - id: services
+    resource: https://docs.brew.sh/Manpage#services-subcommand
+    title: "Homebrew manpage: brew services"
   - id: packages
     resource: https://formulae.brew.sh/formula/postgresql@18
     title: "Homebrew: postgresql@18, libpq; winget: PostgreSQL.PostgreSQL.18; Chocolatey: postgresql, postgresql18"
@@ -54,7 +60,7 @@ An open-source object-relational database server, released under the PostgreSQL 
 
 | Platform | Command |
 | --- | --- |
-| macOS | `brew install postgresql@18` then `brew services start postgresql@18`, or [Postgres.app](./postgres-app.md) |
+| macOS | `brew install postgresql@18`, then [start it](#run-on-macos-with-homebrew); or [Postgres.app](./postgres-app.md) |
 | macOS (client only) | `brew install libpq` |
 | Windows (recommended) | `winget install PostgreSQL.PostgreSQL.18` |
 | Windows (alternative) | `choco install postgresql18` |
@@ -75,6 +81,40 @@ sudo apt install postgresql-18
 In the Docker image, `POSTGRES_PASSWORD` is required. From PostgreSQL 18 the volume to mount is `/var/lib/postgresql`; for 17 and earlier it's `/var/lib/postgresql/data`.[^docker] See [Docker CLI](./docker-cli.md) for running containers without Docker Desktop.
 
 On 2026-10-21, Homebrew (`postgresql@18`, `libpq`), winget and Chocolatey (`postgresql`, `postgresql18`) all had 18.6.[^packages]
+
+## Run on macOS with Homebrew
+
+Homebrew's `postgresql@18` creates a default database cluster in `$(brew --prefix)/var/postgresql@18` when it installs.[^packages] Because the formula is keg-only, add its `bin` to `PATH` to run `psql` and `pg_ctl`:[^packages]
+
+```sh
+# add to ~/.zshrc, then open a new terminal
+export PATH="$(brew --prefix postgresql@18)/bin:$PATH"
+```
+
+### Start now and at every login
+
+```sh
+brew services start postgresql@18     # start now, and again at every login
+brew services list                    # check it's running
+brew services restart postgresql@18
+brew services stop postgresql@18      # stop, and don't start at login
+```
+
+Without `sudo`, `brew services` starts the service at login.[^services] The service runs `postgres -D $(brew --prefix)/var/postgresql@18`, restarts it if it crashes, and logs to `$(brew --prefix)/var/log/postgresql@18.log`.[^packages]
+
+### Run without a background service
+
+Start and stop the server yourself with `pg_ctl`; it won't start again at login:[^pg-ctl]
+
+```sh
+pg_ctl -D "$(brew --prefix)/var/postgresql@18" -l "$(brew --prefix)/var/log/postgresql@18.log" start
+pg_ctl -D "$(brew --prefix)/var/postgresql@18" status
+pg_ctl -D "$(brew --prefix)/var/postgresql@18" stop
+```
+
+`-D` is the data directory, and you can set `PGDATA` instead of passing it each time. `-l` appends the server log to a file. `stop` uses fast mode by default: it doesn't wait for clients, and rolls back open transactions.[^pg-ctl]
+
+If the server won't start after an unclean shutdown, with a `postmaster.pid` lock file error, and no `postgres` is running, delete the stale file: `rm "$(brew --prefix)/var/postgresql@18/postmaster.pid"`.[^packages]
 
 ## Use
 
@@ -101,4 +141,6 @@ The second command, from the Docker image docs, runs psql from a container again
 [^windows]: [PostgreSQL Windows installers](https://www.postgresql.org/download/windows/)
 [^ubuntu]: [PostgreSQL Ubuntu packages and Apt repository](https://www.postgresql.org/download/linux/ubuntu/)
 [^docker]: [Docker Official Image postgres documentation](https://github.com/docker-library/docs/blob/master/postgres/content.md)
-[^packages]: Homebrew: [postgresql@18](https://formulae.brew.sh/formula/postgresql@18), [libpq](https://formulae.brew.sh/formula/libpq); winget: [PostgreSQL.PostgreSQL.18](https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/PostgreSQL/18); Chocolatey: [postgresql](https://community.chocolatey.org/packages/postgresql), [postgresql18](https://community.chocolatey.org/packages/postgresql18); versions checked 2026-10-21
+[^pg-ctl]: [pg_ctl documentation](https://www.postgresql.org/docs/current/app-pg-ctl.html)
+[^services]: [Homebrew manpage: brew services](https://docs.brew.sh/Manpage#services-subcommand)
+[^packages]: Homebrew: [postgresql@18](https://formulae.brew.sh/formula/postgresql@18), [libpq](https://formulae.brew.sh/formula/libpq); winget: [PostgreSQL.PostgreSQL.18](https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PostgreSQL/PostgreSQL/18); Chocolatey: [postgresql](https://community.chocolatey.org/packages/postgresql), [postgresql18](https://community.chocolatey.org/packages/postgresql18); versions checked 2026-10-21; service definition and caveats checked 2026-10-24
