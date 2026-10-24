@@ -208,7 +208,7 @@ The commands follow the same groups. Copy the essentials, then the groups you ne
 
 ### Homebrew
 
-Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebrew.md#set-up). To update everything later, run `brew update && brew upgrade`.
+Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebrew.md#set-up). To update everything later, run `brew update && brew upgrade`, then `uv python upgrade` for uv's Pythons and `uv tool upgrade --all` for uv tools.
 
 ```sh
 # Essentials: core setup

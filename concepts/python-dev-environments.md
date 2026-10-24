@@ -103,7 +103,21 @@ The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew]
 uv downloads a missing Python the first time a command needs one, but only when it can't find a suitable Python already installed. It prefers Pythons it installed itself; after those, it uses a Python already on your system (Homebrew's, pyenv's or macOS's `/usr/bin/python3`) before downloading.[^uv]
 
 - **Get the version you expect:** pin it, with `uv python pin` per project or `uv python pin --global` as your default. Install it first with `uv python install` so uv has its own copy.[^uv]
-- **Never use system Pythons:** set `python-preference = "only-managed"` in `~/.config/uv/uv.toml`, or pass `--managed-python` (environment variable `UV_MANAGED_PYTHON`).[^uv] [^uv-cli] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
+- **Never use system Pythons:** set `python-preference = "only-managed"` in `~/.config/uv/uv.toml`, or pass `--managed-python` (environment variable `UV_MANAGED_PYTHON`).[^uv] [^uv-cli]
+
+### Keeping Python up to date
+
+A pin such as `3.14` accepts any 3.14 release. uv uses the newest 3.14 it has installed, but doesn't download newer patch releases by itself.[^uv]
+
+```sh
+brew upgrade uv          # so uv knows about the newest Python releases
+uv python upgrade 3.14   # latest 3.14 patch release
+uv python upgrade        # or every Python uv installed
+```
+
+- **Virtual environments follow:** after an upgrade, uv prefers the new patch and keeps the old one. Virtual environments using that Python move to the new patch automatically, unless they were created with an exact patch, such as `uv venv -p 3.14.8`.[^uv]
+- **No minor-version jumps:** uv never moves you from 3.14 to 3.15 on its own, because that can change dependency resolution. Change the pin to switch.[^uv]
+- **uv-installed Pythons only:** upgrades don't apply to Homebrew's, pyenv's or other system Pythons.[^uv] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
 
 ## Everyday uv commands
 
