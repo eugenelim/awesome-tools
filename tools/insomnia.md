@@ -76,6 +76,7 @@ On 2026-10-21 Homebrew and winget had 13.3.1, the latest release (2026-10-09).[^
 ## See also
 
 - [API clients](../concepts/api-clients.md)
+- [Bruno](./bruno.md), which can import Insomnia collections
 
 [^insomnia]: [Kong/insomnia README](https://github.com/Kong/insomnia)
 [^releases]: [Kong/insomnia releases](https://github.com/Kong/insomnia/releases); `core@13.3.1`, checked 2026-10-21

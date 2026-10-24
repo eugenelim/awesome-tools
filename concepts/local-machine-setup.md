@@ -178,6 +178,7 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
+| [Bruno](../tools/bruno.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | MIT |
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Spectral](../tools/spectral.md) | [API description linter](./api-clients.md#api-description-linters) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
@@ -284,6 +285,7 @@ brew install --cask dbeaver-community      # multi-database SQL client
 docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
 # Web, APIs and design
+brew install --cask bruno         # offline API client; collections are files in Git
 brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSockets and SSE
 brew install spectral-cli         # lints OpenAPI, AsyncAPI and Arazzo files against rulesets
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
@@ -366,6 +368,7 @@ winget install Neo4j.Neo4jDesktop
 winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
 
 # Web and APIs
+winget install Bruno.Bruno
 winget install Insomnia.Insomnia
 
 # Data modelling (after installing uv above)

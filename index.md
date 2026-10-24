@@ -84,6 +84,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Antigravity](./tools/antigravity.md): Google's desktop app for orchestrating parallel AI agents.
 - [APOC Core](./tools/apoc.md): library of Cypher procedures and functions that ships with Neo4j.
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
+- [Bruno](./tools/bruno.md): open-source, offline API client with collections stored as files in Git; imports Postman and Insomnia.
 - [cargo-audit](./tools/cargo-audit.md): checks Cargo.lock against the RustSec Advisory Database.
 - [cargo-deny](./tools/cargo-deny.md): checks Rust dependencies for advisories, licences, banned crates and sources.
 - [cargo-nextest](./tools/cargo-nextest.md): faster Rust test runner with retries and JUnit output.

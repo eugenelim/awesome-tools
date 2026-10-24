@@ -9,9 +9,10 @@ Tools for sending, testing and designing HTTP, GraphQL and gRPC API requests.
 
 | Tool | Licence | macOS | Windows | Linux |
 | --- | --- | --- | --- | --- |
+| [Bruno](../tools/bruno.md) | MIT | `brew install --cask bruno` | `winget install Bruno.Bruno` | snap, Flatpak or apt repository |
 | [Insomnia](../tools/insomnia.md) | Apache-2.0 | `brew install --cask insomnia` | `winget install Insomnia.Insomnia` | `.deb`, `.rpm`, AppImage or snap from GitHub releases |
 
-Insomnia needs a free account for most features, but you can keep project data on your machine or in your own Git repository; see [Insomnia](../tools/insomnia.md#accounts-and-storage).
+Bruno is offline-only and keeps collections as files you can commit to Git; it imports Postman and Insomnia collections. Insomnia needs a free account for most features, but you can keep project data on your machine or in your own Git repository; see [Insomnia](../tools/insomnia.md#accounts-and-storage).
 
 ## API description linters
 
