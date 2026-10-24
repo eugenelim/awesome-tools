@@ -14,6 +14,7 @@ Software tools worth knowing about (developer tools, everyday apps and self-host
 - [Python dev environments](./concepts/python-dev-environments.md): uv vs pyenv for switching Python versions (recommends uv).
 - [Node.js dev environments](./concepts/node-dev-environments.md): fnm, mise, nvm and Volta for switching Node.js versions (recommends fnm).
 - [Go dev environments](./concepts/go-dev-environments.md): one Go install plus built-in toolchain switching (no version manager needed).
+- [Rust dev environments](./concepts/rust-dev-environments.md): rustup for toolchains, per-project pins and the rustfmt, Clippy and rust-analyzer components.
 - [LinkML dev environment](./concepts/linkml-dev-environment.md): uv, copier and just with the linkml-project-copier template (recommended), or LinkML on its own.
 
 ## Categories
@@ -54,6 +55,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 
 - [Python developer tools](./concepts/python-tools.md): linting, formatting, type checking, testing and Git hooks for Python.
 - [Go developer tools](./concepts/go-tools.md): linting, debugging, vulnerability scanning and releases for Go.
+- [Rust developer tools](./concepts/rust-tools.md): rustup components, testing and dependency checks for Rust.
 
 ### Containers and Kubernetes
 
@@ -82,6 +84,9 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Antigravity](./tools/antigravity.md): Google's desktop app for orchestrating parallel AI agents.
 - [APOC Core](./tools/apoc.md): library of Cypher procedures and functions that ships with Neo4j.
 - [Bitwarden](./tools/bitwarden.md): open-source password manager.
+- [cargo-audit](./tools/cargo-audit.md): checks Cargo.lock against the RustSec Advisory Database.
+- [cargo-deny](./tools/cargo-deny.md): checks Rust dependencies for advisories, licences, banned crates and sources.
+- [cargo-nextest](./tools/cargo-nextest.md): faster Rust test runner with retries and JUnit output.
 - [Chocolatey](./tools/chocolatey.md): package manager for Windows.
 - [Claude Code](./tools/claude-code.md): Anthropic's agentic coding tool for the terminal.
 - [Codex](./tools/codex.md): OpenAI's open-source terminal coding agent.

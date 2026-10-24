@@ -12,6 +12,7 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 - [Notes, knowledge and email](#notes-knowledge-and-email)
 - [Python](#python)
 - [Go](#go)
+- [Rust](#rust)
 - [Containers and Kubernetes](#containers-and-kubernetes)
 - [Databases and vector search](#databases-and-vector-search)
 - [Web, APIs and design](#web-apis-and-design)
@@ -118,6 +119,16 @@ Install Go itself as described in [Go dev environments](./go-dev-environments.md
 | [Delve](../tools/delve.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
 | [govulncheck](../tools/govulncheck.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | BSD-3-Clause |
 | [GoReleaser](../tools/goreleaser.md) | [Go developer tool](./go-tools.md) | ✓ | ✓ | ✓ | MIT |
+
+## Rust
+
+Install Rust with rustup as described in [Rust dev environments](./rust-dev-environments.md); rustfmt and Clippy come with it.
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [cargo-nextest](../tools/cargo-nextest.md) | [Rust developer tool](./rust-tools.md) | ✓ | ✓ | ✓ | Apache-2.0 OR MIT |
+| [cargo-deny](../tools/cargo-deny.md) | [Rust developer tool](./rust-tools.md) | ✓ | ✓ | ✓ | Apache-2.0 OR MIT |
+| [cargo-audit](../tools/cargo-audit.md) | [Rust developer tool](./rust-tools.md) | ✓ | ✓ | ✓ | Apache-2.0 OR MIT |
 
 ## Containers and Kubernetes
 
@@ -247,6 +258,15 @@ brew install delve                            # debugger (dlv)
 brew install govulncheck                      # finds known vulnerabilities your code reaches
 brew install --cask goreleaser/tap/goreleaser # release automation
 
+# Rust: see the Rust guide
+brew install rustup                           # Rust toolchains and components
+export PATH="$(brew --prefix rustup)/bin:$HOME/.cargo/bin:$PATH"  # keg-only; also add this line to ~/.zshrc
+rustup default stable                         # stable Rust, with rustfmt and Clippy
+rustup component add rust-analyzer            # language server for editors
+brew install cargo-nextest                    # faster test runner
+brew install cargo-deny                       # dependency advisories, licences and sources
+brew install cargo-audit                      # RustSec advisories
+
 # Containers and Kubernetes
 brew install docker docker-compose docker-buildx colima  # Docker CLI without Docker Desktop
 brew install kubectl helm k9s kind kubectx              # kubectx installs kubens too
@@ -317,6 +337,10 @@ winget install GoLang.Go                         # Go itself; switches toolchain
 winget install GolangCI.golangci-lint            # runs Go linters in parallel, and formats code
 winget install goreleaser.goreleaser             # release automation
 
+# Rust: needs the MSVC build tools; see the Rust guide
+winget install Rustlang.Rustup                   # Rust toolchains and components
+winget install nextest.cargo-nextest             # faster test runner
+
 # Containers and Kubernetes
 winget install Docker.DockerCLI                  # client only; run Docker Engine in WSL 2
 winget install -e --id Kubernetes.kubectl
@@ -347,7 +371,7 @@ choco install himalaya                           # email; or: scoop install hima
 choco install hermes-desktop                     # personal AI agents
 ```
 
-Delve, govulncheck, mypy, pytest and pre-commit have no winget package; install them with `go install` or uv as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker. Qdrant has no winget or Chocolatey package; use Docker or the release zip. Colima doesn't run on Windows.
+Delve, govulncheck, mypy, pytest, pre-commit, cargo-deny and cargo-audit have no winget package; install them with `go install`, uv or `cargo install` as their pages show. Himalaya has no winget package either; use Chocolatey or Scoop. The Neo4j server has no Windows package; use its zip or Docker. Qdrant has no winget or Chocolatey package; use Docker or the release zip. Colima doesn't run on Windows.
 
 Every winget tool above except Multi Commander, ty and Neo4j Desktop also has a Chocolatey package (Insomnia's is years out of date); IDs are on each tool page. Watch for the name traps: `zed` (use `zed-editor`), `orca` and `nvm`.
 
