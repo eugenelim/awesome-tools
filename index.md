@@ -151,6 +151,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Schema Automator](./tools/schema-automator.md): drafts LinkML schemas from TSV data or JSON Schema (`schemauto`).
 - [SigmaOS](./tools/sigmaos.md): WebKit-based macOS browser with workspaces and an AI assistant.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
+- [Spectral](./tools/spectral.md): open-source linter for OpenAPI, AsyncAPI and Arazzo files.
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
 - [tree](./tools/tree.md): shows directories as a tree.
 - [ty](./tools/ty.md): Astral's Python type checker and language server (beta).

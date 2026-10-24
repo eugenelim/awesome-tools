@@ -179,6 +179,7 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Spectral](../tools/spectral.md) | [API description linter](./api-clients.md#api-description-linters) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
 
 ## Ontologies and data modelling
@@ -283,6 +284,7 @@ docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
 # Web, APIs and design
 brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSockets and SSE
+brew install spectral-cli         # lints OpenAPI, AsyncAPI and Arazzo files against rulesets
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
 
 # Ontologies and data modelling

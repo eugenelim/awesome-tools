@@ -12,3 +12,11 @@ Tools for sending, testing and designing HTTP, GraphQL and gRPC API requests.
 | [Insomnia](../tools/insomnia.md) | Apache-2.0 | `brew install --cask insomnia` | `winget install Insomnia.Insomnia` | `.deb`, `.rpm`, AppImage or snap from GitHub releases |
 
 Insomnia needs a free account for most features, but you can keep project data on your machine or in your own Git repository; see [Insomnia](../tools/insomnia.md#accounts-and-storage).
+
+## API description linters
+
+| Tool | Licence | macOS | Windows | Linux |
+| --- | --- | --- | --- | --- |
+| [Spectral](../tools/spectral.md) | Apache-2.0 | `brew install spectral-cli` | `npm install -g @stoplight/spectral-cli` or `spectral.exe` | npm or release binary |
+
+Spectral lints OpenAPI, AsyncAPI and Arazzo documents against rulesets, such as an API style guide.
