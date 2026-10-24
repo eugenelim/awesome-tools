@@ -135,6 +135,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [OpenKnowledge](./tools/openknowledge.md): WYSIWYG Markdown editor and knowledge base for humans and agents.
 - [Orca](./tools/orca.md): ADE for parallel agents in git worktrees.
 - [Paper](./tools/paper.md): design tool with an HTML/CSS canvas that agents can edit through MCP.
+- [Penpot](./tools/penpot.md): open-source design and prototyping platform, in the browser or self-hosted.
 - [pgAdmin 4](./tools/pgadmin.md): administration and development GUI for PostgreSQL.
 - [pgcli](./tools/pgcli.md): PostgreSQL terminal client with auto-completion and syntax highlighting.
 - [pgvector](./tools/pgvector.md): vector similarity search extension for PostgreSQL.

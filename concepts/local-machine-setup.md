@@ -182,6 +182,7 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Spectral](../tools/spectral.md) | [API description linter](./api-clients.md#api-description-linters) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
+| [Penpot](../tools/penpot.md) | [Design tool](./design-tools.md) | ✓ (web, Docker) | ✓ (web, Docker) | ✓ (web, Docker) | MPL-2.0 |
 | [ImageOptim](../tools/imageoptim.md) | [Design tool](./design-tools.md#image-optimisation) | ✓ | | | GPL-2.0-or-later |
 
 ## Ontologies and data modelling
@@ -291,6 +292,7 @@ brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSocke
 brew install spectral-cli         # lints OpenAPI, AsyncAPI and Arazzo files against rulesets
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
 brew install --cask imageoptim    # shrinks JPEG, PNG, SVG and GIF files and strips metadata
+# Penpot has no Homebrew package: use penpot.app, or self-host with Docker (see the Penpot page)
 
 # Ontologies and data modelling
 brew install openjdk@21                    # Java 17+ for VocBench; skip if you installed neo4j, which installs it
@@ -306,7 +308,7 @@ brew install hermes-agent
 brew install --cask hermes-desktop
 ```
 
-VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant, openGym (Docker) and WebProtégé (Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
+VelaTerm, SilverBullet, Wick, VocBench, Rill, Qdrant, openGym (Docker), WebProtégé (Docker) and Penpot (web or Docker) have no Homebrew package. The Protégé and Muse casks are disabled. Install these from their websites.
 
 ### Windows
 

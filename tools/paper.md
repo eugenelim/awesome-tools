@@ -55,6 +55,7 @@ Requires macOS 13 or later on Apple silicon.[^homebrew]
 ## See also
 
 - [Design tools](../concepts/design-tools.md)
+- [Penpot](./penpot.md)
 
 [^paper]: [Paper homepage](https://paper.design/) and [pricing](https://paper.design/pricing)
 [^homebrew]: [Homebrew: paper-design](https://formulae.brew.sh/cask/paper-design)
