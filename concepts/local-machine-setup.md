@@ -241,6 +241,7 @@ brew install ty          # type checker and language server (beta)
 brew install pre-commit  # Git pre-commit hooks
 
 # Go
+brew install go                               # Go itself; switches toolchains per project
 brew install golangci-lint                    # runs linters in parallel, and formats code
 brew install delve                            # debugger (dlv)
 brew install govulncheck                      # finds known vulnerabilities your code reaches
@@ -312,6 +313,7 @@ winget install Schniz.fnm                        # Node.js version manager
 winget install jdx.mise                          # version manager for Node.js and other languages
 
 # Go
+winget install GoLang.Go                         # Go itself; switches toolchains per project
 winget install GolangCI.golangci-lint            # runs Go linters in parallel, and formats code
 winget install goreleaser.goreleaser             # release automation
 
