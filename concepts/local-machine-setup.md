@@ -286,7 +286,7 @@ brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSocke
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
 
 # Ontologies and data modelling
-brew install openjdk@17                    # Java 17+ for VocBench
+brew install openjdk@21                    # Java 17+ for VocBench; skip if you installed neo4j, which installs it
 uv tool install linkml                     # or a LinkML project; see the LinkML guide
 uv tool install schema-automator           # optional LinkML add-on
 uv tool install linkml-owl                 # optional LinkML add-on
