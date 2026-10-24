@@ -135,6 +135,8 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 
 ## Databases and vector search
 
+### PostgreSQL
+
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
 | [PostgreSQL](../tools/postgresql.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | PostgreSQL |
@@ -143,12 +145,22 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [pgcli](../tools/pgcli.md) | [Database](./databases.md) | ✓ | | ✓ | BSD-3-Clause |
 | [Postgres MCP Pro](../tools/postgres-mcp-pro.md) | [Database](./databases.md) (MCP server) | ✓ | ✓ | ✓ | MIT |
 | [pgvector](../tools/pgvector.md) | [Vector search](./databases.md#vector-search) | ✓ | ✓ | ✓ | PostgreSQL |
-| [Qdrant](../tools/qdrant.md) | [Vector search](./databases.md#vector-search) | ✓ | ✓ | ✓ | Apache-2.0 |
+
+### Neo4j
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
 | [Neo4j Community Edition](../tools/neo4j.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Cypher Shell](../tools/cypher-shell.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | GPL-3.0 |
 | [Neo4j Browser](../tools/neo4j-browser.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
 | [APOC Core](../tools/apoc.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Neo4j Desktop](../tools/neo4j-desktop.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | |
+
+### Other databases and clients
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Qdrant](../tools/qdrant.md) | [Vector search](./databases.md#vector-search) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [DBeaver Community](../tools/dbeaver.md) | [Database](./databases.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 
 ## Web, APIs and design
@@ -229,9 +241,11 @@ brew install docker docker-compose docker-buildx colima  # Docker CLI without Do
 brew install kubectl helm k9s kind kubectx              # kubectx installs kubens too
 
 # Databases and vector search
-brew install postgresql@18 pgcli pgvector  # or Postgres.app instead of postgresql@18
-brew install neo4j                         # includes cypher-shell
-brew install --cask pgadmin4 dbeaver-community neo4j-desktop
+brew install postgresql@18 pgcli pgvector  # PostgreSQL; or Postgres.app instead of postgresql@18
+brew install --cask pgadmin4
+brew install neo4j                         # Neo4j; includes cypher-shell
+brew install --cask neo4j-desktop
+brew install --cask dbeaver-community      # multi-database SQL client
 docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
 # Web, APIs and design
@@ -303,8 +317,8 @@ winget install --id ahmetb.kubens
 # Databases
 winget install PostgreSQL.PostgreSQL.18
 winget install PostgreSQL.pgAdmin
-winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
 winget install Neo4j.Neo4jDesktop
+winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
 
 # Web and APIs
 winget install Insomnia.Insomnia
