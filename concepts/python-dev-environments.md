@@ -241,7 +241,7 @@ These commands are from the pyenv README.[^pyenv]
 - [Go dev environments](./go-dev-environments.md)
 - [Local machine setup](./local-machine-setup.md)
 
-[^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/) [Python versions](https://docs.astral.sh/uv/concepts/python-versions/) and [Configuration files](https://docs.astral.sh/uv/concepts/configuration-files/)
+[^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/), [Python versions](https://docs.astral.sh/uv/concepts/python-versions/) and [Configuration files](https://docs.astral.sh/uv/concepts/configuration-files/)
 [^pyenv]: [pyenv README](https://github.com/pyenv/pyenv)
 [^homebrew]: Homebrew: [uv](https://formulae.brew.sh/formula/uv), [pyenv](https://formulae.brew.sh/formula/pyenv)
 
