@@ -1,7 +1,7 @@
 ---
 type: Guide
 title: Python dev environments
-description: "Managing Python versions and project environments: uv vs pyenv, with a recommendation."
+description: "Managing Python versions and project environments: uv vs pyenv, with a recommendation and everyday uv commands."
 tags:
   - python
   - version-manager
@@ -22,6 +22,33 @@ sources:
   - id: choco
     resource: https://community.chocolatey.org/packages/uv
     title: "Chocolatey: uv"
+  - id: uv-projects
+    resource: https://docs.astral.sh/uv/guides/projects/
+    title: "uv docs: Working on projects"
+  - id: uv-deps
+    resource: https://docs.astral.sh/uv/concepts/projects/dependencies/
+    title: "uv docs: Managing dependencies"
+  - id: uv-run
+    resource: https://docs.astral.sh/uv/concepts/projects/run/
+    title: "uv docs: Running commands in projects"
+  - id: uv-sync
+    resource: https://docs.astral.sh/uv/concepts/projects/sync/
+    title: "uv docs: Locking and syncing"
+  - id: uv-export
+    resource: https://docs.astral.sh/uv/concepts/projects/export/
+    title: "uv docs: Exporting a lockfile"
+  - id: uv-tools
+    resource: https://docs.astral.sh/uv/guides/tools/
+    title: "uv docs: Using tools"
+  - id: uv-scripts
+    resource: https://docs.astral.sh/uv/guides/scripts/
+    title: "uv docs: Running scripts"
+  - id: uv-pip
+    resource: https://docs.astral.sh/uv/pip/compile/
+    title: "uv docs: Locking environments (uv pip)"
+  - id: uv-cli
+    resource: https://docs.astral.sh/uv/reference/cli/
+    title: uv CLI reference
 ---
 # Python dev environments
 
@@ -71,6 +98,124 @@ uv python upgrade               # move to latest patch releases
 
 The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
 
+## Everyday uv commands
+
+Project commands work in a folder with a `pyproject.toml`. Prefer `uv add`, `uv run` and `uv sync` over installing packages into an activated environment.
+
+### Projects
+
+```sh
+uv init my-project              # new project in a new folder
+uv init                         # or in the current folder
+uv run main.py                  # creates .venv and uv.lock on first run
+```
+
+| File | Purpose |
+| --- | --- |
+| `pyproject.toml` | Project metadata and declared dependencies |
+| `.python-version` | The project's default Python version |
+| `uv.lock` | Exact resolved versions for all platforms. Commit it; don't edit it by hand |
+| `.venv/` | The project's virtual environment |
+
+From the projects guide.[^uv-projects]
+
+### Dependencies
+
+```sh
+uv add requests                 # add a dependency
+uv add 'httpx>=0.20'            # with a version constraint
+uv add git+https://github.com/encode/httpx  # from Git
+uv add --dev pytest             # development dependency
+uv add --group lint ruff        # another dependency group
+uv add -r requirements.txt      # import from a requirements file
+uv remove requests
+uv tree                         # show the dependency tree
+```
+
+`uv add` and `uv remove` update `pyproject.toml`, `uv.lock` and the environment.[^uv-deps] [^uv-projects] `uv tree` is from the CLI reference.[^uv-cli]
+
+### Running code
+
+```sh
+uv run app.py                   # run in the project environment
+uv run pytest                   # run a tool installed in the project
+uv run -- flask run -p 3000     # use -- before a command's own flags
+uv run --with httpx==0.26.0 python -c "import httpx; print(httpx.__version__)"  # extra package for this run only
+uv run --python 3.12 app.py     # pick a Python version
+```
+
+Before each run, `uv run` checks that the lockfile matches `pyproject.toml` and that the environment matches the lockfile.[^uv-run] [^uv-sync] For tools that need your project installed, such as pytest or mypy, use `uv run` rather than `uvx`.[^uv-tools]
+
+### Lockfile and syncing
+
+```sh
+uv lock                         # create or update uv.lock
+uv lock --check                 # fail if uv.lock is out of date
+uv lock --upgrade               # upgrade every package
+uv lock --upgrade-package requests  # upgrade one package
+uv sync                         # make .venv match uv.lock exactly
+uv sync --inexact               # keep packages that aren't in the lockfile
+uv run --locked pytest          # fail instead of updating uv.lock (for CI)
+uv run --frozen pytest          # use uv.lock without checking it
+uv run --no-sync pytest         # don't check the environment
+```
+
+- **No automatic upgrades:** uv doesn't treat a lockfile as out of date when new package versions are released. Upgrade with `--upgrade` or `--upgrade-package`.[^uv-sync]
+- **Exact syncing:** `uv sync` removes packages that aren't in the lockfile. `uv run` only adds missing ones, unless you pass `--exact`.[^uv-sync]
+- **`--locked`:** errors if `uv.lock` is missing or needs updating. It works on `uv sync` and `uv run`, and `uv lock --check` is the equivalent for `uv lock`.[^uv-cli] [^uv-sync]
+
+To hand the lockfile to tools that don't use uv:[^uv-export]
+
+```sh
+uv export --format requirements.txt --output-file requirements.txt
+uv export --format pylock.toml --output-file pylock.toml
+uv export --format cyclonedx1.5 --output-file sbom.json   # SBOM
+```
+
+### Command-line tools
+
+```sh
+uvx ruff check                  # run a tool in a temporary environment (same as uv tool run)
+uvx ruff@0.3.0 check            # an exact version; ruff@latest for the newest
+uv tool install ruff            # install and put it on PATH
+uv tool list
+uv tool upgrade ruff            # or: uv tool upgrade --all
+uv tool uninstall ruff
+uv tool update-shell            # add the tools folder to PATH
+```
+
+From the tools guide and CLI reference.[^uv-tools] [^uv-cli]
+
+### Single-file scripts
+
+```sh
+uv add --script example.py 'requests<3' rich   # add inline (PEP 723) dependencies
+uv run example.py                              # uv installs them before running
+uv lock --script example.py                    # lock the script's dependencies
+```
+
+`uv add --script` writes a `# /// script` block at the top of the file:[^uv-scripts]
+
+```python
+# /// script
+# dependencies = [
+#   "requests<3",
+#   "rich",
+# ]
+# ///
+```
+
+### pip-compatible commands
+
+For projects managed with `requirements.txt` instead of `pyproject.toml` and `uv.lock`:[^uv-pip]
+
+```sh
+uv venv
+uv pip compile requirements.in -o requirements.txt   # pin versions
+uv pip sync requirements.txt                         # make the environment match exactly
+uv pip install -r requirements.txt                   # install without removing anything
+```
+
 ## Setup with pyenv (if needed)
 
 ```sh
@@ -96,3 +241,21 @@ These commands are from the pyenv README.[^pyenv]
 [^choco]: [Chocolatey: uv](https://community.chocolatey.org/packages/uv)
 
 [^winget-pkg]: [winget: astral-sh.uv](https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/astral-sh/uv)
+
+[^uv-projects]: [uv docs: Working on projects](https://docs.astral.sh/uv/guides/projects/)
+
+[^uv-deps]: [uv docs: Managing dependencies](https://docs.astral.sh/uv/concepts/projects/dependencies/)
+
+[^uv-run]: [uv docs: Running commands in projects](https://docs.astral.sh/uv/concepts/projects/run/)
+
+[^uv-sync]: [uv docs: Locking and syncing](https://docs.astral.sh/uv/concepts/projects/sync/)
+
+[^uv-export]: [uv docs: Exporting a lockfile](https://docs.astral.sh/uv/concepts/projects/export/)
+
+[^uv-tools]: [uv docs: Using tools](https://docs.astral.sh/uv/guides/tools/)
+
+[^uv-scripts]: [uv docs: Running scripts](https://docs.astral.sh/uv/guides/scripts/)
+
+[^uv-pip]: [uv docs: Locking environments](https://docs.astral.sh/uv/pip/compile/)
+
+[^uv-cli]: [uv CLI reference](https://docs.astral.sh/uv/reference/cli/)
