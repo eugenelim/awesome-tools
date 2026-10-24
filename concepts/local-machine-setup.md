@@ -282,7 +282,8 @@ brew install --cask dbeaver-community      # multi-database SQL client
 docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
 # Web, APIs and design
-brew install --cask insomnia paper-design
+brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSockets and SSE
+brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
 
 # Ontologies and data modelling
 brew install openjdk@17                    # Java 17+ for VocBench
