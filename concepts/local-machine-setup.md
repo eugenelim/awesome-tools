@@ -287,7 +287,9 @@ brew install --cask paper-design  # design tool with an HTML/CSS canvas that age
 
 # Ontologies and data modelling
 brew install openjdk@21                    # Java 17+ for VocBench; skip if you installed neo4j, which installs it
-uv tool install linkml                     # or a LinkML project; see the LinkML guide
+uv tool install --with jinja2-time copier  # creates LinkML projects from the template; see the LinkML guide
+uv tool install rust-just                  # task runner the template uses
+uv tool install linkml                     # optional: LinkML commands outside a project
 uv tool install schema-automator           # optional LinkML add-on
 uv tool install linkml-owl                 # optional LinkML add-on
 mise use -g ubi:NeverBlink-OSS/linkml-scala  # optional: LinkML-Scala native CLI
@@ -363,7 +365,9 @@ winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolate
 winget install Insomnia.Insomnia
 
 # Data modelling (after installing uv above)
-uv tool install linkml
+uv tool install --with jinja2-time copier        # creates LinkML projects from the template
+uv tool install rust-just                        # task runner the template uses
+uv tool install linkml                           # optional: LinkML commands outside a project
 ```
 
 With Chocolatey, for tools winget lacks or only has as a preview. Install Chocolatey first (administrator PowerShell; see [Chocolatey](../tools/chocolatey.md)):
