@@ -30,6 +30,7 @@ Grouped like [index.md](./index.md) and the [overview](./concepts/local-machine-
 | Essentials: core setup | [Code editors](./concepts/code-editors.md) | [Zed](./tools/zed.md) |
 | Essentials: core setup | [Git and GitHub tools](./concepts/git-tools.md) | [GitHub CLI (gh)](./tools/github-cli.md) |
 | Essentials: core setup | [Windows platform tools](./concepts/windows-platform-tools.md) | [winget](./tools/winget.md), [Chocolatey](./tools/chocolatey.md), [WSL](./tools/wsl.md) |
+| Essentials: command-line utilities | [Command-line utilities](./concepts/command-line-utilities.md) | [ripgrep (rg)](./tools/ripgrep.md), [fd](./tools/fd.md), [jq](./tools/jq.md), [tree](./tools/tree.md) |
 | Essentials: everyday utilities | [Web browsers](./concepts/web-browsers.md) | [Firefox Developer Edition](./tools/firefox-developer-edition.md), [Rill](./tools/rill.md), [SigmaOS](./tools/sigmaos.md) |
 | Essentials: everyday utilities | [File managers](./concepts/file-managers.md) | macOS: [Rascal](./tools/rascal.md), [Swift Salamander](./tools/swift-salamander.md). Windows: [FreeCommander](./tools/freecommander.md), [Multi Commander](./tools/multicommander.md), [OneCommander](./tools/onecommander.md) |
 | Essentials: everyday utilities | [macOS utilities](./concepts/macos-utilities.md) | [Forel](./tools/forel.md), [Vorssaint](./tools/vorssaint.md), [Wick](./tools/wick.md) |

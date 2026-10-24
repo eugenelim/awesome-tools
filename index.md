@@ -29,6 +29,10 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Git and GitHub tools](./concepts/git-tools.md): command-line tools for Git and GitHub.
 - [Windows platform tools](./concepts/windows-platform-tools.md): winget vs Chocolatey recommendation, WSL and shell setup for Windows.
 
+### Essentials: command-line utilities
+
+- [Command-line utilities](./concepts/command-line-utilities.md): searching code, finding files, processing JSON and viewing directory trees.
+
 ### Essentials: everyday utilities
 
 - [Web browsers](./concepts/web-browsers.md): browsers, including developer builds.
@@ -86,6 +90,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [DBeaver Community](./tools/dbeaver.md): open-source desktop SQL client for 100+ databases.
 - [Delve](./tools/delve.md): debugger for Go (`dlv`).
 - [Docker CLI](./tools/docker-cli.md): open-source container CLI; licensing vs Docker Desktop.
+- [fd](./tools/fd.md): simple, fast alternative to `find`.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
 - [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
 - [FreeCommander](./tools/freecommander.md): free dual-panel Windows file manager.
@@ -101,6 +106,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Himalaya](./tools/himalaya.md): command-line email client for IMAP, SMTP, JMAP, Gmail and Microsoft Graph.
 - [Homebrew](./tools/homebrew.md): package manager for macOS and Linux, with setup and common commands.
 - [Insomnia](./tools/insomnia.md): Kong's open-source API client for REST, GraphQL, gRPC, WebSockets and SSE.
+- [jq](./tools/jq.md): command-line JSON processor.
 - [k9s](./tools/k9s.md): terminal UI for Kubernetes clusters.
 - [kind](./tools/kind.md): local Kubernetes clusters in Docker containers.
 - [kubectl](./tools/kubectl.md): the Kubernetes command-line tool.
@@ -134,12 +140,14 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Qdrant](./tools/qdrant.md): open-source vector database, with an official MCP server.
 - [pytest](./tools/pytest.md): Python testing framework with plain asserts and fixtures.
 - [Rascal](./tools/rascal.md): free, open-source keyboard-first Finder replacement.
+- [ripgrep (rg)](./tools/ripgrep.md): fast recursive regex search that respects `.gitignore`.
 - [Rill](./tools/rill.md): macOS browser (beta) that hands tasks to your Claude Code or Codex.
 - [Ruff](./tools/ruff.md): Python linter and formatter from Astral.
 - [Schema Automator](./tools/schema-automator.md): drafts LinkML schemas from TSV data or JSON Schema (`schemauto`).
 - [SigmaOS](./tools/sigmaos.md): WebKit-based macOS browser with workspaces and an AI assistant.
 - [SilverBullet](./tools/silverbullet.md): open-source, scriptable Markdown knowledge base.
 - [Swift Salamander](./tools/swift-salamander.md): dual-pane file manager for macOS.
+- [tree](./tools/tree.md): shows directories as a tree.
 - [ty](./tools/ty.md): Astral's Python type checker and language server (beta).
 - [VelaTerm](./tools/velaterm.md): terminal and coding-agent manager.
 - [VocBench](./tools/vocbench.md): collaborative web platform for OWL, SKOS and RDF.

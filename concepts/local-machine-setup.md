@@ -21,7 +21,7 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 
 ## Essentials
 
-The maintainer's picks for any machine, whatever your work: the core setup, then everyday utilities. Set up the [package manager](./package-managers.md) first.
+The maintainer's picks for any machine, whatever your work: the core setup, command-line utilities, then everyday utilities. Set up the [package manager](./package-managers.md) first.
 
 ### Core setup
 
@@ -37,6 +37,17 @@ A package manager, a password manager, a terminal, an editor and the GitHub CLI.
 | [winget](../tools/winget.md) | [Package manager](./package-managers.md) | | ✓ | | MIT |
 | [Chocolatey](../tools/chocolatey.md) | [Package manager](./package-managers.md) (fallback to winget) | | ✓ | | Apache-2.0 |
 | [WSL](../tools/wsl.md) | [Windows platform tool](./windows-platform-tools.md) | | ✓ | | MIT |
+
+### Command-line utilities
+
+Small terminal tools for searching code, finding files, processing JSON and viewing directory trees.
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [ripgrep (rg)](../tools/ripgrep.md) | [Command-line utility](./command-line-utilities.md) | ✓ | ✓ | ✓ | Unlicense OR MIT |
+| [fd](../tools/fd.md) | [Command-line utility](./command-line-utilities.md) | ✓ | ✓ | ✓ | Apache-2.0 OR MIT |
+| [jq](../tools/jq.md) | [Command-line utility](./command-line-utilities.md) | ✓ | ✓ | ✓ | MIT |
+| [tree](../tools/tree.md) | [Command-line utility](./command-line-utilities.md) | ✓ | | ✓ | GPL-2.0-or-later |
 
 ### Everyday utilities
 
@@ -180,6 +191,9 @@ Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebre
 # Essentials: core setup
 brew install --cask bitwarden ghostty zed
 brew install gh
+
+# Essentials: command-line utilities
+brew install ripgrep fd jq tree
 
 # Essentials: everyday utilities
 brew install --cask sigmaos vorssaint
