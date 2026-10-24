@@ -9,12 +9,12 @@ Every tool in this bundle: the essentials first, then the tools for each type of
 
 - [Essentials](#essentials)
 - [AI-assisted coding](#ai-assisted-coding)
+- [Notes, knowledge and email](#notes-knowledge-and-email)
 - [Python](#python)
 - [Go](#go)
 - [Containers and Kubernetes](#containers-and-kubernetes)
 - [Databases and vector search](#databases-and-vector-search)
 - [Web, APIs and design](#web-apis-and-design)
-- [Notes, knowledge and email](#notes-knowledge-and-email)
 - [Ontologies and data modelling](#ontologies-and-data-modelling)
 - [Personal AI agents](#personal-ai-agents)
 - [Install commands](#install-commands)
@@ -55,6 +55,7 @@ Browsers, file managers and small utilities. Pick the ones for your platform.
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
+| [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
 | [SigmaOS](../tools/sigmaos.md) | [Web browser](./web-browsers.md) | ✓ | | | |
 | [Rill](../tools/rill.md) | [Web browser](./web-browsers.md) | ✓ (Apple silicon) | | | |
 | [Rascal](../tools/rascal.md) | [File manager](./file-managers.md) | ✓ | | | MIT |
@@ -81,6 +82,17 @@ Coding agents, and agentic development environments (ADEs) for running several a
 | [Orca](../tools/orca.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
 | [herdr](../tools/herdr.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [VelaTerm](../tools/velaterm.md) | [ADE](./agentic-development-environments.md) | ✓ | ✓ | ✓ | MIT |
+
+## Notes, knowledge and email
+
+| Tool | Type | macOS | Windows | Linux | Licence |
+| --- | --- | --- | --- | --- | --- |
+| [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | |
+| [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
+| [Logseq](../tools/logseq.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | AGPL-3.0 |
+| [Octarine](../tools/octarine.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | |
+| [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
+| [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
 
 ## Python
 
@@ -143,20 +155,8 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 
 | Tool | Type | macOS | Windows | Linux | Licence |
 | --- | --- | --- | --- | --- | --- |
-| [Firefox Developer Edition](../tools/firefox-developer-edition.md) | [Web browser](./web-browsers.md) | ✓ | ✓ | ✓ | |
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
-
-## Notes, knowledge and email
-
-| Tool | Type | macOS | Windows | Linux | Licence |
-| --- | --- | --- | --- | --- | --- |
-| [Obsidian](../tools/obsidian.md) | [Knowledge management](./knowledge-management.md) | ✓ | | | |
-| [Logseq](../tools/logseq.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | AGPL-3.0 |
-| [Octarine](../tools/octarine.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | |
-| [SilverBullet](../tools/silverbullet.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | MIT |
-| [OpenKnowledge](../tools/openknowledge.md) | [Knowledge management](./knowledge-management.md) | ✓ | ✓ | ✓ | GPL-3.0 |
-| [Himalaya](../tools/himalaya.md) | [Email client](./email-clients.md) | ✓ | ✓ | ✓ | MIT OR Apache-2.0 |
 
 ## Ontologies and data modelling
 
@@ -196,14 +196,26 @@ brew install gh
 brew install ripgrep fd jq tree
 
 # Essentials: everyday utilities
+brew install --cask firefox@developer-edition
 brew install --cask sigmaos vorssaint
 brew install --cask c0desurfer/tap/swift-salamander chang-07/tap/rascal lab421/tap/forel
 
 # AI-assisted coding
-brew install --cask claude-code codex antigravity stablyai/orca/orca
-brew install copilot-cli pi-coding-agent herdr  # copilot-cli, not `copilot` (AWS's ECS tool)
+brew install --cask claude-code codex stablyai/orca/orca
+brew install copilot-cli  # not `copilot` (AWS's ECS tool)
+brew install --cask antigravity
+brew install pi-coding-agent
+brew install herdr
+
+# Notes, knowledge and email
+brew install node git
+brew install --cask obsidian
+npm install -g @inkeep/open-knowledge
+brew install --cask octarine logseq
+brew install himalaya
 
 # Python: add mypy and pytest per project with uv
+brew install uv
 brew install ruff ty pre-commit
 
 # Go
@@ -221,12 +233,7 @@ brew install --cask pgadmin4 dbeaver-community neo4j-desktop
 docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 
 # Web, APIs and design
-brew install --cask firefox@developer-edition insomnia paper-design
-
-# Notes, knowledge and email
-brew install --cask obsidian octarine logseq
-brew install node git && npm install -g @inkeep/open-knowledge
-brew install himalaya
+brew install --cask insomnia paper-design
 
 # Ontologies and data modelling
 brew install openjdk@17                    # Java 17+ for VocBench
@@ -267,6 +274,10 @@ winget install OpenAI.Codex
 winget install GitHub.Copilot
 winget install Google.Antigravity
 
+# Notes and knowledge
+winget install Obsidian.Obsidian
+winget install Logseq.Logseq
+
 # Python and Node.js
 winget install astral-sh.uv
 winget install astral-sh.ruff
@@ -295,10 +306,6 @@ winget install Neo4j.Neo4jDesktop
 
 # Web and APIs
 winget install Insomnia.Insomnia
-
-# Notes and knowledge
-winget install Obsidian.Obsidian
-winget install Logseq.Logseq
 
 # Data modelling (after installing uv above)
 uv tool install linkml

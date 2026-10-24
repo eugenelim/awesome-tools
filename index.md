@@ -45,6 +45,11 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [AI coding agents](./concepts/ai-coding-agents.md): command-line agents that read, edit and run code.
 - [Agentic development environments](./concepts/agentic-development-environments.md): running and supervising multiple AI coding agents.
 
+### Notes, knowledge and email
+
+- [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
+- [Email clients](./concepts/email-clients.md): applications for reading, searching and sending email.
+
 ### Programming languages
 
 - [Python developer tools](./concepts/python-tools.md): linting, formatting, type checking, testing and Git hooks for Python.
@@ -62,11 +67,6 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 
 - [API clients](./concepts/api-clients.md): sending, testing and designing API requests.
 - [Design tools](./concepts/design-tools.md): interface design and prototyping.
-
-### Notes, knowledge and email
-
-- [Knowledge management](./concepts/knowledge-management.md): Markdown-based notes and wikis.
-- [Email clients](./concepts/email-clients.md): applications for reading, searching and sending email.
 
 ### Ontologies and data modelling
 

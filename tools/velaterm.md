@@ -54,4 +54,4 @@ No Homebrew cask or formula.[^homebrew]
 - [Orca](./orca.md)
 
 [^velaterm]: [VelaTerm homepage](https://velaterm.com/)
-[^homebrew]: [Homebrew catalogue](https://formulae.brew.sh/): no VelaTerm package as of 2026-10-18
+[^homebrew]: [Homebrew catalogue](https://formulae.brew.sh/): no VelaTerm package as of 2026-10-23
