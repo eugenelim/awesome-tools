@@ -35,7 +35,7 @@ A free, open-source Mac app that makes image files smaller. Drop JPEG, PNG, SVG 
 brew install --cask imageoptim
 ```
 
-On 2026-10-24 Homebrew had 1.9.3, and the cask updates itself.[^packages] There's no Windows or Linux version.
+On 2026-10-24 Homebrew had 1.9.3, and the cask updates itself.[^packages]
 
 ## See also
 
