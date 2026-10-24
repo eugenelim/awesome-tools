@@ -36,6 +36,12 @@ sources:
   - id: docker
     resource: https://neo4j.com/docs/operations-manual/current/docker/introduction/
     title: Neo4j Operations Manual, Getting started with Neo4j in Docker
+  - id: cli
+    resource: https://neo4j.com/docs/operations-manual/current/neo4j-admin-neo4j-cli/
+    title: Neo4j Operations Manual, neo4j and neo4j-admin commands
+  - id: services
+    resource: https://docs.brew.sh/Manpage#services-subcommand
+    title: "Homebrew manpage: brew services"
   - id: packages
     resource: https://formulae.brew.sh/formula/neo4j
     title: "Homebrew: neo4j; Docker Hub: neo4j"
@@ -54,7 +60,7 @@ A graph database that stores data as nodes and relationships (a property graph),
 
 | Platform | Command |
 | --- | --- |
-| macOS | `brew install neo4j` then `brew services start neo4j`[^macos] |
+| macOS | `brew install neo4j`, then [start it](#run-on-macos-with-homebrew)[^macos] |
 | Windows | the Windows zip from the Neo4j Deployment Center (run `bin\neo4j console`), or Docker[^windows] |
 | Linux (Debian/Ubuntu) | add the `https://debian.neo4j.com` apt repository, then `sudo apt-get install neo4j`[^debian] |
 | Linux (RHEL, Fedora, Amazon Linux) | add the `https://yum.neo4j.com/stable/latest` repository, then `yum install neo4j-<version>`[^rpm] |
@@ -64,10 +70,33 @@ The Homebrew formula installs Community Edition as a service.[^macos] On Windows
 
 On 2026-10-21 Homebrew had 2026.10.0, the latest release, and installs [Cypher Shell](./cypher-shell.md) and `openjdk@21` with it. There's no winget package, and Chocolatey's `neo4j-community` is stuck at 3.5.1, so neither is listed.[^packages]
 
+## Run on macOS with Homebrew
+
+### Start now and at every login
+
+```sh
+brew services start neo4j        # start now, and again at every login
+brew services list               # check it's running
+brew services restart neo4j      # after changing the configuration file
+brew services stop neo4j         # stop, and don't start at login
+```
+
+Configuration changes only take effect after a restart.[^macos] Without `sudo`, `brew services` starts the service at login.[^services] The service runs `neo4j console` from `$(brew --prefix)/var/neo4j` and logs to `$(brew --prefix)/var/log/neo4j.log`.[^packages]
+
+### Run without a background service
+
+The Homebrew formula puts the `neo4j` command on `PATH`, so you can run the server yourself. It won't start again at login:[^cli] [^macos]
+
+```sh
+neo4j console      # in this terminal, with logs printed here
+neo4j start        # or as a background process (daemon)
+neo4j status
+neo4j stop
+```
+
 ## Use
 
 ```sh
-brew services start neo4j                 # macOS service
 $NEO4J_HOME/bin/neo4j console             # foreground, zip or tar install
 docker run --restart always \
   --publish=7474:7474 --publish=7687:7687 \
@@ -92,4 +121,6 @@ docker run --restart always \
 [^rpm]: [Neo4j Operations Manual, RPM installation](https://neo4j.com/docs/operations-manual/current/installation/linux/rpm/)
 [^windows]: [Neo4j Operations Manual, Windows installation](https://neo4j.com/docs/operations-manual/current/installation/windows/)
 [^docker]: [Neo4j Operations Manual, Getting started with Neo4j in Docker](https://neo4j.com/docs/operations-manual/current/docker/introduction/)
-[^packages]: Homebrew: [neo4j](https://formulae.brew.sh/formula/neo4j); Docker Hub: [neo4j](https://hub.docker.com/_/neo4j); Chocolatey: [neo4j-community](https://community.chocolatey.org/packages/neo4j-community); versions checked 2026-10-21
+[^cli]: [Neo4j Operations Manual, neo4j and neo4j-admin commands](https://neo4j.com/docs/operations-manual/current/neo4j-admin-neo4j-cli/)
+[^services]: [Homebrew manpage: brew services](https://docs.brew.sh/Manpage#services-subcommand)
+[^packages]: Homebrew: [neo4j](https://formulae.brew.sh/formula/neo4j); Docker Hub: [neo4j](https://hub.docker.com/_/neo4j); Chocolatey: [neo4j-community](https://community.chocolatey.org/packages/neo4j-community); versions checked 2026-10-21; service definition checked 2026-10-24
