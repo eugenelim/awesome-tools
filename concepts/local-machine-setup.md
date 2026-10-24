@@ -181,6 +181,7 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Spectral](../tools/spectral.md) | [API description linter](./api-clients.md#api-description-linters) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
+| [ImageOptim](../tools/imageoptim.md) | [Design tool](./design-tools.md#image-optimisation) | ✓ | | | GPL-2.0-or-later |
 
 ## Ontologies and data modelling
 
@@ -286,6 +287,7 @@ docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSockets and SSE
 brew install spectral-cli         # lints OpenAPI, AsyncAPI and Arazzo files against rulesets
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
+brew install --cask imageoptim    # shrinks JPEG, PNG, SVG and GIF files and strips metadata
 
 # Ontologies and data modelling
 brew install openjdk@21                    # Java 17+ for VocBench; skip if you installed neo4j, which installs it

@@ -110,6 +110,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Hermes Agent](./tools/hermes.md): Nous Research's open-source, self-hosted personal agent.
 - [Himalaya](./tools/himalaya.md): command-line email client for IMAP, SMTP, JMAP, Gmail and Microsoft Graph.
 - [Homebrew](./tools/homebrew.md): package manager for macOS and Linux, with setup and common commands.
+- [ImageOptim](./tools/imageoptim.md): free, open-source Mac app that shrinks image files and strips metadata.
 - [Insomnia](./tools/insomnia.md): Kong's open-source API client for REST, GraphQL, gRPC, WebSockets and SSE.
 - [jq](./tools/jq.md): command-line JSON processor.
 - [k9s](./tools/k9s.md): terminal UI for Kubernetes clusters.
