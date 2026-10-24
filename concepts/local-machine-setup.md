@@ -208,11 +208,12 @@ brew install gh
 brew install ripgrep fd jq tree
 
 # Essentials: everyday utilities
-brew install --cask c0desurfer/tap/swift-salamander
-brew install --cask firefox@developer-edition
-brew install --cask chang-07/tap/rascal
-brew install --cask lab421/tap/forel
-brew install --cask sigmaos vorssaint
+brew install --cask c0desurfer/tap/swift-salamander  # dual-pane file manager
+brew install --cask firefox@developer-edition        # Firefox with beta DevTools
+brew install --cask chang-07/tap/rascal              # keyboard-first Finder replacement
+brew install --cask lab421/tap/forel                 # folder automation (Hazel alternative)
+brew install --cask sigmaos                          # browser with workspaces and an AI assistant
+brew install --cask vorssaint                        # menu bar toolkit
 
 # AI-assisted coding
 brew install --cask claude-code codex stablyai/orca/orca
@@ -284,9 +285,9 @@ winget install Bitwarden.Bitwarden
 winget install ZedIndustries.Zed
 
 # Essentials: everyday utilities
-winget install MilosParipovic.OneCommander       # Pro licence needed for commercial use
-winget install MarekJasinski.FreeCommanderXE
-winget install MathiasSvensson.MultiCommander
+winget install MilosParipovic.OneCommander       # Explorer alternative with Miller columns; Pro licence needed for commercial use
+winget install MarekJasinski.FreeCommanderXE     # dual-panel file manager
+winget install MathiasSvensson.MultiCommander    # scriptable dual-pane file manager
 
 # AI-assisted coding
 winget install Anthropic.ClaudeCode
