@@ -96,7 +96,14 @@ uv venv                         # create .venv (downloads Python if missing)
 uv python upgrade               # move to latest patch releases
 ```
 
-The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
+The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew]
+
+### Which Python uv uses
+
+uv downloads a missing Python the first time a command needs one, but only when it can't find a suitable Python already installed. It prefers Pythons it installed itself; after those, it uses a Python already on your system (Homebrew's, pyenv's or macOS's `/usr/bin/python3`) before downloading.[^uv]
+
+- **Get the version you expect:** pin it, with `uv python pin` per project or `uv python pin --global` as your default. Install it first with `uv python install` so uv has its own copy.[^uv]
+- **Never use system Pythons:** set `python-preference = "only-managed"` in `~/.config/uv/uv.toml`, or pass `--managed-python` (environment variable `UV_MANAGED_PYTHON`).[^uv] [^uv-cli] On Windows, use `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`,[^uv] `winget install astral-sh.uv`[^winget-pkg] or `choco install uv`.[^choco]
 
 ## Everyday uv commands
 
@@ -234,7 +241,7 @@ These commands are from the pyenv README.[^pyenv]
 - [Go dev environments](./go-dev-environments.md)
 - [Local machine setup](./local-machine-setup.md)
 
-[^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/) and [Python versions](https://docs.astral.sh/uv/concepts/python-versions/)
+[^uv]: [uv README](https://github.com/astral-sh/uv), [Installing Python](https://docs.astral.sh/uv/guides/install-python/) [Python versions](https://docs.astral.sh/uv/concepts/python-versions/) and [Configuration files](https://docs.astral.sh/uv/concepts/configuration-files/)
 [^pyenv]: [pyenv README](https://github.com/pyenv/pyenv)
 [^homebrew]: Homebrew: [uv](https://formulae.brew.sh/formula/uv), [pyenv](https://formulae.brew.sh/formula/pyenv)
 
