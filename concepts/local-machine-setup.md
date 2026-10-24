@@ -229,12 +229,16 @@ brew install --cask octarine logseq
 brew install himalaya
 
 # Python: add mypy and pytest per project with uv
-brew install uv
-brew install ruff ty pre-commit
+brew install uv          # Python versions, environments, packages and tools
+brew install ruff        # linter and formatter
+brew install ty          # type checker and language server (beta)
+brew install pre-commit  # Git pre-commit hooks
 
 # Go
-brew install golangci-lint delve govulncheck
-brew install --cask goreleaser/tap/goreleaser
+brew install golangci-lint                    # runs linters in parallel, and formats code
+brew install delve                            # debugger (dlv)
+brew install govulncheck                      # finds known vulnerabilities your code reaches
+brew install --cask goreleaser/tap/goreleaser # release automation
 
 # Containers and Kubernetes
 brew install docker docker-compose docker-buildx colima  # Docker CLI without Docker Desktop
@@ -295,15 +299,15 @@ winget install Obsidian.Obsidian
 winget install Logseq.Logseq
 
 # Python and Node.js
-winget install astral-sh.uv
-winget install astral-sh.ruff
-winget install astral-sh.ty
-winget install Schniz.fnm
-winget install jdx.mise
+winget install astral-sh.uv                      # Python versions, environments, packages and tools
+winget install astral-sh.ruff                    # Python linter and formatter
+winget install astral-sh.ty                      # Python type checker and language server (beta)
+winget install Schniz.fnm                        # Node.js version manager
+winget install jdx.mise                          # version manager for Node.js and other languages
 
 # Go
-winget install GolangCI.golangci-lint
-winget install goreleaser.goreleaser
+winget install GolangCI.golangci-lint            # runs Go linters in parallel, and formats code
+winget install goreleaser.goreleaser             # release automation
 
 # Containers and Kubernetes
 winget install Docker.DockerCLI                  # client only; run Docker Engine in WSL 2
