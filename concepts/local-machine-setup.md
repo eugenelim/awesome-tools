@@ -203,6 +203,7 @@ Install Homebrew and add it to your shell first; see [Homebrew](../tools/homebre
 # Essentials: core setup
 brew install --cask bitwarden ghostty zed
 brew install gh
+brew install git
 
 # Essentials: command-line utilities
 brew install ripgrep fd jq tree
@@ -222,10 +223,14 @@ brew install --cask antigravity
 brew install pi-coding-agent
 brew install herdr
 
+# Node.js: fnm installs Node.js, which comes with npm; see the Node.js guide
+brew install fnm                           # Node.js version manager
+eval "$(fnm env --use-on-cd --shell zsh)"  # also add this line to ~/.zshrc
+fnm install --lts                          # the first version installed becomes the default
+
 # Notes, knowledge and email
-brew install node git
 brew install --cask obsidian
-npm install -g @inkeep/open-knowledge
+npm install -g @inkeep/open-knowledge      # needs Node.js 24+ and git, installed above
 brew install --cask octarine logseq
 brew install himalaya
 

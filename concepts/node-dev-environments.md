@@ -20,6 +20,12 @@ sources:
   - id: choco
     resource: https://community.chocolatey.org/packages/fnm
     title: "Chocolatey: fnm, mise, nvm"
+  - id: fnm
+    resource: https://github.com/Schniz/fnm
+    title: fnm README, commands and install source
+  - id: npm-folders
+    resource: https://docs.npmjs.com/cli/v11/configuring-npm/folders
+    title: "npm docs: Folders"
 ---
 # Node.js dev environments
 
@@ -50,15 +56,32 @@ npm comes with Node.js. mise can also install and pin npm, pnpm and Yarn as sepa
 
 ## Setup with fnm
 
+You don't need Homebrew's `node` formula: fnm installs Node.js itself.
+
 ```sh
 brew install fnm
-# add to ~/.zshrc
+# add to ~/.zshrc, then open a new terminal
 eval "$(fnm env --use-on-cd --shell zsh)"
-fnm install --lts
+fnm install --lts                  # latest LTS; the first version installed becomes the default
+fnm list                           # installed versions
+fnm default <version>              # change the default
 echo "<version>" > .node-version   # pin the project; fnm switches on cd
 ```
 
+The commands are from the fnm README and command reference; the default comes from `fnm install`'s source.[^fnm]
+
 On Windows, run `winget install Schniz.fnm` or `choco install fnm`, then add `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` to your PowerShell profile.[^node-vm] mise is on winget as `jdx.mise`[^winget-pkg] and on Chocolatey as `mise`. The Chocolatey `nvm` package is nvm-windows, a separate project from nvm.[^choco]
+
+### npm with fnm
+
+npm comes with each Node.js version, so install packages with npm as usual:
+
+```sh
+npm install <package>              # into the current project
+npm install -g <package>           # a global command-line tool
+```
+
+On macOS and Linux, npm puts global packages in the folder of the Node.js that runs it.[^npm-folders] fnm installs each Node.js version separately,[^fnm] so global packages belong to one version: after you switch to a new Node.js version, install them again.
 
 ## Setup with mise
 
@@ -81,6 +104,8 @@ These commands are from the mise docs.[^node-vm] The Homebrew formula is `mise`.
 [^node-vm]: [nvm README](https://github.com/nvm-sh/nvm), [fnm README](https://github.com/Schniz/fnm) and [commands](https://github.com/Schniz/fnm/blob/master/docs/commands.md), [Volta README](https://github.com/volta-cli/volta), [mise Node.js docs](https://mise.jdx.dev/lang/node.html)
 [^homebrew]: Homebrew: [fnm](https://formulae.brew.sh/formula/fnm), [mise](https://formulae.brew.sh/formula/mise), [nvm](https://formulae.brew.sh/formula/nvm), [volta](https://formulae.brew.sh/formula/volta)
 
+[^fnm]: [fnm README](https://github.com/Schniz/fnm), [command reference](https://github.com/Schniz/fnm/blob/master/docs/commands.md) and [`src/commands/install.rs`](https://github.com/Schniz/fnm/blob/master/src/commands/install.rs)
+[^npm-folders]: [npm docs: Folders](https://docs.npmjs.com/cli/v11/configuring-npm/folders)
 [^choco]: Chocolatey: [fnm](https://community.chocolatey.org/packages/fnm), [mise](https://community.chocolatey.org/packages/mise), [nvm (nvm-windows)](https://community.chocolatey.org/packages/nvm)
 
 [^winget-pkg]: [winget: jdx.mise](https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/jdx/mise)

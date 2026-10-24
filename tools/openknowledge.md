@@ -24,8 +24,8 @@ sources:
     resource: https://github.com/inkeep/open-knowledge
     title: inkeep/open-knowledge on GitHub
   - id: homebrew
-    resource: https://formulae.brew.sh/formula/node
-    title: "Homebrew: node and git formulae"
+    resource: https://formulae.brew.sh/formula/git
+    title: "Homebrew: git formula"
 ---
 # OpenKnowledge
 
@@ -56,11 +56,11 @@ Desktop apps for macOS 13 or later, Windows and Linux. A local web app and CLI r
 
 ## Install
 
-There's no Homebrew cask for the desktop app.[^homebrew] The CLI and web app need Node.js 24+ and git,[^ok-github] and both are available as Homebrew formulae.[^homebrew]
+There's no Homebrew cask for the desktop app.[^homebrew] The CLI and web app need Node.js 24+ and git.[^ok-github] Install Node.js with [fnm](../concepts/node-dev-environments.md#setup-with-fnm); npm comes with it. git is a Homebrew formula.[^homebrew]
 
 ```sh
-brew install node git
-npm install -g @inkeep/open-knowledge
+brew install git
+npm install -g @inkeep/open-knowledge   # with Node.js 24+ active in fnm
 cd your-project
 ok init
 ok start --open
@@ -74,4 +74,4 @@ ok start --open
 
 [^ok-docs]: [OpenKnowledge docs overview](https://openknowledge.ai/docs/get-started/overview)
 [^ok-github]: [inkeep/open-knowledge on GitHub](https://github.com/inkeep/open-knowledge)
-[^homebrew]: Homebrew: [node](https://formulae.brew.sh/formula/node) and [git](https://formulae.brew.sh/formula/git); no OpenKnowledge package in the [catalogue](https://formulae.brew.sh/)
+[^homebrew]: Homebrew: [git](https://formulae.brew.sh/formula/git); no OpenKnowledge package in the [catalogue](https://formulae.brew.sh/)
