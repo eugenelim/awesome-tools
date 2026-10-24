@@ -97,6 +97,7 @@ Grouped like the [overview](./concepts/local-machine-setup.md): essentials first
 - [Delve](./tools/delve.md): debugger for Go (`dlv`).
 - [Docker CLI](./tools/docker-cli.md): open-source container CLI; licensing vs Docker Desktop.
 - [fd](./tools/fd.md): simple, fast alternative to `find`.
+- [Figma](./tools/figma.md): collaborative interface design in the browser, with desktop apps and an MCP server.
 - [Firefox Developer Edition](./tools/firefox-developer-edition.md): Firefox with beta DevTools and developer defaults.
 - [Forel](./tools/forel.md): open-source folder automation for macOS (Hazel alternative).
 - [FreeCommander](./tools/freecommander.md): free dual-panel Windows file manager.

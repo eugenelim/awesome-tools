@@ -181,6 +181,7 @@ On a Mac, the Docker CLI with Colima replaces Docker Desktop; on Windows, run Do
 | [Bruno](../tools/bruno.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | MIT |
 | [Insomnia](../tools/insomnia.md) | [API client](./api-clients.md) | ✓ | ✓ | ✓ | Apache-2.0 |
 | [Spectral](../tools/spectral.md) | [API description linter](./api-clients.md#api-description-linters) | ✓ | ✓ | ✓ | Apache-2.0 |
+| [Figma](../tools/figma.md) | [Design tool](./design-tools.md) | ✓ | ✓ | (web) | Proprietary |
 | [Paper](../tools/paper.md) | [Design tool](./design-tools.md) | ✓ (Apple silicon) | | | |
 | [Penpot](../tools/penpot.md) | [Design tool](./design-tools.md) | ✓ (web, Docker) | ✓ (web, Docker) | ✓ (web, Docker) | MPL-2.0 |
 | [ImageOptim](../tools/imageoptim.md) | [Design tool](./design-tools.md#image-optimisation) | ✓ | | | GPL-2.0-or-later |
@@ -290,6 +291,7 @@ docker run -p 6333:6333 qdrant/qdrant      # Qdrant has no Homebrew package
 brew install --cask bruno         # offline API client; collections are files in Git
 brew install --cask insomnia      # API client for REST, GraphQL, gRPC, WebSockets and SSE
 brew install spectral-cli         # lints OpenAPI, AsyncAPI and Arazzo files against rulesets
+brew install --cask figma         # Figma desktop app: local fonts, notifications, tabs (optional; Figma runs in the browser)
 brew install --cask paper-design  # design tool with an HTML/CSS canvas that agents can edit
 brew install --cask imageoptim    # shrinks JPEG, PNG, SVG and GIF files and strips metadata
 # Penpot has no Homebrew package: use penpot.app, or self-host with Docker (see the Penpot page)
@@ -370,9 +372,10 @@ winget install PostgreSQL.pgAdmin
 winget install Neo4j.Neo4jDesktop
 winget install DBeaver.DBeaver.Community         # 26.2.0 vs 26.2.3 on Chocolatey, 2026-10-21
 
-# Web and APIs
+# Web, APIs and design
 winget install Bruno.Bruno
 winget install Insomnia.Insomnia
+winget install Figma.Figma
 
 # Data modelling (after installing uv above)
 uv tool install --with jinja2-time copier        # creates LinkML projects from the template

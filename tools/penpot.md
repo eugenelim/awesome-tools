@@ -62,6 +62,7 @@ For Docker without Docker Desktop on a Mac, see [Colima](./colima.md).
 ## See also
 
 - [Design tools](../concepts/design-tools.md)
+- [Figma](./figma.md)
 - [Paper](./paper.md)
 
 [^penpot]: [penpot/penpot README](https://github.com/penpot/penpot)
