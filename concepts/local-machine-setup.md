@@ -251,6 +251,7 @@ brew install himalaya
 # Python: add mypy and pytest per project with uv
 brew install uv               # Python versions, environments, packages and tools
 uv python install 3.14        # a uv-managed Python, so uv doesn't fall back to a system one
+uv python update-shell        # put ~/.local/bin (python3.14, uv tools) on PATH; open a new terminal
 uv python pin --global 3.14   # default when a project doesn't pin a version
 brew install ruff             # linter and formatter
 brew install ty               # type checker and language server (beta)

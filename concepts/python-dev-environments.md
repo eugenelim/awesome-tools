@@ -90,6 +90,7 @@ Sources: uv[^uv], pyenv[^pyenv].
 ```sh
 brew install uv                 # or: curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install 3.12 3.13     # install versions
+uv python update-shell          # add ~/.local/bin to PATH, for python3.12 and python3.13
 uv python pin 3.12              # write .python-version for this project
 uv python pin --global 3.13     # personal default
 uv venv                         # create .venv (downloads Python if missing)
@@ -97,6 +98,8 @@ uv python upgrade               # move to latest patch releases
 ```
 
 The uv commands are from its docs.[^uv] The Homebrew formula is `uv`.[^homebrew]
+
+`uv python install` puts versioned executables such as `python3.13` in `~/.local/bin`. If that folder isn't on your `PATH`, `uv python update-shell` adds it; open a new terminal afterwards.[^uv]
 
 ### Which Python uv uses
 
