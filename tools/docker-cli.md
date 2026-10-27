@@ -61,19 +61,23 @@ colima start
 docker run hello-world
 ```
 
-Homebrew installs `docker-compose` and `docker-buildx` as Docker CLI plugins in `$HOMEBREW_PREFIX/lib/docker/cli-plugins`, but the Docker CLI doesn't look there by default.[^homebrew] Add that folder to `~/.docker/config.json`, creating the file if it doesn't exist:
-
-```json
-{
-  "cliPluginsExtraDirs": ["/opt/homebrew/lib/docker/cli-plugins"]
-}
-```
-
-`/opt/homebrew` is Homebrew's default prefix on Apple silicon.[^brew-prefix] On an Intel Mac, use the folder printed by `echo "$(brew --prefix)/lib/docker/cli-plugins"`. If `config.json` already has other settings, add the `cliPluginsExtraDirs` line inside the existing braces rather than replacing the file.
-
-Check that the plugins are found:
+Homebrew installs `docker-compose` and `docker-buildx` as Docker CLI plugins in `$HOMEBREW_PREFIX/lib/docker/cli-plugins`, but the Docker CLI doesn't look there by default.[^homebrew] Add that folder to `cliPluginsExtraDirs` in `~/.docker/config.json`. With [jq](./jq.md), this creates the file if needed, keeps your other settings and existing entries, and is safe to run again:
 
 ```sh
+mkdir -p ~/.docker
+[ -f ~/.docker/config.json ] || echo '{}' > ~/.docker/config.json
+jq --arg d "$(brew --prefix)/lib/docker/cli-plugins" \
+  '.cliPluginsExtraDirs = ((.cliPluginsExtraDirs // []) + [$d] | unique)' \
+  ~/.docker/config.json > /tmp/docker-config.json \
+  && mv /tmp/docker-config.json ~/.docker/config.json
+```
+
+`$(brew --prefix)` is `/opt/homebrew` on Apple silicon and `/usr/local` on Intel.[^brew-prefix] Without jq, add `"cliPluginsExtraDirs": ["/opt/homebrew/lib/docker/cli-plugins"]` inside the braces of `config.json` by hand (use your own prefix on Intel).
+
+Check the setting and that the plugins are found:
+
+```sh
+jq .cliPluginsExtraDirs ~/.docker/config.json
 docker compose version
 docker buildx version
 ```
@@ -97,6 +101,34 @@ Install Docker Engine directly; the CLI comes with it.[^engine-ubuntu]
 
 If your organisation is under the thresholds, or pays for a subscription, Docker Desktop installs the CLI and an engine together: `brew install --cask docker-desktop` or `choco install docker-desktop`.[^homebrew] [^choco-pkg]
 
+## Build images
+
+`docker build` builds with BuildKit through the `buildx` plugin. If the CLI can't find buildx, it falls back to the legacy builder and warns:[^build-check]
+
+```text
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+```
+
+If you see that warning, run `docker buildx version`. On macOS, an `unknown command: docker buildx` error usually means `cliPluginsExtraDirs` is missing from `~/.docker/config.json` (see [macOS: Docker CLI + Colima](#macos-docker-cli--colima)). On Linux and in WSL, check that Docker Engine's buildx plugin package is installed (TODO: needs source for package name per distribution).
+
+Build from the `Dockerfile` in the current folder, then run the image:[^build-check]
+
+```sh
+docker build -t myapp:dev .
+docker image ls myapp
+docker run --rm myapp:dev
+```
+
+To build for Intel and Arm at once, pass `--platform`:[^build-check]
+
+```sh
+docker buildx ls                  # builders and the platforms they support
+docker buildx build --platform linux/amd64,linux/arm64 -t myapp:dev .
+```
+
+With Colima on an Apple silicon Mac, the default builder listed `linux/amd64` and `linux/arm64`, and the multi-platform build above worked without creating another builder.[^build-check]
+
 ## Podman
 
 Podman is an Apache-2.0 alternative with its own CLI. On macOS it runs containers in a VM started with `podman machine`. It's available as `brew install podman` and `choco install podman-cli`.[^homebrew] [^choco-pkg] Licensing doesn't require it.
@@ -115,3 +147,4 @@ Podman is an Apache-2.0 alternative with its own CLI. On macOS it runs container
 [^choco-pkg]: Chocolatey: [docker-cli](https://community.chocolatey.org/packages/docker-cli), [docker-desktop](https://community.chocolatey.org/packages/docker-desktop), [podman-cli](https://community.chocolatey.org/packages/podman-cli)
 
 [^winget-pkg]: [winget: Docker.DockerCLI](https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/Docker/DockerCLI)
+[^build-check]: `docker build`, `docker buildx ls` and `docker buildx build` with Docker CLI 29.9.2, docker-buildx 0.38.1 (Homebrew) and Colima 0.10.3 on the maintainer's Apple silicon Mac, 2026-10-27; the warning was captured with buildx not found
